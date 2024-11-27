@@ -24,21 +24,21 @@ Known Limitations:
 - Sometimes DTS MA isn't picked up properly. 
 - Not tuned for avi files, needs work.  Just handles audio and skips them.
 
-![1_ingest_tag](https://github.com/samssausages/tdarr/blob/main/1_ingest_tag.png)
+![1_ingest_tag](https://github.com/samssausages/tdarr/blob/main/images/1_ingest_tag.png)
 
-![2_prep](https://github.com/samssausages/tdarr/blob/main/2_prep.png)
+![2_prep](https://github.com/samssausages/tdarr/blob/main/images/2_prep.png)
 
-![3_clean_audio](https://github.com/samssausages/tdarr/blob/main/3_clean_audio.png)
+![3_clean_audio](https://github.com/samssausages/tdarr/blob/main/images/3_clean_audio.png)
 
-![4_encode_audio](https://github.com/samssausages/tdarr/blob/main/4_encode_audio.png)
+![4_encode_audio](https://github.com/samssausages/tdarr/blob/main/images/4_encode_audio.png)
 
-![5a_encode_video](https://github.com/samssausages/tdarr/blob/main/5_encode_video.png)
+![5a_encode_video](https://github.com/samssausages/tdarr/blob/main/images/5_encode_video.png)
 
-![5b_encode_video_fallback](https://github.com/samssausages/tdarr/blob/main/5b_encode_video_fallback.png)
+![5b_encode_video_fallback](https://github.com/samssausages/tdarr/blob/main/images/5b_encode_video_fallback.png)
 
-![6_save_file](https://github.com/samssausages/tdarr/blob/main/6_save_file.png)
+![6_save_file](https://github.com/samssausages/tdarr/blob/main/images/6_save_file.png)
 
-![library_variables](https://github.com/samssausages/tdarr/blob/main/library_variables.png)
+![library_variables](https://github.com/samssausages/tdarr/blob/main/images/library_variables.png)
 
 
 
