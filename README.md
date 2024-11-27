@@ -22,7 +22,7 @@ Known Limitations:
 - Sometimes DTS MA isn't picked up properly. 
 - Not tuned for avi files, needs work.  Just handles audio and skips them.
 
-![1_ingest_tag](https://github.com/samssausages/tdarr/blob/main/1_ingest_tag)
+![1_ingest_tag](https://github.com/samssausages/tdarr/blob/main/1_ingest_tag.png)
 
 ![2_prep](https://github.com/samssausages/tdarr/blob/main/2_prep.png)
 
