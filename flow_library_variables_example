@@ -1,0 +1,66 @@
+This is for my "Medium Quality" encode setting, using nvenc.  You can adjust from there or go a totally different route.
+
+```
+480p_arg  # The ffmpeg argument to pass for 480p videos.  If you don't have 20 series or up Nvidia, remove the "-bf 4"
+-c:v hevc_nvenc -b:v 1250k -maxrate 2500k -bufsize 5000k -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4
+
+480p_limit # Files with video bitrate less than this will get skipped and passed to alternate "cq" hevc encode flow
+1350k
+
+576p_arg
+-c:v hevc_nvenc -b:v 1500k -maxrate 3000k -bufsize 6000k -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4
+
+576p_limit
+1600k
+
+720p_arg
+-c:v hevc_nvenc -b:v 2000k -maxrate 4000k -bufsize 8000k -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4
+
+720p_limit
+2100k
+
+1080p_arg
+-c:v hevc_nvenc -b:v 3000k -maxrate 6000k -bufsize 12000k -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4
+
+1080p_limit
+3150k
+
+1440p_arg
+-c:v hevc_nvenc -b:v 4000k -maxrate 8000k -bufsize 16000k -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4
+
+1440p_limit
+4200k
+
+4k_arg
+-c:v hevc_nvenc -b:v 10000k -maxrate 20000k -bufsize 40000k -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4
+
+4k_limit
+11000k
+
+4k_hdr_arg
+-c:v hevc_nvenc -b:v 12000k -maxrate 24000k -bufsize 48000k -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -map_metadata 0 -bf 4
+
+4k_hdr_limit
+13000k
+
+v_cq # Used for alternate encoding flow based on cq
+24
+
+do_audio # process audio?  true/false
+true
+
+aud_2ch # Settings if you want to encode into another audio codec
+-c:v copy -c:a:0 libopus -b:a 320k
+
+aud_6ch
+-c:v copy -c:a:0 libopus -b:a 960k -ac 6
+
+aud_8ch
+-c:v copy -c:a:0 libopus -b:a 1280k -mapping_family 1
+
+aud_2ch_limit # Encode audio only if stream is over this size
+800
+
+aud_8ch_limit # Encode audio only if stream is over this size
+1800
+```
