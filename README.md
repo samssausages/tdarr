@@ -32,7 +32,7 @@ Known Limitations:
 
 ![4_encode_audio](https://github.com/samssausages/tdarr/blob/main/images/4_encode_audio.png)
 
-![5a_encode_video](https://github.com/samssausages/tdarr/blob/main/images/5_encode_video.png)
+![5a_encode_video](https://github.com/samssausages/tdarr/blob/main/images/5a_encode_video.png)
 
 ![5b_encode_video_fallback](https://github.com/samssausages/tdarr/blob/main/images/5b_encode_video_fallback.png)
 
