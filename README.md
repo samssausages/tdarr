@@ -4,7 +4,7 @@ Current Library Variable Examples: [flow_library_variables_example](https://gith
 
 Very much a work in process, but works great for 90% of the files that I feed into it.  Working on this as I run into errors and fixes.  Suggestions and feedback welcome!
 
-This uses Library Variables.  So you can have a Low Quality Libary, High Quality Libraryetc.  Then you put the files in your library folder and go!  Set the variables in the library and they will be imported into this flow.
+This uses Library Variables.  So you can have a Low Quality Libary, High Quality Library, etc.  Then you put the files in your corresponding library folder and go!  Set the variables in the library and they will be imported into this flow.
 
 I'll document the flow when I have more time.  But the flow itself is quite self explanitory.
 
