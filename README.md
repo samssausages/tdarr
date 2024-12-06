@@ -17,12 +17,13 @@ Goals:
 - HDR seems to work fine, but could use more testing, I don't trust it yet
 - Deinterlace .ts files. (tv broadcasts) Wouldn't mind to find a way to check for interlacing and apply if found.
 
-Known Limitations:
+Current Known Limitations:
 - Only works for nvidia
 - my command is made for 20 series nvidia and up, as it uses b-frames. Remove them if you have an older card.
 - Audio Transcode fails more often that I would like.  Needs work.
 - Sometimes DTS MA isn't picked up properly. 
 - Not tuned for avi files, needs work.  Just handles audio and skips them.
+- No compatibility audio track
 
 ![1_ingest_tag](https://github.com/samssausages/tdarr/blob/main/images/1_ingest_tag.png)
 
