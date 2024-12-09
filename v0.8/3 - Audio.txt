@@ -1,0 +1,3001 @@
+{
+  "_id": "TcG_OWsAi",
+  "name": "3 - Audio",
+  "description": "3 - Audio",
+  "tags": "",
+  "flowPlugins": [
+    {
+      "name": "Reset Flow Error",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "90XvoVKK_",
+      "position": {
+        "x": 261.0723828231357,
+        "y": 1866.4017496040112
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Reset Flow Error",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "wWVvBYYaN",
+      "position": {
+        "x": 269.3992705639761,
+        "y": 1775.485873129093
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Need to improve error flow when codecs error out or aren't found",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "GQgYPPuCn",
+      "position": {
+        "x": -200.30338087829796,
+        "y": 2676.413837706146
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - MKVPropEdit Error! ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "fVUGrG3KK",
+      "position": {
+        "x": 902.2637210811973,
+        "y": 3997.4756736275867
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Encode Error! Skipping Audio Encode ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "e7lfImqz4",
+      "position": {
+        "x": 901.7368632119103,
+        "y": 3907.5454643764424
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - MKVPropEdit OK! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "RdB4YXh8J",
+      "position": {
+        "x": 716.6439150706793,
+        "y": 3997.882791834348
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - File is mkv ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "MSw1f7keb",
+      "position": {
+        "x": 868.620944635905,
+        "y": 3779.547287342147
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Removed Tracks ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "0022sTONL",
+      "position": {
+        "x": 767.4249612259721,
+        "y": 1000.0163316269699
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Removed Tracks ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "WR1Lag2Ls",
+      "position": {
+        "x": 489.8173898826561,
+        "y": 879.925258332505
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Removed Tracks ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "9vG4bGFyK",
+      "position": {
+        "x": 213.71715344889833,
+        "y": 739.4851637590019
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Nothing Processed ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "aKqpG5jAZ",
+      "position": {
+        "x": 917.7794952091433,
+        "y": 999.4471642426014
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Nothing Processed ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "JjxNJV9ga",
+      "position": {
+        "x": 640.7254181185895,
+        "y": 879.7115764783505
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Nothing Processed ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "9_Y4Ql07p",
+      "position": {
+        "x": 362.49842761681253,
+        "y": 739.5145243831323
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "dgVClMici",
+      "position": {
+        "x": 1879.8452356477007,
+        "y": 2471.0322163968635
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ If encode succeeds, remove all other audio tracks.\nBe aware of vids with multiple language tracks that you wish to keep!",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "tDB-jLovY",
+      "position": {
+        "x": 645.834146031548,
+        "y": 3505.4193595229217
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ We try to keep the highest channel audio codec only.\nWill add a way to add compatibility track in the future",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "pFlIVyaSE",
+      "position": {
+        "x": -201.58640123477582,
+        "y": 2157.4637410510613
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Go to Flow - 4 Video ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "Ndw7h1SEI",
+      "position": {
+        "x": 991.383881961684,
+        "y": 4198.836105744239
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "2OlpiKQ6y"
+      }
+    },
+    {
+      "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "OrR0rXBi-",
+      "position": {
+        "x": 412.0191449765105,
+        "y": 2688.9376184792945
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "Ka4bqB3zT",
+      "position": {
+        "x": 913.874691676506,
+        "y": 2760.2068469738624
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "YnarcMR5F",
+      "position": {
+        "x": 1389.8586929024173,
+        "y": 2852.073473003004
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Nothing to process ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "LEWyqEPjw",
+      "position": {
+        "x": 966.4629931788627,
+        "y": 3617.5226423121735
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Removed all but opus! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "pUJx60xNJ",
+      "position": {
+        "x": 812.1424528963587,
+        "y": 3618.4830719198508
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "ao4PhBnkx",
+      "position": {
+        "x": 1880.8559652852068,
+        "y": 2945.4064989995113
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - No Opus but Encoded, something is wrong.  Flag for Review! 🚨",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "S4iThhPvh",
+      "position": {
+        "x": 1132.2716325618946,
+        "y": 3437.0105008609066
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Go to Flow - 4 Video ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "nppyT7nft",
+      "position": {
+        "x": 1190.2013465423538,
+        "y": 3309.1982359471217
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "2OlpiKQ6y"
+      }
+    },
+    {
+      "name": "Audio - Opus Exists! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "uVvEH-f46",
+      "position": {
+        "x": 892.8456190241286,
+        "y": 3442.2404027733505
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Encode Done! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "LTmW8nMkk",
+      "position": {
+        "x": 1022.1468227793471,
+        "y": 3272.453536088047
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Go to Flow - 4 Video ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "0PImCv_dl",
+      "position": {
+        "x": 1787.6554918371414,
+        "y": 3150.1971384035805
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "2OlpiKQ6y"
+      }
+    },
+    {
+      "name": "Audio - Go to Flow - 4 Video ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "TZ43h2TCm",
+      "position": {
+        "x": 1307.666378633418,
+        "y": 3054.526692071625
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "2OlpiKQ6y"
+      }
+    },
+    {
+      "name": "Audio - Go to Flow - 4 Video ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "IVLs-jkma",
+      "position": {
+        "x": 827.9097320959075,
+        "y": 3003.604509103138
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "2OlpiKQ6y"
+      }
+    },
+    {
+      "name": "Audio - Go to Flow - 4 Video ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "dCf7Tob69",
+      "position": {
+        "x": 330.8223177783911,
+        "y": 2969.5279306122306
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "2OlpiKQ6y"
+      }
+    },
+    {
+      "name": "Audio - Source bitrate too low - Skipping Audio Encode ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "dwAqcaYPH",
+      "position": {
+        "x": 1787.7732205514365,
+        "y": 3045.7312981851933
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Encode - Encode in libopus - 1ch 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "O_9LOpNF0",
+      "position": {
+        "x": 1504.1259893215672,
+        "y": 3038.5573595929613
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputArguments": "-c:v copy -c:a:0 libopus -b:a {{{args.variables.bitrate_audio_2}}} -ac 1"
+      }
+    },
+    {
+      "name": "Audio - Check if is_audio_lossless 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "SgeLsQHv3",
+      "position": {
+        "x": 1762.731909908683,
+        "y": 2902.8964889948998
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": " {{{args.variables.is_audio_lossless}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if wav - 1ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "FdEKIRBzk",
+      "position": {
+        "x": 1708.319076704961,
+        "y": 2816.8447745765197
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "wav",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if flac - 1ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "0-3aRjaYS",
+      "position": {
+        "x": 1649.5807628626499,
+        "y": 2732.515684481725
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "flac",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if TrueHD - 1ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "GM1sHEBTo",
+      "position": {
+        "x": 1588.9699531969861,
+        "y": 2647.56242911248
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "truehd",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if dts - 1ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "4J4dDJ3Tn",
+      "position": {
+        "x": 1528.9833088057733,
+        "y": 2558.86418209653
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "dts",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if dca - 1ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "_I4ev8nP_",
+      "position": {
+        "x": 1470.8823391364763,
+        "y": 2472.0578501516407
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "dca",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Source bitrate too low - Skipping Audio Encode ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "QMbEsJCYP",
+      "position": {
+        "x": 1307.8559940127157,
+        "y": 2955.178592085505
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Check if is_audio_lossless 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "dzcqBzIai",
+      "position": {
+        "x": 1282.3304382058182,
+        "y": 2809.7191590208245
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": " {{{args.variables.is_audio_lossless}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if wav - 2ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "v6DjtYFVh",
+      "position": {
+        "x": 1222.861020870929,
+        "y": 2725.4991696408656
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "wav",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if flac - 2ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "MCWHs2fBd",
+      "position": {
+        "x": 1162.3096765040202,
+        "y": 2639.3231318114645
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "flac",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if TrueHD - 2ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "FE22r5Yyl",
+      "position": {
+        "x": 1104.0569073483232,
+        "y": 2554.9588795762866
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "truehd",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if dts - 2ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "VYZRFs3Rp",
+      "position": {
+        "x": 1046.6462124625436,
+        "y": 2470.1962445392573
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "dts",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Encode in libopus - 2ch 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "F2U_8EH4S",
+      "position": {
+        "x": 1020.4835939840011,
+        "y": 3042.4093267124485
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputArguments": "-c:v copy -c:a:0 libopus -b:a {{{args.variables.bitrate_audio_2}}} -ac 2"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if dca - 2ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "h21X_I2Wu",
+      "position": {
+        "x": 989.1249286389511,
+        "y": 2383.7012692646167
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "dca",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Source bitrate too low - Skipping Audio Encode ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "IGLmyMWoA",
+      "position": {
+        "x": 827.3711136464473,
+        "y": 2918.9084980827865
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Encode - Encode in libopus - 6ch 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "lbj9YbACM",
+      "position": {
+        "x": 533.9538524216098,
+        "y": 3039.1842063089393
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputArguments": "-c:v copy -c:a:0 libopus -b:a {{{args.variables.bitrate_audio_6}}} -ac 6 "
+      }
+    },
+    {
+      "name": "Audio - Check if is_audio_lossless 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "2HfCSkIVo",
+      "position": {
+        "x": 801.9699726657892,
+        "y": 2716.909337239615
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": " {{{args.variables.is_audio_lossless}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if wav - 6ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "rbk3cxOri",
+      "position": {
+        "x": 742.6455559263632,
+        "y": 2632.2624744566897
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "wav",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if flac - 6ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "iVuMg_bBq",
+      "position": {
+        "x": 681.0416746656939,
+        "y": 2546.0392337059766
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "flac",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if TrueHD - 6ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "O5_5gRxud",
+      "position": {
+        "x": 621.7431272234357,
+        "y": 2461.8211501156256
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "truehd",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if dts - 6ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "6pPLXnl8T",
+      "position": {
+        "x": 557.4942865124375,
+        "y": 2378.662520249426
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "dts",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if dca - 6ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "J3rVxQFew",
+      "position": {
+        "x": 494.63985174468917,
+        "y": 2294.7031751958425
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "dca",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "ℹ️ Calculates stream bitrates based on library variable bitrate_audio\nLogic is Channel Count * bitrate_audio\nGenerates Variables:\nbitrate_audio_2\nbitrate_audio_6\nbitrate_audio_8",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "jaODXbb-R",
+      "position": {
+        "x": -41.06737551375028,
+        "y": 1663.1856017693744
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Check if is_audio_lossless 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "rakfkFoMv",
+      "position": {
+        "x": 304.72054651629696,
+        "y": 2631.5559478795876
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": " {{{args.variables.is_audio_lossless}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "ℹ️ Checks for listed codecs and tags with is_audio_lossless",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "G9J3Uhyq9",
+      "position": {
+        "x": -81.17937736380114,
+        "y": 1803.9011408245374
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Tag with is_audio_lossless 🧮",
+      "sourceRepo": "Community",
+      "pluginName": "customFunction",
+      "version": "1.0.0",
+      "id": "evtek_5dF",
+      "position": {
+        "x": 71.44845052074976,
+        "y": 1816.4073295089972
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "code": "module.exports = async (args) => {\n  // Define lossless audio codecs\n  const losslessCodecs = [\"pcm_s16le\", \"pcm_s24le\", \"pcm_f32le\"];\n  \n  // Check if the audio codec of the file is in the lossless list\n  const streams = args.inputFileObj.ffProbeData.streams || [];\n  let isLossless = false;\n\n  for (const stream of streams) {\n    if (stream.codec_type === \"audio\" && losslessCodecs.includes(stream.codec_name.toLowerCase())) {\n      isLossless = true;\n      break;\n    }\n  }\n\n  // Tag the file as `is_audio_lossless` if it meets the condition\n  args.variables.is_audio_lossless = isLossless;\n\n  return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1, // Continue the workflow\n    variables: args.variables, // Pass the updated variables\n  };\n};\n"
+      }
+    },
+    {
+      "name": "Audio - Source bitrate too low - Skipping Audio Encode ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "GKe-B1tIi",
+      "position": {
+        "x": 330.3217512778765,
+        "y": 2866.156887680384
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Encode - Check if wav - 8ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "vDTU6jq34",
+      "position": {
+        "x": 246.99834185504693,
+        "y": 2547.1521285842496
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "wav",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if TrueHD - 8ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "Re_OQhamq",
+      "position": {
+        "x": 118.79370362742696,
+        "y": 2378.0906913705826
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "truehd",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if flac - 8ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "8n-hA7TRX",
+      "position": {
+        "x": 181.43332377990248,
+        "y": 2462.3796456330906
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "flac",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "ℹ️ Check if encode/process audio or not",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "wiWMZ_QHF",
+      "position": {
+        "x": 113.02791234866245,
+        "y": 1319.2346107619132
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - 8ch Audio found ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "WWBBomMf5",
+      "position": {
+        "x": 2.391896047316834,
+        "y": 2150.3996931431348
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Calculates stream bitrates based on library variable bitrate_audio\nLogic is Channel Count * bitrate_audio",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "on9qTSrkl",
+      "position": {
+        "x": -319.0996822810297,
+        "y": 1700.8930632942652
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Calculates stream bitrates based on library variable bitrate_audio_cutoff\nLogic is Channel Count * bitrate_audio_cutoff\nGenerates Variables:\nbitrate_audio_cutoff_2\nbitrate_audio_cutoff_6\nbitrate_audio_cutoff_8",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "x2mkBBSTK",
+      "position": {
+        "x": 0.3404336323428936,
+        "y": 1499.143477977582
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Encode - JS Calculate bitrate_audio_cutoff 🧮",
+      "sourceRepo": "Community",
+      "pluginName": "customFunction",
+      "version": "1.0.0",
+      "id": "ohpvGSMoD",
+      "position": {
+        "x": 161.90256213797767,
+        "y": 1599.4885676146455
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "code": "module.exports = async (args) => {\n      // Define the base bitrate per channel from the library variable\n      const baseBitratePerChannel = parseInt(args.userVariables.library.bitrate_audio_cutoff);\n\n      // Convert from kilobits to bits\n      const baseBitratePerChannelBits = baseBitratePerChannel * 1000;\n\n      // Function to set channel bitrates\n      function setChannelBitrate(channelCount) {\n          const totalBitrate = baseBitratePerChannelBits * channelCount;\n          const variableName = `bitrate_audio_cutoff_${channelCount}`;\n          args.variables[variableName] = totalBitrate;\n          console.log(`${variableName}: ${totalBitrate} bits`);\n      }\n\n      // Set bitrates for different channel configurations\n      setChannelBitrate(1);  // For mono\n      setChannelBitrate(2);  // For stereo (2-channel)\n      setChannelBitrate(6);  // For 5.1 surround sound\n      setChannelBitrate(8);  // For 7.1 surround sound\n\n   return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1,\n    variables: args.variables,\n  };\n};"
+      }
+    },
+    {
+      "name": "ℹ️ JS work in progress\nThis tags all the codecs on a the list.  But I need a way to set a bitrate cutoff, so only over x bitrate.\nThat would pretty much eliminate the entire flow on the right...",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "OYLOSUi8F",
+      "position": {
+        "x": -196.30338087829796,
+        "y": 2366.413837706146
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Is Lossless Codec? 🧮",
+      "sourceRepo": "Community",
+      "pluginName": "customFunction",
+      "version": "1.0.0",
+      "id": "MMq1Q2ymm",
+      "position": {
+        "x": -195.98620590904875,
+        "y": 2556.734972449613
+      },
+      "fpEnabled": false,
+      "inputsDB": {
+        "code": "module.exports = async (args) => {\n  // Define lossless audio codecs\n  const losslessCodecs = [\"flac\", \"alac\", \"dca\", \"dts\", \"wav\", \"pcm_s16le\", \"pcm_s24le\", \"pcm_f32le\", \"truehd\", \"mlp\"];\n  \n  // Check if the audio codec of the file is in the lossless list\n  const streams = args.inputFileObj.ffProbeData.streams || [];\n  let isLossless = false;\n\n  for (const stream of streams) {\n    if (stream.codec_type === \"audio\" && losslessCodecs.includes(stream.codec_name.toLowerCase())) {\n      isLossless = true;\n      break;\n    }\n  }\n\n  // Tag the file as `is_audio_lossless` if it meets the condition\n  args.variables.is_audio_lossless = isLossless;\n\n  return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1, // Continue the workflow\n    variables: args.variables, // Pass the updated variables\n  };\n};"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if dts - 8ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "jqXnLzQfC",
+      "position": {
+        "x": 60.06349210111841,
+        "y": 2294.563318557133
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "dts",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Check Variable audio_1ch🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "YApKmzUde",
+      "position": {
+        "x": 1496.239173174973,
+        "y": 2383.90605496967
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": " {{{args.variables.user.audio_1ch}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Check Variable audio_2ch🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "GoTU1-6zI",
+      "position": {
+        "x": 1014.3399975531293,
+        "y": 2299.5928802289864
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": " {{{args.variables.user.audio_2ch}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Check Variable audio_6ch🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "GAnMVwvcj",
+      "position": {
+        "x": 519.4407770420262,
+        "y": 2210.3829210628946
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": " {{{args.variables.user.audio_6ch}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Set Variable audio_1ch 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "zCRCLqP6s",
+      "position": {
+        "x": 1172.6954836251518,
+        "y": 1038.9611818086278
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "audio_1ch",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Set Variable audio_2ch 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "Mviaj6s0x",
+      "position": {
+        "x": 844.9013067968428,
+        "y": 1085.9261858364116
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "audio_2ch",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Set Variable audio_6ch 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "gkx2a_GOv",
+      "position": {
+        "x": 562.8493527910664,
+        "y": 963.6661569414246
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "audio_6ch",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - do_audio found, Encode Audio ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "i48rest6S",
+      "position": {
+        "x": 162.6642112988443,
+        "y": 1421.2761224953401
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Ultimate goal is to only encode Lossless sources only.  But right now my filter is not perfect and will pickup a lossy codec if you set the bitrate low enough.  This may be desirable, if you want to process all codecs over a certain bitrate.\nWould love ideas on how to simplify and improve!",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "cXFQNrqFX",
+      "position": {
+        "x": -157.74446509679123,
+        "y": 1303.0465964968023
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Do not Encode Audio ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "l-FX8xwlT",
+      "position": {
+        "x": 355.77547093389865,
+        "y": 1424.360428062668
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Go to Flow - 4 Video ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "puesfFpWS",
+      "position": {
+        "x": 355.92507973243664,
+        "y": 1517.7365119355636
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "px3PqFxVL",
+        "pluginId": "2OlpiKQ6y"
+      }
+    },
+    {
+      "name": "Audio - Encode - Start 🚀",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "AwkoEMHXZ",
+      "position": {
+        "x": 162.1527564345118,
+        "y": 1523.8589080934723
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Go to Flow - Nothing to Process ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "v8mlWMCB2",
+      "position": {
+        "x": 1547.1511236873691,
+        "y": 837.7787807812055
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "TcG_OWsAi",
+        "pluginId": "kXiy_6aLf"
+      }
+    },
+    {
+      "name": "Audio - Clean - Go to Flow - Error Remove Track ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "X4w8U3ohn",
+      "position": {
+        "x": 455.94813187655484,
+        "y": 697.7943102523049
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "TcG_OWsAi",
+        "pluginId": "cpvMZJdoY"
+      }
+    },
+    {
+      "name": "Audio - Clean - Go to Flow - Error Remove Track ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "8-K38F9uN",
+      "position": {
+        "x": 729.396345829367,
+        "y": 825.6908279263514
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "TcG_OWsAi",
+        "pluginId": "cpvMZJdoY"
+      }
+    },
+    {
+      "name": "Audio - Clean - Go to Flow - Error Remove Track ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "U3tr8l162",
+      "position": {
+        "x": 1007.4179865864894,
+        "y": 952.1854115358262
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "TcG_OWsAi",
+        "pluginId": "cpvMZJdoY"
+      }
+    },
+    {
+      "name": "Audio - Clean - Error Remove Track 🚨",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "cpvMZJdoY",
+      "position": {
+        "x": 1546.284934391056,
+        "y": 683.2026716094169
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Nothing Processed ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "kXiy_6aLf",
+      "position": {
+        "x": 1174.0504696744454,
+        "y": 1196.5095309010442
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Remove all but 2 Channel ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "M_lfTMnEG",
+      "position": {
+        "x": 892.1249063616141,
+        "y": 906.9369996914406
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_audio_by_channel_count",
+        "channelCounts": "1"
+      }
+    },
+    {
+      "name": "Audio - Clean - Remove all but 6 Channel ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "G3A2Y8WBG",
+      "position": {
+        "x": 618.8549268157118,
+        "y": 779.818673736858
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_audio_by_channel_count",
+        "channelCounts": "2,1"
+      }
+    },
+    {
+      "name": "Audio - Clean - Not able to parse audio track Channel # ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "nNC1PCGy8",
+      "position": {
+        "x": 1324.3736987613124,
+        "y": 934.4195592541437
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Keep only highest Audio Channel Track - 1 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkChannelCount",
+      "version": "1.0.0",
+      "id": "Nf68BwpQv",
+      "position": {
+        "x": 1197.608733221955,
+        "y": 828.775319167986
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channelCount": "1"
+      }
+    },
+    {
+      "name": "Audio - Clean - Found 1 Channel Track ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "PulJXrK8M",
+      "position": {
+        "x": 1172.122940205876,
+        "y": 949.4529154280438
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Found 2 Channel Track ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "TUrnR8Exd",
+      "position": {
+        "x": 891.3669686631297,
+        "y": 824.5889375736183
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Found 6 Channel Track ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "X6KOW4tLW",
+      "position": {
+        "x": 619.429703983944,
+        "y": 697.1547380828795
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Keep only highest Audio Channel Track - 2 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkChannelCount",
+      "version": "1.0.0",
+      "id": "E2F9SHWF0",
+      "position": {
+        "x": 983.6433411357103,
+        "y": 726.2672579896231
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channelCount": "2"
+      }
+    },
+    {
+      "name": "Audio - Clean - Keep only highest Audio Channel Track - 6 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkChannelCount",
+      "version": "1.0.0",
+      "id": "pM5Xc3f3q",
+      "position": {
+        "x": 733.0817448580892,
+        "y": 594.2466001123513
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channelCount": "6"
+      }
+    },
+    {
+      "name": "ℹ️ I'm kind of brute forcing this right now, but would love to find a cleaner and simpler (more direct) way of keeping only the highest channel track.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "8XnZGqJzO",
+      "position": {
+        "x": 303.97481875500335,
+        "y": 405.7488731122645
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Keep only Audio Tracks listed in aud_lang - Nothing Processed ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "yr9CMoKRz",
+      "position": {
+        "x": 633.3644334055409,
+        "y": 327.85908155310625
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Keep only Audio Tracks listed in aud_lang OK ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "cg5tVkEY8",
+      "position": {
+        "x": 477.993069245618,
+        "y": 346.1789472371948
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ User config required\nVariable aud_lang for languages to keep",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "9ktggnxb7",
+      "position": {
+        "x": 382.29839644830406,
+        "y": 220.49096059902104
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Start 🚀",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "jG9agfHPW",
+      "position": {
+        "x": 554.803662287587,
+        "y": 44.77505319087214
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Found 8 Channel Track ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "lJ83LpCUk",
+      "position": {
+        "x": 415.403622477685,
+        "y": 562.734755889674
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Keep only Audio Tracks in listed Languages ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "cUkNS-hQL",
+      "position": {
+        "x": 554.009539548386,
+        "y": 116.54138990865209
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Remove all Languages not defined in var aud_lang ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "M9FxCpocJ",
+      "position": {
+        "x": 552.8457929271168,
+        "y": 217.101908938507
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MC93_Migz3CleanAudio",
+        "language": "{{{args.userVariables.library.audio_language}}}",
+        "commentary": "true"
+      }
+    },
+    {
+      "name": "Audio - Clean - Keep only highest Audio Channel Track - 8 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkChannelCount",
+      "version": "1.0.0",
+      "id": "ro6KgYaXg",
+      "position": {
+        "x": 549.3325969515967,
+        "y": 459.1398702527233
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channelCount": "8"
+      }
+    },
+    {
+      "name": "Audio - Clean - Remove all but 8 Channel ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "pVf0b1N0N",
+      "position": {
+        "x": 291.8886464344686,
+        "y": 651.5398169249862
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_audio_by_channel_count",
+        "channelCounts": "6,2,1"
+      }
+    },
+    {
+      "name": "Audio - Clean - Not able to remove audio tracks ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "1Wb2ENRYt",
+      "position": {
+        "x": 1546.4333919162511,
+        "y": 762.7716380925497
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Clean - Check var do_audio 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "0SoOMHLNd",
+      "position": {
+        "x": 265.9941330869611,
+        "y": 1336.0008468704104
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.do_audio}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Encode - JS Calculate bitrate_audio 🧮",
+      "sourceRepo": "Community",
+      "pluginName": "customFunction",
+      "version": "1.0.0",
+      "id": "RBSADUV2i",
+      "position": {
+        "x": 116.60706255288386,
+        "y": 1726.2666706332438
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "code": "module.exports = async (args) => {\n      // Define the base bitrate per channel from the library variable\n      const baseBitratePerChannel = parseInt(args.userVariables.library.bitrate_audio);\n\n      // Convert from kilobits to bits\n      const baseBitratePerChannelBits = baseBitratePerChannel * 1000;\n\n      // Function to set channel bitrates\n      function setChannelBitrate(channelCount) {\n          const totalBitrate = baseBitratePerChannelBits * channelCount;\n          const variableName = `bitrate_audio_${channelCount}`;\n          args.variables[variableName] = totalBitrate;\n          console.log(`${variableName}: ${totalBitrate} bits`);\n      }\n\n      // Set bitrates for different channel configurations\n      setChannelBitrate(1);  // For mono\n      setChannelBitrate(2);  // For stereo (2-channel)\n      setChannelBitrate(6);  // For 5.1 surround sound\n      setChannelBitrate(8);  // For 7.1 surround sound\n\n    return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1,\n    variables: args.variables,\n    };\n};"
+      }
+    },
+    {
+      "name": "Audio - Set Variable audio_8ch 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "vir0PusVB",
+      "position": {
+        "x": 266.8624515985385,
+        "y": 824.35538352751
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "audio_8ch",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Check Variable audio_8ch🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "gdq5cqEJ1",
+      "position": {
+        "x": 26.897402239981176,
+        "y": 2034.0718158521943
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": " {{{args.variables.user.audio_8ch}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if dca - 8ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "WfDnxH__W",
+      "position": {
+        "x": 2.1532225988921425,
+        "y": 2211.035714282575
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "dca",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
+        "lessThan": "999999999"
+      }
+    },
+    {
+      "name": "Audio - Encode - Begin ffmpeg Command 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "AVOGHm5kI",
+      "position": {
+        "x": 26.606142168926823,
+        "y": 1915.0166118086042
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Encode - Encode in libopus - 8ch 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "rWuso2nsU",
+      "position": {
+        "x": -24.258514811064515,
+        "y": 3038.8710327630674
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputArguments": "-c:v copy -c:a:0 libopus -b:a {{{args.variables.bitrate_audio_8}}} -mapping_family 1"
+      }
+    },
+    {
+      "name": "Audio - Encode - Execute Audio Encode ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandExecute",
+      "version": "1.0.0",
+      "id": "06NkCtYpa",
+      "position": {
+        "x": 1021.5418629568194,
+        "y": 3171.158019543686
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Ensure Opus Exists 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "RaFVa5mwW",
+      "position": {
+        "x": 1021.0915649626918,
+        "y": 3346.233661454899
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "opus"
+      }
+    },
+    {
+      "name": "Audio - Set Variable audio_review 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "IgDBEt27L",
+      "position": {
+        "x": 1135.7378916798639,
+        "y": 3619.1616187749178
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "audio_review",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Audio - Encode Error! Skipping Audio Encode ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "xrMbHQnp0",
+      "position": {
+        "x": 1189.3349431321697,
+        "y": 3226.549504615778
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Audio - Remove all Audio but opus ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "B3TKV7LVq",
+      "position": {
+        "x": 892.8748921187575,
+        "y": 3524.6180596242325
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MP01_MichPasCleanSubsAndAudioCodecs",
+        "tag_audio_codecs": "aac,ac3,eac3,dca,dts,flac,mp2,mp3,truehd,vorbis,wav,wma"
+      }
+    },
+    {
+      "name": "Audio - Check is_mkv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "J8tZK5YJe",
+      "position": {
+        "x": 966.9122508294487,
+        "y": 3704.79234451867
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "extensions": "mkv"
+      }
+    },
+    {
+      "name": "Prep & Clean - Run MKVPropEdit ⏳ ",
+      "sourceRepo": "Community",
+      "pluginName": "runMkvPropEdit",
+      "version": "1.0.0",
+      "id": "GhMthZgi7",
+      "position": {
+        "x": 716.8285706567549,
+        "y": 3865.5342504751948
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Reset Flow Error",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "k7zliIwsW",
+      "position": {
+        "x": 282.07891112129704,
+        "y": 1673.2528393313257
+      },
+      "fpEnabled": true
+    }
+  ],
+  "flowEdges": [
+    {
+      "source": "jG9agfHPW",
+      "sourceHandle": "1",
+      "target": "cUkNS-hQL",
+      "targetHandle": null,
+      "id": "W0IccEGGC"
+    },
+    {
+      "source": "cUkNS-hQL",
+      "sourceHandle": "1",
+      "target": "M9FxCpocJ",
+      "targetHandle": null,
+      "id": "WKXNWyPA2"
+    },
+    {
+      "source": "M9FxCpocJ",
+      "sourceHandle": "1",
+      "target": "cg5tVkEY8",
+      "targetHandle": null,
+      "id": "ipLSLldme"
+    },
+    {
+      "source": "M9FxCpocJ",
+      "sourceHandle": "2",
+      "target": "yr9CMoKRz",
+      "targetHandle": null,
+      "id": "EykVoVaO2"
+    },
+    {
+      "source": "cg5tVkEY8",
+      "sourceHandle": "1",
+      "target": "ro6KgYaXg",
+      "targetHandle": null,
+      "id": "tTj73oL8F"
+    },
+    {
+      "source": "yr9CMoKRz",
+      "sourceHandle": "1",
+      "target": "ro6KgYaXg",
+      "targetHandle": null,
+      "id": "U_IfHkxNW"
+    },
+    {
+      "source": "ro6KgYaXg",
+      "sourceHandle": "2",
+      "target": "pM5Xc3f3q",
+      "targetHandle": null,
+      "id": "wESglHzV-"
+    },
+    {
+      "source": "pM5Xc3f3q",
+      "sourceHandle": "2",
+      "target": "E2F9SHWF0",
+      "targetHandle": null,
+      "id": "7mgowwrnM"
+    },
+    {
+      "source": "ro6KgYaXg",
+      "sourceHandle": "1",
+      "target": "lJ83LpCUk",
+      "targetHandle": null,
+      "id": "QGIAxjuNU"
+    },
+    {
+      "source": "pM5Xc3f3q",
+      "sourceHandle": "1",
+      "target": "X6KOW4tLW",
+      "targetHandle": null,
+      "id": "WT_HvpuJJ"
+    },
+    {
+      "source": "E2F9SHWF0",
+      "sourceHandle": "1",
+      "target": "TUrnR8Exd",
+      "targetHandle": null,
+      "id": "CPjJFhchp"
+    },
+    {
+      "source": "E2F9SHWF0",
+      "sourceHandle": "2",
+      "target": "Nf68BwpQv",
+      "targetHandle": null,
+      "id": "K505AVjDr"
+    },
+    {
+      "source": "Nf68BwpQv",
+      "sourceHandle": "1",
+      "target": "PulJXrK8M",
+      "targetHandle": null,
+      "id": "Dr7JMFa2k"
+    },
+    {
+      "source": "Nf68BwpQv",
+      "sourceHandle": "2",
+      "target": "nNC1PCGy8",
+      "targetHandle": null,
+      "id": "SF49ibKv1"
+    },
+    {
+      "source": "Nf68BwpQv",
+      "sourceHandle": "err1",
+      "target": "nNC1PCGy8",
+      "targetHandle": null,
+      "id": "JaEh8Ir70"
+    },
+    {
+      "source": "E2F9SHWF0",
+      "sourceHandle": "err1",
+      "target": "nNC1PCGy8",
+      "targetHandle": null,
+      "id": "uY0m1eirQ"
+    },
+    {
+      "source": "pM5Xc3f3q",
+      "sourceHandle": "err1",
+      "target": "nNC1PCGy8",
+      "targetHandle": null,
+      "id": "DLo2vDyAZ"
+    },
+    {
+      "source": "ro6KgYaXg",
+      "sourceHandle": "err1",
+      "target": "nNC1PCGy8",
+      "targetHandle": null,
+      "id": "s4SS-Fgmr"
+    },
+    {
+      "source": "lJ83LpCUk",
+      "sourceHandle": "1",
+      "target": "pVf0b1N0N",
+      "targetHandle": null,
+      "id": "gtkLSEque"
+    },
+    {
+      "source": "X6KOW4tLW",
+      "sourceHandle": "1",
+      "target": "G3A2Y8WBG",
+      "targetHandle": null,
+      "id": "qSowNmMlz"
+    },
+    {
+      "source": "TUrnR8Exd",
+      "sourceHandle": "1",
+      "target": "M_lfTMnEG",
+      "targetHandle": null,
+      "id": "W4Ky--NbB"
+    },
+    {
+      "source": "cpvMZJdoY",
+      "sourceHandle": "1",
+      "target": "1Wb2ENRYt",
+      "targetHandle": null,
+      "id": "QnX9rjlyb"
+    },
+    {
+      "source": "M_lfTMnEG",
+      "sourceHandle": "err1",
+      "target": "U3tr8l162",
+      "targetHandle": null,
+      "id": "BW5uqFFWE"
+    },
+    {
+      "source": "G3A2Y8WBG",
+      "sourceHandle": "err1",
+      "target": "8-K38F9uN",
+      "targetHandle": null,
+      "id": "uS3Ze_rUq"
+    },
+    {
+      "source": "pVf0b1N0N",
+      "sourceHandle": "err1",
+      "target": "X4w8U3ohn",
+      "targetHandle": null,
+      "id": "owFGsnzrF"
+    },
+    {
+      "source": "1Wb2ENRYt",
+      "sourceHandle": "1",
+      "target": "v8mlWMCB2",
+      "targetHandle": null,
+      "id": "oKzZd923d"
+    },
+    {
+      "source": "kXiy_6aLf",
+      "sourceHandle": "1",
+      "target": "0SoOMHLNd",
+      "targetHandle": null,
+      "id": "knbZQStqC"
+    },
+    {
+      "source": "0SoOMHLNd",
+      "sourceHandle": "2",
+      "target": "l-FX8xwlT",
+      "targetHandle": null,
+      "id": "z42wCbAMe"
+    },
+    {
+      "source": "l-FX8xwlT",
+      "sourceHandle": "1",
+      "target": "puesfFpWS",
+      "targetHandle": null,
+      "id": "54n0f8EcS"
+    },
+    {
+      "source": "0SoOMHLNd",
+      "sourceHandle": "1",
+      "target": "i48rest6S",
+      "targetHandle": null,
+      "id": "njt2Go-oo"
+    },
+    {
+      "source": "i48rest6S",
+      "sourceHandle": "1",
+      "target": "AwkoEMHXZ",
+      "targetHandle": null,
+      "id": "wMHbeUAKS"
+    },
+    {
+      "source": "PulJXrK8M",
+      "sourceHandle": "1",
+      "target": "zCRCLqP6s",
+      "targetHandle": null,
+      "id": "tfsn53iKn"
+    },
+    {
+      "source": "gdq5cqEJ1",
+      "sourceHandle": "2",
+      "target": "GAnMVwvcj",
+      "targetHandle": null,
+      "id": "Gydn_xSlY"
+    },
+    {
+      "source": "GAnMVwvcj",
+      "sourceHandle": "2",
+      "target": "GoTU1-6zI",
+      "targetHandle": null,
+      "id": "qJ41g9GYy"
+    },
+    {
+      "source": "GoTU1-6zI",
+      "sourceHandle": "2",
+      "target": "YApKmzUde",
+      "targetHandle": null,
+      "id": "KljnbppG7"
+    },
+    {
+      "source": "WfDnxH__W",
+      "sourceHandle": "2",
+      "target": "jqXnLzQfC",
+      "targetHandle": null,
+      "id": "skGP9QLlG"
+    },
+    {
+      "source": "nNC1PCGy8",
+      "sourceHandle": "1",
+      "target": "kXiy_6aLf",
+      "targetHandle": null,
+      "id": "KZQ2M7HWq"
+    },
+    {
+      "source": "zCRCLqP6s",
+      "sourceHandle": "1",
+      "target": "kXiy_6aLf",
+      "targetHandle": null,
+      "id": "e_91_uBEc"
+    },
+    {
+      "source": "OYLOSUi8F",
+      "sourceHandle": "1",
+      "target": "MMq1Q2ymm",
+      "targetHandle": null,
+      "id": "MWTf1fDIF"
+    },
+    {
+      "source": "AwkoEMHXZ",
+      "sourceHandle": "1",
+      "target": "ohpvGSMoD",
+      "targetHandle": null,
+      "id": "IybQvthX1"
+    },
+    {
+      "source": "gdq5cqEJ1",
+      "sourceHandle": "1",
+      "target": "WWBBomMf5",
+      "targetHandle": null,
+      "id": "ahseWe-SY"
+    },
+    {
+      "source": "WWBBomMf5",
+      "sourceHandle": "1",
+      "target": "WfDnxH__W",
+      "targetHandle": null,
+      "id": "0RYdrDdcI"
+    },
+    {
+      "source": "jqXnLzQfC",
+      "sourceHandle": "2",
+      "target": "Re_OQhamq",
+      "targetHandle": null,
+      "id": "3wArLm_J6"
+    },
+    {
+      "source": "Re_OQhamq",
+      "sourceHandle": "2",
+      "target": "8n-hA7TRX",
+      "targetHandle": null,
+      "id": "5Ddldfssi"
+    },
+    {
+      "source": "8n-hA7TRX",
+      "sourceHandle": "2",
+      "target": "vDTU6jq34",
+      "targetHandle": null,
+      "id": "o8LaAdCo-"
+    },
+    {
+      "source": "vDTU6jq34",
+      "sourceHandle": "2",
+      "target": "rakfkFoMv",
+      "targetHandle": null,
+      "id": "lhOkDop48"
+    },
+    {
+      "source": "rakfkFoMv",
+      "sourceHandle": "2",
+      "target": "GKe-B1tIi",
+      "targetHandle": null,
+      "id": "WqxZ-kgpe"
+    },
+    {
+      "source": "ohpvGSMoD",
+      "sourceHandle": "1",
+      "target": "RBSADUV2i",
+      "targetHandle": null,
+      "id": "x1MUf2CGN"
+    },
+    {
+      "source": "RBSADUV2i",
+      "sourceHandle": "1",
+      "target": "evtek_5dF",
+      "targetHandle": null,
+      "id": "-YZ3VOvHt"
+    },
+    {
+      "source": "evtek_5dF",
+      "sourceHandle": "1",
+      "target": "AVOGHm5kI",
+      "targetHandle": null,
+      "id": "owWCbUCuX"
+    },
+    {
+      "source": "AVOGHm5kI",
+      "sourceHandle": "1",
+      "target": "gdq5cqEJ1",
+      "targetHandle": null,
+      "id": "j5acQsMxL"
+    },
+    {
+      "source": "WfDnxH__W",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "gZl4LITxS"
+    },
+    {
+      "source": "jqXnLzQfC",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "nxRbay6Rt"
+    },
+    {
+      "source": "Re_OQhamq",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "jPFiMwoJL"
+    },
+    {
+      "source": "8n-hA7TRX",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "7aSB3eUBF"
+    },
+    {
+      "source": "vDTU6jq34",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "Zu-rcZakp"
+    },
+    {
+      "source": "rakfkFoMv",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "s2s_OQ7JR"
+    },
+    {
+      "source": "rWuso2nsU",
+      "sourceHandle": "1",
+      "target": "06NkCtYpa",
+      "targetHandle": null,
+      "id": "tPXJTlEw9"
+    },
+    {
+      "source": "GAnMVwvcj",
+      "sourceHandle": "1",
+      "target": "J3rVxQFew",
+      "targetHandle": null,
+      "id": "Ns44AGcVx"
+    },
+    {
+      "source": "rbk3cxOri",
+      "sourceHandle": "2",
+      "target": "2HfCSkIVo",
+      "targetHandle": null,
+      "id": "C8CH6qWBH"
+    },
+    {
+      "source": "iVuMg_bBq",
+      "sourceHandle": "2",
+      "target": "rbk3cxOri",
+      "targetHandle": null,
+      "id": "0ejazg81H"
+    },
+    {
+      "source": "O5_5gRxud",
+      "sourceHandle": "2",
+      "target": "iVuMg_bBq",
+      "targetHandle": null,
+      "id": "whqDWE-HG"
+    },
+    {
+      "source": "6pPLXnl8T",
+      "sourceHandle": "2",
+      "target": "O5_5gRxud",
+      "targetHandle": null,
+      "id": "_tCfdeqOc"
+    },
+    {
+      "source": "J3rVxQFew",
+      "sourceHandle": "2",
+      "target": "6pPLXnl8T",
+      "targetHandle": null,
+      "id": "v5NX6Yw69"
+    },
+    {
+      "source": "J3rVxQFew",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "IVzdSDctg"
+    },
+    {
+      "source": "6pPLXnl8T",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "j5p6RbHIR"
+    },
+    {
+      "source": "2HfCSkIVo",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "wPiW18oJ6"
+    },
+    {
+      "source": "rbk3cxOri",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "8bgCMY4KI"
+    },
+    {
+      "source": "iVuMg_bBq",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "9zTMXVF6Q"
+    },
+    {
+      "source": "O5_5gRxud",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "YMAeLMUxd"
+    },
+    {
+      "source": "2HfCSkIVo",
+      "sourceHandle": "2",
+      "target": "IGLmyMWoA",
+      "targetHandle": null,
+      "id": "673gB3V0H"
+    },
+    {
+      "source": "GoTU1-6zI",
+      "sourceHandle": "1",
+      "target": "h21X_I2Wu",
+      "targetHandle": null,
+      "id": "nKC1bF3SH"
+    },
+    {
+      "source": "h21X_I2Wu",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "xKdeWXani"
+    },
+    {
+      "source": "v6DjtYFVh",
+      "sourceHandle": "2",
+      "target": "dzcqBzIai",
+      "targetHandle": null,
+      "id": "miUwW77DH"
+    },
+    {
+      "source": "MCWHs2fBd",
+      "sourceHandle": "2",
+      "target": "v6DjtYFVh",
+      "targetHandle": null,
+      "id": "4ZBqxPN3d"
+    },
+    {
+      "source": "FE22r5Yyl",
+      "sourceHandle": "2",
+      "target": "MCWHs2fBd",
+      "targetHandle": null,
+      "id": "hfYSDy4AM"
+    },
+    {
+      "source": "VYZRFs3Rp",
+      "sourceHandle": "2",
+      "target": "FE22r5Yyl",
+      "targetHandle": null,
+      "id": "UuCrjkMN_"
+    },
+    {
+      "source": "h21X_I2Wu",
+      "sourceHandle": "2",
+      "target": "VYZRFs3Rp",
+      "targetHandle": null,
+      "id": "g-Xb4n63m"
+    },
+    {
+      "source": "VYZRFs3Rp",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "uqmx3s3Id"
+    },
+    {
+      "source": "FE22r5Yyl",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "G6d2FOBHs"
+    },
+    {
+      "source": "MCWHs2fBd",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "lXQq4bim5"
+    },
+    {
+      "source": "v6DjtYFVh",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "N4sJZs-BN"
+    },
+    {
+      "source": "dzcqBzIai",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "8OGeDNbNZ"
+    },
+    {
+      "source": "dzcqBzIai",
+      "sourceHandle": "2",
+      "target": "QMbEsJCYP",
+      "targetHandle": null,
+      "id": "nCVdZgUnG"
+    },
+    {
+      "source": "lbj9YbACM",
+      "sourceHandle": "1",
+      "target": "06NkCtYpa",
+      "targetHandle": null,
+      "id": "NomuYwm5Y"
+    },
+    {
+      "source": "F2U_8EH4S",
+      "sourceHandle": "1",
+      "target": "06NkCtYpa",
+      "targetHandle": null,
+      "id": "43J7t9tIc"
+    },
+    {
+      "source": "YApKmzUde",
+      "sourceHandle": "1",
+      "target": "_I4ev8nP_",
+      "targetHandle": null,
+      "id": "E20lICdDz"
+    },
+    {
+      "source": "FdEKIRBzk",
+      "sourceHandle": "2",
+      "target": "SgeLsQHv3",
+      "targetHandle": null,
+      "id": "iitD6Vt3k"
+    },
+    {
+      "source": "0-3aRjaYS",
+      "sourceHandle": "2",
+      "target": "FdEKIRBzk",
+      "targetHandle": null,
+      "id": "J4H-9WPbn"
+    },
+    {
+      "source": "GM1sHEBTo",
+      "sourceHandle": "2",
+      "target": "0-3aRjaYS",
+      "targetHandle": null,
+      "id": "98yM_RIjD"
+    },
+    {
+      "source": "4J4dDJ3Tn",
+      "sourceHandle": "2",
+      "target": "GM1sHEBTo",
+      "targetHandle": null,
+      "id": "0lbvuWgOr"
+    },
+    {
+      "source": "_I4ev8nP_",
+      "sourceHandle": "2",
+      "target": "4J4dDJ3Tn",
+      "targetHandle": null,
+      "id": "BvjrzI8HH"
+    },
+    {
+      "source": "_I4ev8nP_",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "4JNK2sKJS"
+    },
+    {
+      "source": "4J4dDJ3Tn",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "R4T398NWs"
+    },
+    {
+      "source": "GM1sHEBTo",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "DPRBgD496"
+    },
+    {
+      "source": "0-3aRjaYS",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "-kMxTTjao"
+    },
+    {
+      "source": "FdEKIRBzk",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "7AfYOyOIz"
+    },
+    {
+      "source": "SgeLsQHv3",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "qi_SZ_QK4"
+    },
+    {
+      "source": "SgeLsQHv3",
+      "sourceHandle": "2",
+      "target": "dwAqcaYPH",
+      "targetHandle": null,
+      "id": "xf4Fo7Lvj"
+    },
+    {
+      "source": "O_9LOpNF0",
+      "sourceHandle": "1",
+      "target": "06NkCtYpa",
+      "targetHandle": null,
+      "id": "AoMcTQeZ0"
+    },
+    {
+      "source": "GKe-B1tIi",
+      "sourceHandle": "1",
+      "target": "dCf7Tob69",
+      "targetHandle": null,
+      "id": "wRA28vU6v"
+    },
+    {
+      "source": "IGLmyMWoA",
+      "sourceHandle": "1",
+      "target": "IVLs-jkma",
+      "targetHandle": null,
+      "id": "EtJSzxaN2"
+    },
+    {
+      "source": "QMbEsJCYP",
+      "sourceHandle": "1",
+      "target": "TZ43h2TCm",
+      "targetHandle": null,
+      "id": "0BBx4Nufl"
+    },
+    {
+      "source": "06NkCtYpa",
+      "sourceHandle": "1",
+      "target": "LTmW8nMkk",
+      "targetHandle": null,
+      "id": "21wPDGVm_"
+    },
+    {
+      "source": "LTmW8nMkk",
+      "sourceHandle": "1",
+      "target": "RaFVa5mwW",
+      "targetHandle": null,
+      "id": "MOFm1yyCu"
+    },
+    {
+      "source": "RaFVa5mwW",
+      "sourceHandle": "1",
+      "target": "uVvEH-f46",
+      "targetHandle": null,
+      "id": "FCgXJRGA6"
+    },
+    {
+      "source": "RaFVa5mwW",
+      "sourceHandle": "2",
+      "target": "S4iThhPvh",
+      "targetHandle": null,
+      "id": "d0Sy9D1n4"
+    },
+    {
+      "source": "06NkCtYpa",
+      "sourceHandle": "err1",
+      "target": "xrMbHQnp0",
+      "targetHandle": null,
+      "id": "CFMXCqrvy"
+    },
+    {
+      "source": "xrMbHQnp0",
+      "sourceHandle": "1",
+      "target": "nppyT7nft",
+      "targetHandle": null,
+      "id": "pCjWoK5wu"
+    },
+    {
+      "source": "_I4ev8nP_",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "VlNhputC1"
+    },
+    {
+      "source": "4J4dDJ3Tn",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "Dp2WX0vqS"
+    },
+    {
+      "source": "GM1sHEBTo",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "aPY0iq7-B"
+    },
+    {
+      "source": "0-3aRjaYS",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "jvb4CFcOl"
+    },
+    {
+      "source": "FdEKIRBzk",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "8fh7s9Or9"
+    },
+    {
+      "source": "SgeLsQHv3",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "BhLM0l90P"
+    },
+    {
+      "source": "dwAqcaYPH",
+      "sourceHandle": "1",
+      "target": "0PImCv_dl",
+      "targetHandle": null,
+      "id": "p629-PVhV"
+    },
+    {
+      "source": "S4iThhPvh",
+      "sourceHandle": "1",
+      "target": "IgDBEt27L",
+      "targetHandle": null,
+      "id": "HbfTMl8QG"
+    },
+    {
+      "source": "uVvEH-f46",
+      "sourceHandle": "1",
+      "target": "B3TKV7LVq",
+      "targetHandle": null,
+      "id": "o_wPxzy0_"
+    },
+    {
+      "source": "B3TKV7LVq",
+      "sourceHandle": "1",
+      "target": "pUJx60xNJ",
+      "targetHandle": null,
+      "id": "oQ4Cks6rp"
+    },
+    {
+      "source": "B3TKV7LVq",
+      "sourceHandle": "2",
+      "target": "LEWyqEPjw",
+      "targetHandle": null,
+      "id": "Yo0jtTftT"
+    },
+    {
+      "source": "dzcqBzIai",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "xnBGQTfLW"
+    },
+    {
+      "source": "v6DjtYFVh",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "5OtFXTPGk"
+    },
+    {
+      "source": "MCWHs2fBd",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "aYbLAaKu7"
+    },
+    {
+      "source": "FE22r5Yyl",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "HEoHbDb0c"
+    },
+    {
+      "source": "VYZRFs3Rp",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "f5cb-mKiK"
+    },
+    {
+      "source": "h21X_I2Wu",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "6WWLadroX"
+    },
+    {
+      "source": "2HfCSkIVo",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "tSuAjZmt_"
+    },
+    {
+      "source": "rbk3cxOri",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "Uf26Pao9U"
+    },
+    {
+      "source": "iVuMg_bBq",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "6NKbgcSZS"
+    },
+    {
+      "source": "O5_5gRxud",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "YwDDERYlU"
+    },
+    {
+      "source": "6pPLXnl8T",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "0QAoiMe9B"
+    },
+    {
+      "source": "J3rVxQFew",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "67i4rSzqj"
+    },
+    {
+      "source": "rakfkFoMv",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "zSgkHgeB0"
+    },
+    {
+      "source": "vDTU6jq34",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "T33pvFnOZ"
+    },
+    {
+      "source": "8n-hA7TRX",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "DiKWRONrI"
+    },
+    {
+      "source": "Re_OQhamq",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "UWPaNe9AK"
+    },
+    {
+      "source": "jqXnLzQfC",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "LPNEAYmfE"
+    },
+    {
+      "source": "WfDnxH__W",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "iTWvBMVKq"
+    },
+    {
+      "source": "YApKmzUde",
+      "sourceHandle": "2",
+      "target": "dgVClMici",
+      "targetHandle": null,
+      "id": "1YIlpl3Fq"
+    },
+    {
+      "source": "dgVClMici",
+      "sourceHandle": "1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "6H80en-oI"
+    },
+    {
+      "source": "pVf0b1N0N",
+      "sourceHandle": "2",
+      "target": "9_Y4Ql07p",
+      "targetHandle": null,
+      "id": "P7SPMPNkX"
+    },
+    {
+      "source": "9_Y4Ql07p",
+      "sourceHandle": "1",
+      "target": "vir0PusVB",
+      "targetHandle": null,
+      "id": "-wUXcy1Y4"
+    },
+    {
+      "source": "G3A2Y8WBG",
+      "sourceHandle": "2",
+      "target": "JjxNJV9ga",
+      "targetHandle": null,
+      "id": "PlCneaWJf"
+    },
+    {
+      "source": "JjxNJV9ga",
+      "sourceHandle": "1",
+      "target": "gkx2a_GOv",
+      "targetHandle": null,
+      "id": "lGRN7-uir"
+    },
+    {
+      "source": "M_lfTMnEG",
+      "sourceHandle": "2",
+      "target": "aKqpG5jAZ",
+      "targetHandle": null,
+      "id": "7SLj_cFck"
+    },
+    {
+      "source": "aKqpG5jAZ",
+      "sourceHandle": "1",
+      "target": "Mviaj6s0x",
+      "targetHandle": null,
+      "id": "ZJwC5fy-I"
+    },
+    {
+      "source": "pVf0b1N0N",
+      "sourceHandle": "1",
+      "target": "9vG4bGFyK",
+      "targetHandle": null,
+      "id": "mP_liKuML"
+    },
+    {
+      "source": "9vG4bGFyK",
+      "sourceHandle": "1",
+      "target": "vir0PusVB",
+      "targetHandle": null,
+      "id": "44B4CtuCY"
+    },
+    {
+      "source": "G3A2Y8WBG",
+      "sourceHandle": "1",
+      "target": "WR1Lag2Ls",
+      "targetHandle": null,
+      "id": "r5DAJnl9b"
+    },
+    {
+      "source": "WR1Lag2Ls",
+      "sourceHandle": "1",
+      "target": "gkx2a_GOv",
+      "targetHandle": null,
+      "id": "S4IGWqkxu"
+    },
+    {
+      "source": "M_lfTMnEG",
+      "sourceHandle": "1",
+      "target": "0022sTONL",
+      "targetHandle": null,
+      "id": "zbImMsZEJ"
+    },
+    {
+      "source": "0022sTONL",
+      "sourceHandle": "1",
+      "target": "Mviaj6s0x",
+      "targetHandle": null,
+      "id": "2Fp7GwXZd"
+    },
+    {
+      "source": "vir0PusVB",
+      "sourceHandle": "1",
+      "target": "0SoOMHLNd",
+      "targetHandle": null,
+      "id": "fDrHtLyvA"
+    },
+    {
+      "source": "gkx2a_GOv",
+      "sourceHandle": "1",
+      "target": "0SoOMHLNd",
+      "targetHandle": null,
+      "id": "ezC4NMEth"
+    },
+    {
+      "source": "Mviaj6s0x",
+      "sourceHandle": "1",
+      "target": "0SoOMHLNd",
+      "targetHandle": null,
+      "id": "qFU8OYVqc"
+    },
+    {
+      "source": "pUJx60xNJ",
+      "sourceHandle": "1",
+      "target": "J8tZK5YJe",
+      "targetHandle": null,
+      "id": "K7qs1XtWl"
+    },
+    {
+      "source": "LEWyqEPjw",
+      "sourceHandle": "1",
+      "target": "J8tZK5YJe",
+      "targetHandle": null,
+      "id": "f6O4tK3sC"
+    },
+    {
+      "source": "IgDBEt27L",
+      "sourceHandle": "1",
+      "target": "J8tZK5YJe",
+      "targetHandle": null,
+      "id": "BUsTZns3G"
+    },
+    {
+      "source": "J8tZK5YJe",
+      "sourceHandle": "1",
+      "target": "MSw1f7keb",
+      "targetHandle": null,
+      "id": "UY-jqSnaC"
+    },
+    {
+      "source": "MSw1f7keb",
+      "sourceHandle": "1",
+      "target": "GhMthZgi7",
+      "targetHandle": null,
+      "id": "rxgup9mrh"
+    },
+    {
+      "source": "GhMthZgi7",
+      "sourceHandle": "1",
+      "target": "RdB4YXh8J",
+      "targetHandle": null,
+      "id": "n3kx3kbyx"
+    },
+    {
+      "source": "RdB4YXh8J",
+      "sourceHandle": "1",
+      "target": "Ndw7h1SEI",
+      "targetHandle": null,
+      "id": "sRa6StM0H"
+    },
+    {
+      "source": "J8tZK5YJe",
+      "sourceHandle": "2",
+      "target": "Ndw7h1SEI",
+      "targetHandle": null,
+      "id": "V9Tu5v8Lx"
+    },
+    {
+      "source": "GhMthZgi7",
+      "sourceHandle": "err1",
+      "target": "e7lfImqz4",
+      "targetHandle": null,
+      "id": "GDeRgIG3s"
+    },
+    {
+      "source": "e7lfImqz4",
+      "sourceHandle": "1",
+      "target": "fVUGrG3KK",
+      "targetHandle": null,
+      "id": "jHEWGVoFh"
+    },
+    {
+      "source": "fVUGrG3KK",
+      "sourceHandle": "1",
+      "target": "Ndw7h1SEI",
+      "targetHandle": null,
+      "id": "DQsStr8Fg"
+    },
+    {
+      "source": "OrR0rXBi-",
+      "sourceHandle": "1",
+      "target": "dCf7Tob69",
+      "targetHandle": null,
+      "id": "9CSdNp_5K"
+    },
+    {
+      "source": "Ka4bqB3zT",
+      "sourceHandle": "1",
+      "target": "IVLs-jkma",
+      "targetHandle": null,
+      "id": "bIaqvbEvy"
+    },
+    {
+      "source": "YnarcMR5F",
+      "sourceHandle": "1",
+      "target": "TZ43h2TCm",
+      "targetHandle": null,
+      "id": "oR7IRh_ef"
+    },
+    {
+      "source": "ao4PhBnkx",
+      "sourceHandle": "1",
+      "target": "0PImCv_dl",
+      "targetHandle": null,
+      "id": "tt6PvN2XP"
+    },
+    {
+      "source": "ohpvGSMoD",
+      "sourceHandle": "err1",
+      "target": "k7zliIwsW",
+      "targetHandle": null,
+      "id": "O1NiBu7Qb"
+    },
+    {
+      "source": "k7zliIwsW",
+      "sourceHandle": "1",
+      "target": "RBSADUV2i",
+      "targetHandle": null,
+      "id": "1oWfM_7oU"
+    },
+    {
+      "source": "RBSADUV2i",
+      "sourceHandle": "err1",
+      "target": "wWVvBYYaN",
+      "targetHandle": null,
+      "id": "xP4ABjJWo"
+    },
+    {
+      "source": "wWVvBYYaN",
+      "sourceHandle": "1",
+      "target": "evtek_5dF",
+      "targetHandle": null,
+      "id": "YsmNE5zPm"
+    },
+    {
+      "source": "evtek_5dF",
+      "sourceHandle": "err1",
+      "target": "90XvoVKK_",
+      "targetHandle": null,
+      "id": "ln1o1K12l"
+    },
+    {
+      "source": "90XvoVKK_",
+      "sourceHandle": "1",
+      "target": "AVOGHm5kI",
+      "targetHandle": null,
+      "id": "m5pNRtoWy"
+    }
+  ]
+}
