@@ -22,13 +22,13 @@ module.exports = async (args) => {
     const bitrate = bitrates[resolution];
     const maxrate = bitrate * 2; // Maxrate is double the bitrate
     const bufsize = maxrate * 2; // Bufsize is double the maxrate
-    const cutoff = Math.round(bitrate * 1.15); // Cutoff is 115% of the bitrate, rounded to nearest integer
+    const cutoff = Math.round(bitrate * 1.15 * 1000); // Cutoff is 115% of the bitrate, rounded to nearest integer.  In bps, not kbs
     
     // Store in variables
     variables[`bitrate_${resolution}`] = `${bitrate}k`;
     variables[`maxrate_${resolution}`] = `${maxrate}k`;
     variables[`bufsize_${resolution}`] = `${bufsize}k`;
-    variables[`cutoff_${resolution}`] = `${cutoff}k`;
+    variables[`cutoff_${resolution}`] = `${cutoff}`;  // In bps
   }
 
   return {
