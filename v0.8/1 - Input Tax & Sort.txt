@@ -1,0 +1,316 @@
+{
+  "_id": "htpX8Ypt1",
+  "name": "1 - Input Tag & Sort",
+  "description": "1 - Input Tag & Sort",
+  "tags": "",
+  "flowPlugins": [
+    {
+      "name": "ℹ️ Goal of this flow is to id and tag things for easier recall later on",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "IuJ64Bs3g",
+      "position": {
+        "x": 563.1424211345304,
+        "y": -151.96834718374419
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ We look for extensions that aren't processed well, or need extra processing.  Tagging them here helps recall later in the flow.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "AcOsg6NGg",
+      "position": {
+        "x": 334.4220900358325,
+        "y": 203.24903718855103
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Sorted & Tagged Done! ✅✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "At2ZiLHCX",
+      "position": {
+        "x": 526.754855071115,
+        "y": 605.8633470821054
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - File is not ts ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "cYqc7sNbD",
+      "position": {
+        "x": 881.7401981772964,
+        "y": 527.1612792326722
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_ts 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "rOUu3_Yzz",
+      "position": {
+        "x": 713.0007219265823,
+        "y": 516.0674500522146
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_ts",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Start 🚀",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "2kU0j98XT",
+      "position": {
+        "x": 554.5691572080907,
+        "y": 129.50651133758484
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - File is not avi ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "3FJrHRaQD",
+      "position": {
+        "x": 792.3228209270461,
+        "y": 361.1252830528393
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Check if ts 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "CJJf39rHE",
+      "position": {
+        "x": 793.2090474237875,
+        "y": 443.36955551747474
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "extensions": "ts"
+      }
+    },
+    {
+      "name": "Input File - Start 🚀",
+      "sourceRepo": "Community",
+      "pluginName": "inputFile",
+      "version": "1.0.0",
+      "id": "OO_HK73Ms",
+      "position": {
+        "x": 554.7955827837234,
+        "y": -34.479315190057065
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "fileAccessChecks": "true"
+      }
+    },
+    {
+      "name": "Input File - Fail Permissions or File Error 🚨🚨",
+      "sourceRepo": "Community",
+      "pluginName": "failFlow",
+      "version": "1.0.0",
+      "id": "rsJ4Znt-F",
+      "position": {
+        "x": 732.6491419778225,
+        "y": 4.10817173293573
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "File Input - File Found! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "EOKWqH2pd",
+      "position": {
+        "x": 554.3605531811872,
+        "y": 49.85319413186346
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Check if avi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "GxxhjqFpX",
+      "position": {
+        "x": 655.8168041038375,
+        "y": 289.97278449903416
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "extensions": "avi"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_avi 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "4_jWs5Ktm",
+      "position": {
+        "x": 631.8234260691826,
+        "y": 360.530972598364
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_avi",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Extensions that don't need tagging 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "QVy9g0ntp",
+      "position": {
+        "x": 553.5592434578249,
+        "y": 205.54818526041572
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Go To Flow 2 Prep & Clean ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "kp1rLu37S",
+      "position": {
+        "x": 526.7222605952952,
+        "y": 692.0178669952065
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "6FNPwZs6M",
+        "pluginId": "d8balkJHB"
+      }
+    }
+  ],
+  "flowEdges": [
+    {
+      "source": "OO_HK73Ms",
+      "sourceHandle": "err1",
+      "target": "rsJ4Znt-F",
+      "targetHandle": null,
+      "id": "_uFTcO9cF"
+    },
+    {
+      "source": "OO_HK73Ms",
+      "sourceHandle": "1",
+      "target": "EOKWqH2pd",
+      "targetHandle": null,
+      "id": "A0uJHeXoz"
+    },
+    {
+      "source": "GxxhjqFpX",
+      "sourceHandle": "2",
+      "target": "3FJrHRaQD",
+      "targetHandle": null,
+      "id": "0jKy6XHJ8"
+    },
+    {
+      "source": "3FJrHRaQD",
+      "sourceHandle": "1",
+      "target": "CJJf39rHE",
+      "targetHandle": null,
+      "id": "S96pRzPrs"
+    },
+    {
+      "source": "GxxhjqFpX",
+      "sourceHandle": "1",
+      "target": "4_jWs5Ktm",
+      "targetHandle": null,
+      "id": "OscQs0RNG"
+    },
+    {
+      "source": "CJJf39rHE",
+      "sourceHandle": "1",
+      "target": "rOUu3_Yzz",
+      "targetHandle": null,
+      "id": "XEcmV7m_c"
+    },
+    {
+      "source": "CJJf39rHE",
+      "sourceHandle": "2",
+      "target": "cYqc7sNbD",
+      "targetHandle": null,
+      "id": "ks72hpviB"
+    },
+    {
+      "source": "EOKWqH2pd",
+      "sourceHandle": "1",
+      "target": "2kU0j98XT",
+      "targetHandle": null,
+      "id": "mqa__OOBk"
+    },
+    {
+      "source": "2kU0j98XT",
+      "sourceHandle": "1",
+      "target": "QVy9g0ntp",
+      "targetHandle": null,
+      "id": "-Fg60KVtk"
+    },
+    {
+      "source": "QVy9g0ntp",
+      "sourceHandle": "2",
+      "target": "GxxhjqFpX",
+      "targetHandle": null,
+      "id": "MMu9RuKxk"
+    },
+    {
+      "source": "cYqc7sNbD",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "p5sF2WWbV"
+    },
+    {
+      "source": "rOUu3_Yzz",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "OZEjyYv5a"
+    },
+    {
+      "source": "4_jWs5Ktm",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "N9i8eJfpn"
+    },
+    {
+      "source": "QVy9g0ntp",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "oBV-nVq1Z"
+    },
+    {
+      "source": "At2ZiLHCX",
+      "sourceHandle": "1",
+      "target": "kp1rLu37S",
+      "targetHandle": null,
+      "id": "rcJrtzAjx"
+    }
+  ]
+}
