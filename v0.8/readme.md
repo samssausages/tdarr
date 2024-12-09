@@ -3,8 +3,6 @@ This is currently a Beta Version of the next major relase.  It's a total rework.
 Help me test this by running some files through it and letting me know if something isn't as expected!
 
 
-I have a pretty extensive tdarr flow and over the weekend I completely reworked it.  I could use some people testing it so it's faster for me to find ze bugs.
-
 What makes my flow unique is that I use Library Variables for the Quality Settings.  This way you can have a library for Low Quality, High Quality, Animation etc.
 This way you set your quality settings in the library variables and only need to manage 1 Flow!
 
