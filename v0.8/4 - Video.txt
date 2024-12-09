@@ -408,7 +408,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_4k_hdr}}}",
         "lessThan": "99999999999999",
-        "unit": "bps"
+        "unit": "kbps"
       }
     },
     {
@@ -441,7 +441,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_4k}}}",
         "lessThan": "99999999999999",
-        "unit": "bps"
+        "unit": "kbps"
       }
     },
     {
@@ -458,7 +458,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_1440p}}}",
         "lessThan": "99999999999999",
-        "unit": "bps"
+        "unit": "kbps"
       }
     },
     {
@@ -475,7 +475,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_1080p}}}",
         "lessThan": "99999999999999",
-        "unit": "bps"
+        "unit": "kbps"
       }
     },
     {
@@ -492,7 +492,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_720p}}}",
         "lessThan": "99999999999999",
-        "unit": "bps"
+        "unit": "kbps"
       }
     },
     {
@@ -509,7 +509,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_576p}}}",
         "lessThan": "99999999999999",
-        "unit": "bps"
+        "unit": "kbps"
       }
     },
     {
@@ -742,7 +742,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_480p}}}",
         "lessThan": "99999999999999",
-        "unit": "bps"
+        "unit": "kbps"
       }
     },
     {
