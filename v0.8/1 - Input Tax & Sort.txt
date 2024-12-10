@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "id": "IuJ64Bs3g",
       "position": {
-        "x": 563.1424211345304,
-        "y": -151.96834718374419
+        "x": 549.5111459713339,
+        "y": -110.10085918249779
       },
       "fpEnabled": true
     },
@@ -23,13 +23,13 @@
       "version": "1.0.0",
       "id": "AcOsg6NGg",
       "position": {
-        "x": 334.4220900358325,
-        "y": 203.24903718855103
+        "x": 383.10521561867716,
+        "y": 194.48607458363898
       },
       "fpEnabled": true
     },
     {
-      "name": "Sort & Tag - Sorted & Tagged Done! ✅✅",
+      "name": "Sort & Tag - Sorted & Tagged Done! ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -41,7 +41,7 @@
       "fpEnabled": true
     },
     {
-      "name": "Sort & Tag - File is not ts ✅",
+      "name": "Sort & Tag - File is not ts ℹ️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -81,7 +81,7 @@
       "fpEnabled": true
     },
     {
-      "name": "Sort & Tag - File is not avi ✅",
+      "name": "Sort & Tag - File is not avi ℹ️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -108,7 +108,7 @@
       }
     },
     {
-      "name": "Input File - Start 🚀",
+      "name": "Input File - Start 📁",
       "sourceRepo": "Community",
       "pluginName": "inputFile",
       "version": "1.0.0",
@@ -168,8 +168,8 @@
       "version": "1.0.0",
       "id": "4_jWs5Ktm",
       "position": {
-        "x": 631.8234260691826,
-        "y": 360.530972598364
+        "x": 629.878424805901,
+        "y": 364.42097512492717
       },
       "fpEnabled": true,
       "inputsDB": {
