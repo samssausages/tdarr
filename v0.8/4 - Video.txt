@@ -408,7 +408,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_4k_hdr}}}",
         "lessThan": "99999999999999",
-        "unit": "kbps"
+        "unit": "bps"
       }
     },
     {
@@ -441,7 +441,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_4k}}}",
         "lessThan": "99999999999999",
-        "unit": "kbps"
+        "unit": "bps"
       }
     },
     {
@@ -458,7 +458,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_1440p}}}",
         "lessThan": "99999999999999",
-        "unit": "kbps"
+        "unit": "bps"
       }
     },
     {
@@ -475,7 +475,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_1080p}}}",
         "lessThan": "99999999999999",
-        "unit": "kbps"
+        "unit": "bps"
       }
     },
     {
@@ -492,7 +492,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_720p}}}",
         "lessThan": "99999999999999",
-        "unit": "kbps"
+        "unit": "bps"
       }
     },
     {
@@ -503,13 +503,13 @@
       "id": "zGeOEYjqk",
       "position": {
         "x": 805.9919549659118,
-        "y": -372.83603948452696
+        "y": -372.13089050428476
       },
       "fpEnabled": true,
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_576p}}}",
         "lessThan": "99999999999999",
-        "unit": "kbps"
+        "unit": "bps"
       }
     },
     {
@@ -529,7 +529,7 @@
       "fpEnabled": true
     },
     {
-      "name": "Video - Encode Main Arg - 4k 📼",
+      "name": "Video - Encode Main Arg - 1440p 📼",
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandCustomArguments",
       "version": "1.0.0",
@@ -539,7 +539,7 @@
       },
       "id": "LFlLXUHgp",
       "position": {
-        "x": 1265.1670979425835,
+        "x": 1265.8722469228258,
         "y": -233.24210857095832
       },
       "fpEnabled": true
@@ -742,7 +742,7 @@
       "inputsDB": {
         "greaterThan": "{{{args.variables.cutoff_480p}}}",
         "lessThan": "99999999999999",
-        "unit": "kbps"
+        "unit": "bps"
       }
     },
     {
