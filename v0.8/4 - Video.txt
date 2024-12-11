@@ -5,6 +5,110 @@
   "tags": "",
   "flowPlugins": [
     {
+      "name": "ℹ️ Disable b-frames for pre 20 Series Nvidia Cards. ",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "oJsQ6-yYF",
+      "position": {
+        "x": 1326.271448593882,
+        "y": 375.374458794578
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Encode Main Arg - Quality Setting 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "inputsDB": {
+        "inputArguments": "",
+        "outputArguments": "-preset p7"
+      },
+      "id": "2MEuI5x_Y",
+      "position": {
+        "x": 1150.3034666552587,
+        "y": 582.9305858985742
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ You can add disable_cq = true to your library variables to skip cq attempt.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "MKOhRW6BY",
+      "position": {
+        "x": 2436.527464044471,
+        "y": -480.79952407738097
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Check disable_cq🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "8C0OxWjcR",
+      "position": {
+        "x": 2267.191365282655,
+        "y": -470.4042719245422
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.disable_cq}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Video - Encode Main Arg - Main Arg 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "inputsDB": {
+        "inputArguments": "",
+        "outputArguments": "-spatial-aq 1 -aq-strength 8 -max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+      },
+      "id": "9pBMF3lxO",
+      "position": {
+        "x": 1151.2788314280017,
+        "y": 467.14048317732545
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Encode Main Arg - b-frames 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "inputsDB": {
+        "inputArguments": "",
+        "outputArguments": "-bf 4"
+      },
+      "id": "Yt6saOPIJ",
+      "position": {
+        "x": 1150.7953993264334,
+        "y": 366.655428309015
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Encode Main Arg - Encoder Type NVENC 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "inputsDB": {
+        "inputArguments": "",
+        "outputArguments": "-c:v hevc_nvenc "
+      },
+      "id": "kNV2dDj7U",
+      "position": {
+        "x": 1314.7899510921234,
+        "y": -734.3528501885881
+      },
+      "fpEnabled": true
+    },
+    {
       "name": "Video - is_hdr ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
@@ -47,8 +151,8 @@
       "version": "1.0.0",
       "id": "ssynyR8HM",
       "position": {
-        "x": 1042.054496740346,
-        "y": 191.80941170358082
+        "x": 1049.0189012467147,
+        "y": 209.22042296950315
       },
       "fpEnabled": true
     },
@@ -59,8 +163,8 @@
       "version": "1.0.0",
       "id": "JSg_wHYxh",
       "position": {
-        "x": 1017.322506601214,
-        "y": -54.248521969701976
+        "x": 1037.3451695570247,
+        "y": -43.80191521014852
       },
       "fpEnabled": true
     },
@@ -71,8 +175,8 @@
       "version": "1.0.0",
       "id": "h_GgZQ6qp",
       "position": {
-        "x": 1099.830147738683,
-        "y": -131.37187676600635
+        "x": 1100.7006983019792,
+        "y": -127.01912394952575
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -195,8 +299,8 @@
       "version": "1.0.0",
       "id": "acjMNmSX_",
       "position": {
-        "x": 1316.4640423564585,
-        "y": -825.6337161468514
+        "x": 1314.7036935435588,
+        "y": -920.3523542523105
       },
       "fpEnabled": true
     },
@@ -207,8 +311,8 @@
       "version": "1.0.0",
       "id": "whLxoif7t",
       "position": {
-        "x": 1004.4110883442863,
-        "y": -1078.5760333725016
+        "x": 1105.558048246566,
+        "y": -1195.4130984156857
       },
       "fpEnabled": true
     },
@@ -223,8 +327,8 @@
       },
       "id": "FRoBG45R5",
       "position": {
-        "x": 1017.7874332337988,
-        "y": 16.6987104740508
+        "x": 1037.8100961896096,
+        "y": 36.72137342986167
       },
       "fpEnabled": true
     },
@@ -369,8 +473,8 @@
       "version": "2.0.0",
       "id": "UveiLLkBS",
       "position": {
-        "x": 2247.11623714941,
-        "y": -301.05162157459813
+        "x": 2241.811229166624,
+        "y": -305.5987712741293
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -385,7 +489,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-c:v hevc_nvenc -b:v {{{args.variables.bitrate_4k_hdr}}} -maxrate {{{args.variables.maxrate_4k_hdr}}} -bufsize {{{args.variables.bufsize_4k_hdr}}} -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4 -max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+        "outputArguments": "-b:v {{{args.variables.bitrate_4k_hdr}}} -maxrate {{{args.variables.maxrate_4k_hdr}}} -bufsize {{{args.variables.bufsize_4k_hdr}}} -rc vbr -rc-lookahead 32"
       },
       "id": "ui2LhKdMO",
       "position": {
@@ -418,8 +522,8 @@
       "version": "1.0.0",
       "id": "B5BTZJ679",
       "position": {
-        "x": 1124.689002406225,
-        "y": 119.61577682633492
+        "x": 1126.4301035328174,
+        "y": 137.02678809225728
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -502,8 +606,8 @@
       "version": "1.0.0",
       "id": "zGeOEYjqk",
       "position": {
-        "x": 805.9919549659118,
-        "y": -372.13089050428476
+        "x": 800.7068647631048,
+        "y": -374.24492658540754
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -519,12 +623,12 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-c:v hevc_nvenc -b:v {{{args.variables.bitrate_4k}}} -maxrate {{{args.variables.maxrate_4k}}} -bufsize {{{args.variables.bufsize_4k}}} -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4 -max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+        "outputArguments": "-b:v {{{args.variables.bitrate_4k}}} -maxrate {{{args.variables.maxrate_4k}}} -bufsize {{{args.variables.bufsize_4k}}} -rc vbr -rc-lookahead 32"
       },
       "id": "fkeuqI238",
       "position": {
-        "x": 1607.9431284777445,
-        "y": -238.8395989474609
+        "x": 1610.2405251877387,
+        "y": -233.61629556768415
       },
       "fpEnabled": true
     },
@@ -535,7 +639,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-c:v hevc_nvenc -b:v {{{args.variables.bitrate_1440p}}} -maxrate {{{args.variables.maxrate_1440p}}} -bufsize {{{args.variables.bufsize_1440p}}} -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4 -max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+        "outputArguments": "-b:v {{{args.variables.bitrate_1440p}}} -maxrate {{{args.variables.maxrate_1440p}}} -bufsize {{{args.variables.bufsize_1440p}}} -rc vbr -rc-lookahead 32"
       },
       "id": "LFlLXUHgp",
       "position": {
@@ -551,7 +655,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-c:v hevc_nvenc -b:v {{{args.variables.bitrate_1080p}}} -maxrate {{{args.variables.maxrate_1080p}}} -bufsize {{{args.variables.bufsize_1080p}}} -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4 -max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+        "outputArguments": "-b:v {{{args.variables.bitrate_1080p}}} -maxrate {{{args.variables.maxrate_1080p}}} -bufsize {{{args.variables.bufsize_1080p}}} -rc vbr -rc-lookahead 32"
       },
       "id": "SXvAiKHNW",
       "position": {
@@ -567,7 +671,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-c:v hevc_nvenc -b:v {{{args.variables.bitrate_720p}}} -maxrate {{{args.variables.maxrate_720p}}} -bufsize {{{args.variables.bufsize_720p}}} -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4 -max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+        "outputArguments": "-b:v {{{args.variables.bitrate_720p}}} -maxrate {{{args.variables.maxrate_720p}}} -bufsize {{{args.variables.bufsize_720p}}} -rc vbr -rc-lookahead 32"
       },
       "id": "HiSk5ef-y",
       "position": {
@@ -583,7 +687,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-c:v hevc_nvenc -b:v {{{args.variables.bitrate_576p}}} -maxrate {{{args.variables.maxrate_576p}}} -bufsize {{{args.variables.bufsize_576p}}} -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4 -max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+        "outputArguments": "-b:v {{{args.variables.bitrate_576p}}} -maxrate {{{args.variables.maxrate_576p}}} -bufsize {{{args.variables.bufsize_576p}}} -rc vbr -rc-lookahead 32"
       },
       "id": "Wio8oz5GC",
       "position": {
@@ -599,7 +703,7 @@
       "version": "1.0.0",
       "inputsDB": {
         "inputArguments": "",
-        "outputArguments": "-c:v hevc_nvenc -b:v {{{args.variables.bitrate_480p}}} -maxrate {{{args.variables.maxrate_480p}}} -bufsize {{{args.variables.bufsize_480p}}} -preset p6 -rc vbr -rc-lookahead 32 -spatial-aq 1 -aq-strength 8 -bf 4 -max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+        "outputArguments": "-b:v {{{args.variables.bitrate_480p}}} -maxrate {{{args.variables.maxrate_480p}}} -bufsize {{{args.variables.bufsize_480p}}} -rc vbr -rc-lookahead 32"
       },
       "id": "R2VJtivho",
       "position": {
@@ -675,8 +779,8 @@
       "version": "1.0.0",
       "id": "stuikulyy",
       "position": {
-        "x": 1149.9818505084995,
-        "y": 359.28732728970004
+        "x": 1150.9960810288678,
+        "y": 691.4234362401289
       },
       "fpEnabled": true
     },
@@ -687,8 +791,8 @@
       "version": "1.0.0",
       "id": "CRWm2FTTc",
       "position": {
-        "x": 1314.9625139489783,
-        "y": -735.5874486392179
+        "x": 1314.9913685281686,
+        "y": -840.8974260666779
       },
       "fpEnabled": true
     },
@@ -700,7 +804,7 @@
       "id": "hFo4ZDW0g",
       "position": {
         "x": 1314.429595609472,
-        "y": -633.918751503633
+        "y": -624.918751503633
       },
       "fpEnabled": true
     },
@@ -853,8 +957,8 @@
       "version": "1.0.0",
       "id": "ua0Y1mByE",
       "position": {
-        "x": 1042.2820333478194,
-        "y": 265.2011790293002
+        "x": 1050.1169884174844,
+        "y": 280.87108916863036
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -868,8 +972,8 @@
       "version": "1.0.0",
       "id": "OwfGcqzSU",
       "position": {
-        "x": 1291.6041653572033,
-        "y": -996.7916380098641
+        "x": 1288.7758705381545,
+        "y": -1096.954523311495
       },
       "fpEnabled": true
     },
@@ -880,8 +984,8 @@
       "version": "1.0.0",
       "id": "2OlpiKQ6y",
       "position": {
-        "x": 1105.8619632679777,
-        "y": -1309.6439963869802
+        "x": 1266.9939879474566,
+        "y": -1434.146190272709
       },
       "fpEnabled": true
     },
@@ -892,8 +996,8 @@
       "version": "2.0.0",
       "id": "NAQG8aB_i",
       "position": {
-        "x": 1003.0380343485099,
-        "y": -994.1610644665021
+        "x": 1108.3933183144964,
+        "y": -1112.981271239786
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -908,8 +1012,8 @@
       "version": "1.0.0",
       "id": "Aau4aHpE1",
       "position": {
-        "x": 1107.0500869942016,
-        "y": -1239.0955713870885
+        "x": 1265.9569293400732,
+        "y": -1355.835024579539
       },
       "fpEnabled": true
     },
@@ -920,8 +1024,8 @@
       "version": "1.0.0",
       "id": "CX0eeir2X",
       "position": {
-        "x": 1150.0122191917776,
-        "y": 452.02423927505754
+        "x": 1151.5279357582879,
+        "y": 791.1754696578338
       },
       "fpEnabled": true
     },
@@ -932,8 +1036,8 @@
       "version": "1.0.0",
       "id": "K_Z-TiFwk",
       "position": {
-        "x": 2332.970751275101,
-        "y": -465.5721912151196
+        "x": 2267.111998119524,
+        "y": -542.0153413189505
       },
       "fpEnabled": true
     },
@@ -960,8 +1064,8 @@
       "version": "2.0.0",
       "id": "MDD_GBBGX",
       "position": {
-        "x": 1150.1642316099228,
-        "y": 526.8774865141227
+        "x": 1151.761652779443,
+        "y": 875.2469670040865
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -976,8 +1080,8 @@
       "version": "1.0.0",
       "id": "mZGhkFE_A",
       "position": {
-        "x": 1292.4343852618824,
-        "y": -1081.1615378634524
+        "x": 1291.2027628166522,
+        "y": -1173.2474274919105
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -991,8 +1095,8 @@
       "version": "1.0.0",
       "id": "1eZMD_YUy",
       "position": {
-        "x": 1107.4292139396753,
-        "y": -1156.651930500766
+        "x": 1266.4697753244743,
+        "y": -1266.7305244528955
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1006,8 +1110,8 @@
       "version": "1.0.0",
       "id": "oSxoUxPFE",
       "position": {
-        "x": 1217.094224535409,
-        "y": -911.5729465987027
+        "x": 1190.2047689239632,
+        "y": -1007.419186272046
       },
       "fpEnabled": true,
       "inputsDB": {
@@ -1038,8 +1142,8 @@
       "version": "1.0.0",
       "id": "g-IegzkNa",
       "position": {
-        "x": 1448.770864559656,
-        "y": -1033.35624114853
+        "x": 1452.0832405857198,
+        "y": -1128.1259968432632
       },
       "fpEnabled": true
     },
@@ -1050,13 +1154,13 @@
       "version": "1.0.0",
       "id": "2aZh8f7JX",
       "position": {
-        "x": 1316.5302055697066,
-        "y": 423.6439391068389
+        "x": 1314.5439906340853,
+        "y": 755.4025127192508
       },
       "fpEnabled": true
     },
     {
-      "name": "Might have to turn into variable",
+      "name": "ℹ️ Might have to turn into variable",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
@@ -1090,6 +1194,30 @@
         "y": 817.4375467209334
       },
       "fpEnabled": true
+    },
+    {
+      "name": "Video - Error - Can't Calculate Bitrate ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "ykLLIDQ7U",
+      "position": {
+        "x": 1819.272844682805,
+        "y": -336.0739124792215
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Video - Let's go to fallback encoding method ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "Wmd8ArPMo",
+      "position": {
+        "x": 1819.6465501217629,
+        "y": -234.62375000868843
+      },
+      "fpEnabled": true
     }
   ],
   "flowEdges": [
@@ -1106,20 +1234,6 @@
       "target": "mCCZq7Sd_",
       "targetHandle": null,
       "id": "JO0XlMuci"
-    },
-    {
-      "source": "B5BTZJ679",
-      "sourceHandle": "2",
-      "target": "stuikulyy",
-      "targetHandle": null,
-      "id": "69QVPzHF_"
-    },
-    {
-      "source": "ua0Y1mByE",
-      "sourceHandle": "1",
-      "target": "stuikulyy",
-      "targetHandle": null,
-      "id": "w9pA3frbQ"
     },
     {
       "source": "Kq7SA5w3K",
@@ -1155,13 +1269,6 @@
       "target": "zS_dE8Dx2",
       "targetHandle": null,
       "id": "-HwOBsEXy"
-    },
-    {
-      "source": "K_Z-TiFwk",
-      "sourceHandle": "1",
-      "target": "Kq7SA5w3K",
-      "targetHandle": null,
-      "id": "TPLvfSmg-"
     },
     {
       "source": "jnRtGCtQV",
@@ -1344,13 +1451,6 @@
       "target": "oSxoUxPFE",
       "targetHandle": null,
       "id": "ZnEZtfXV7"
-    },
-    {
-      "source": "CRWm2FTTc",
-      "sourceHandle": "1",
-      "target": "hFo4ZDW0g",
-      "targetHandle": null,
-      "id": "kOxNtKOVa"
     },
     {
       "source": "hFo4ZDW0g",
@@ -1694,6 +1794,139 @@
       "target": "wTcfjtaKa",
       "targetHandle": null,
       "id": "dXk7kXjir"
+    },
+    {
+      "source": "BiPlhKExH",
+      "sourceHandle": "err1",
+      "target": "ykLLIDQ7U",
+      "targetHandle": null,
+      "id": "enl_DfkCO"
+    },
+    {
+      "source": "6FN1FFcbH",
+      "sourceHandle": "err1",
+      "target": "ykLLIDQ7U",
+      "targetHandle": null,
+      "id": "gYQ_FIrv8"
+    },
+    {
+      "source": "cV5-LAnLV",
+      "sourceHandle": "err1",
+      "target": "ykLLIDQ7U",
+      "targetHandle": null,
+      "id": "F2kZZQx1g"
+    },
+    {
+      "source": "ooUXmcK1T",
+      "sourceHandle": "err1",
+      "target": "ykLLIDQ7U",
+      "targetHandle": null,
+      "id": "pHeS9Prv6"
+    },
+    {
+      "source": "YjQXZRWjC",
+      "sourceHandle": "err1",
+      "target": "ykLLIDQ7U",
+      "targetHandle": null,
+      "id": "8Uz3M20gK"
+    },
+    {
+      "source": "zGeOEYjqk",
+      "sourceHandle": "err1",
+      "target": "ykLLIDQ7U",
+      "targetHandle": null,
+      "id": "iWdQF0Qr6"
+    },
+    {
+      "source": "gAHMD-XEk",
+      "sourceHandle": "err1",
+      "target": "ykLLIDQ7U",
+      "targetHandle": null,
+      "id": "50CyYz-SJ"
+    },
+    {
+      "source": "ykLLIDQ7U",
+      "sourceHandle": "1",
+      "target": "Wmd8ArPMo",
+      "targetHandle": null,
+      "id": "bCVfWqIAi"
+    },
+    {
+      "source": "Wmd8ArPMo",
+      "sourceHandle": "1",
+      "target": "K_Z-TiFwk",
+      "targetHandle": null,
+      "id": "RwBZz1BPL"
+    },
+    {
+      "source": "CRWm2FTTc",
+      "sourceHandle": "1",
+      "target": "kNV2dDj7U",
+      "targetHandle": null,
+      "id": "vi55ks6HN"
+    },
+    {
+      "source": "kNV2dDj7U",
+      "sourceHandle": "1",
+      "target": "hFo4ZDW0g",
+      "targetHandle": null,
+      "id": "7js-Kfz1c"
+    },
+    {
+      "source": "8C0OxWjcR",
+      "sourceHandle": "1",
+      "target": "UveiLLkBS",
+      "targetHandle": null,
+      "id": "T7MZtF5pQ"
+    },
+    {
+      "source": "8C0OxWjcR",
+      "sourceHandle": "2",
+      "target": "Kq7SA5w3K",
+      "targetHandle": null,
+      "id": "zr0M9kCRW"
+    },
+    {
+      "source": "K_Z-TiFwk",
+      "sourceHandle": "1",
+      "target": "8C0OxWjcR",
+      "targetHandle": null,
+      "id": "phwRWvuXc"
+    },
+    {
+      "source": "ua0Y1mByE",
+      "sourceHandle": "1",
+      "target": "Yt6saOPIJ",
+      "targetHandle": null,
+      "id": "xPprJqCvg"
+    },
+    {
+      "source": "B5BTZJ679",
+      "sourceHandle": "2",
+      "target": "Yt6saOPIJ",
+      "targetHandle": null,
+      "id": "JFSPMk6TA"
+    },
+    {
+      "source": "Yt6saOPIJ",
+      "sourceHandle": "1",
+      "target": "9pBMF3lxO",
+      "targetHandle": null,
+      "id": "MPvIAQ3tN"
+    },
+    {
+      "source": "9pBMF3lxO",
+      "sourceHandle": "1",
+      "target": "2MEuI5x_Y",
+      "targetHandle": null,
+      "id": "ifr5WEGJw"
+    },
+    {
+      "source": "2MEuI5x_Y",
+      "sourceHandle": "1",
+      "target": "stuikulyy",
+      "targetHandle": null,
+      "id": "2q8NHaN3w"
     }
   ]
 }
