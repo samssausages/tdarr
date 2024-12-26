@@ -2,6 +2,8 @@ NEED:  Need good working ffmpeg commands for CPU encoding and Quick Sync.
 I don't use CPU encoding or quick sync, so I need help from people who have experience with it.
 I'd like to add it, but I need good examples of ffmpeg commands that are producing good encoding results.
 
+NOTE: Use v0.8
+I'm going to update the page to arvice 0.7 soon.  But V0.8 is working well and much improved.
 
 ## Tdarr One Flow To Rule Them All
 Current Flow file:  [V0.7 nevc hevc vbr](https://github.com/samssausages/tdarr/blob/452e79832a65c514d0fdedc81e9febbeffe41464/V2.0%20nevc%20hevc%20vbr)
