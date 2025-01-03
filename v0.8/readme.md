@@ -81,7 +81,7 @@ output_dir_review /media/4_done_review # if something didn't go right, we move t
 
 do_audio true # process audio? Currently Opus
 
-v_cq 20 # quality setting for cq fallback method
+v_cq 18 # quality setting for cq fallback method
 
 bitrate_480p 1750k # bitrate you want for given resolution
 
