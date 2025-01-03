@@ -42,7 +42,7 @@ test_mode true # true = will not delete source file.  False = will delete source
 
 output_dir_done /media/4_done # path from within tdarr
 
-output_dir_review /media/4_done_review
+output_dir_review /media/4_done_review 
 
 do_audio true # process audio? Currently Opus
 
@@ -77,7 +77,7 @@ test_mode true # true = will not delete source file.  False = will delete source
 
 output_dir_done /media/4_done # path from within tdarr
 
-output_dir_review /media/4_done_review
+output_dir_review /media/4_done_review # if something didn't go right, we move to review folder.
 
 do_audio true # process audio? Currently Opus
 
