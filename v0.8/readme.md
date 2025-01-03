@@ -39,38 +39,69 @@ Library variables you need to add, with example setting for what I consider low 
 
 ```
 test_mode true # true = will not delete source file.  False = will delete source file
+
 output_dir_done /media/4_done # path from within tdarr
+
 output_dir_review /media/4_done_review
+
 do_audio true # process audio? Currently Opus
+
 v_cq 20 # quality setting for cq fallback method
+
 bitrate_480p 1250k # bitrate you want for given resolution
+
 bitrate_576p 1400k
+
 bitrate_720p 2000k
+
 bitrate_1080p 2500k
+
 bitrate_1440p 3800k
+
 bitrate_4k 10000k
+
 bitrate_4k_hdr 12500k
+
 bitrate_audio 160k # Audio bitrate we will encode to.  This is PER CHANNEL
+
 bitrate_audio_cutoff 192k # will not encode audio under this bitrate.  This is PER CHANNEL
+
 audio_language und,un,eng,en,ger,deu,de,zho,zh,chi,jpn,ja,kor,ko,spa,es,cpe,  # languages that you want to keep
+
 ```
 Example of Mid-High Quality:
 
 ```
+
 test_mode true # true = will not delete source file.  False = will delete source file
+
 output_dir_done /media/4_done # path from within tdarr
+
 output_dir_review /media/4_done_review
+
 do_audio true # process audio? Currently Opus
+
 v_cq 20 # quality setting for cq fallback method
+
 bitrate_480p 1750k # bitrate you want for given resolution
+
 bitrate_576p 2000k
+
 bitrate_720p 3000k
+
 bitrate_1080p 4000k
+
 bitrate_1440p 6000k
+
 bitrate_4k 17500k
+
 bitrate_4k_hdr 20000k
+
 bitrate_audio 256k # Audio bitrate we will encode to.  This is PER CHANNEL
+
 bitrate_audio_cutoff 384k # will not encode audio under this bitrate.  This is PER CHANNEL
+
 audio_language und,un,eng,en,ger,deu,de,zho,zh,chi,jpn,ja,kor,ko,spa,es,cpe,  # languages that you want to keep
+
 
 ```
