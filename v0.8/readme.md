@@ -64,7 +64,7 @@ bitrate_4k_hdr 12500k
 
 bitrate_audio 160k # Audio bitrate we will encode to.  This is PER CHANNEL
 
-bitrate_audio_cutoff 192k # will not encode audio under this bitrate.  This is PER CHANNEL
+bitrate_audio_cutoff 192k # will not encode source audio under this bitrate.  This is PER CHANNEL
 
 audio_language und,un,eng,en,ger,deu,de,zho,zh,chi,jpn,ja,kor,ko,spa,es,cpe,  # languages that you want to keep
 
@@ -99,7 +99,7 @@ bitrate_4k_hdr 20000k
 
 bitrate_audio 256k # Audio bitrate we will encode to.  This is PER CHANNEL
 
-bitrate_audio_cutoff 384k # will not encode audio under this bitrate.  This is PER CHANNEL
+bitrate_audio_cutoff 384k # will not encode source audio under this bitrate.  This is PER CHANNEL
 
 audio_language und,un,eng,en,ger,deu,de,zho,zh,chi,jpn,ja,kor,ko,spa,es,cpe,  # languages that you want to keep
 
