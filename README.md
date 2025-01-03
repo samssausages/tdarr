@@ -1,4 +1,5 @@
 NOTE: Use v0.8
+
 I'm updating it right now and will have a new version this weeked.  V0.8 is working well and much improved.  I now calculate bitrates using custom JS, to reduce the number of necessary variables, simplifying the process.
 
 ## Tdarr One Flow To Rule Them All
