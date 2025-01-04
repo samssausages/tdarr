@@ -38,9 +38,15 @@ I broke it down into 5 steps/flows:
 
 4 - Video (Define desired bitrate by resolution, fall back on cq)
 
-5 - Save File (final checks and move operations)
+5 - Save (final checks and move operations)
 
 # Installation
+1. Create a new flow for each of the above steps (1-5) by:
+  a. Go to Tdarr Flows
+  b. Click "add flow"
+  c. Scoll to bottom and copy/paste json into "Import JSON Template" 
+3. Create a new Library with the Variables listed below (Make Sure your library has an input folder defined & output folders exist)
+4. Profit
 
 # Tweaks
 - All the configurable Flow Settings can be edited in flow 1 - Input
