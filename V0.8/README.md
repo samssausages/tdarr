@@ -1,7 +1,3 @@
-NOTE: Use v0.8
-
-I'm updating it right now and and will have a new version this weekend, this readme is for v0.7.  V0.8 is working well and much improved.  I now calculate bitrates using custom JS, to reduce the number of necessary variables, simplifying the process.
-
 ## Tdarr One Flow To Rule Them All
 Current Flow file:  [V0.7 nevc hevc vbr](https://github.com/samssausages/tdarr/blob/452e79832a65c514d0fdedc81e9febbeffe41464/V2.0%20nevc%20hevc%20vbr)
 
