@@ -482,7 +482,7 @@
         "x": 1165.820555126866,
         "y": -933.9189089693849
       },
-      "fpEnabled": true,
+      "fpEnabled": false,
       "inputsDB": {
         "variable": "fl_nvenc_b-frames",
         "value": "-bf 4"
