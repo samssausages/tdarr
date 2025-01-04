@@ -10,7 +10,7 @@ V0.9
 - Consider this beta, do not trust it with your media library until you have ran a bunch of various files through it!  Let me know if you run into unexpected behavior!
 - Do not use with DV or HDR+.  Could cause playback error.  Works fine with basic HDR
 - CPU & QSV need more testing, as I don't use them often.  NVENC is well tested
-- This Flow is designed to be used with an imput and output directory
+- This Flow is designed to be used with an input and output directory
 - Uses the -vbr method to obtain a predictable bitrate.  With cq as a fallback method.
 - Languages not defined in the audio_language variable are removed
 
