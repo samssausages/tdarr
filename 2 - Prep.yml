@@ -1,0 +1,2104 @@
+{
+  "_id": "6FNPwZs6M",
+  "name": "2 - Prep",
+  "description": "2 - Prep",
+  "tags": "",
+  "flowPlugins": [
+    {
+      "name": "Prep & Clean - Check Variable retry5 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "wa9lSIJCd",
+      "position": {
+        "x": 1250.568810251692,
+        "y": 1456.3249751936703
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.retry5}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Set Container MKV Force Conform  📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetContainer",
+      "version": "1.0.0",
+      "id": "7PuSG3-6D",
+      "position": {
+        "x": 1183.8718902615306,
+        "y": 1542.5604858352679
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "forceConform": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Go to Flow 3 Audio ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "_iFkU1C17",
+      "position": {
+        "x": 941.5713266286093,
+        "y": 2125.3592873373686
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "TcG_OWsAi",
+        "pluginId": "jG9agfHPW"
+      }
+    },
+    {
+      "name": "ℹ️ You can use a library variable remove_subs to remove all subtitles.\nremove_subs true. This removes all subs.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "8eT9YX7vR",
+      "position": {
+        "x": 843.9121376912393,
+        "y": 1706.666172953836
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ I rarely get good results encoding or remuxing avi files, so I skip remuxing and video encoding.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "tEQspDzQQ",
+      "position": {
+        "x": 757.6992448578068,
+        "y": 1286.5913963379598
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Could use this to remove subtitles.  But I have too many problems with it removing Eng, even when I don't want it to.  Until I get a more reliable method I'm not dealing with subs",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "Qa2KMT05-",
+      "position": {
+        "x": 517.6529807896262,
+        "y": 792.8357884691893
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Goal of this flow is to sort tracks, standardize the container and deal with anything that may cause an encode error later on.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "6LmXwra96",
+      "position": {
+        "x": 652.0696541357429,
+        "y": -838.1103077305005
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Set Variable force_conform 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "uRXgRWy3A",
+      "position": {
+        "x": 1184.2371092172095,
+        "y": 1629.7090668069743
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "force_conform",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Reset Variable retry4 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "QMHwf-38I",
+      "position": {
+        "x": 1999.0427165961382,
+        "y": 2738.8326336046707
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry4",
+        "value": "reset"
+      }
+    },
+    {
+      "name": "Prep & Clean - Reset Variable retry3 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "qZHmlR-QL",
+      "position": {
+        "x": 1818.4851176912487,
+        "y": 2581.8237485092886
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry3",
+        "value": "reset"
+      }
+    },
+    {
+      "name": "Prep & Clean - Reset Variable retry2 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "13vEyPpHp",
+      "position": {
+        "x": 1553.9794577350117,
+        "y": 2513.066818924035
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry2",
+        "value": "reset"
+      }
+    },
+    {
+      "name": "Prep & Clean - Reset Variable retry1 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "2TBOdavD2",
+      "position": {
+        "x": 1395.517237537516,
+        "y": 2422.9072783838415
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry1",
+        "value": "reset"
+      }
+    },
+    {
+      "name": "Prep & Clean - Set Variable force_timescale 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "3xfSrm5u6",
+      "position": {
+        "x": 1817.3827581482221,
+        "y": 3058.49553115157
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "force_timescale",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Force Timescale worked! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "jtSxGNjjN",
+      "position": {
+        "x": 1817.270051466333,
+        "y": 2990.801667651911
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - retry3 Remux worked! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "8wqevGK79",
+      "position": {
+        "x": 1554.4073496592741,
+        "y": 2904.3121485801416
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - retry4  - failed Force Timescale ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "Jr7llqP0Y",
+      "position": {
+        "x": 1919.7711176678295,
+        "y": 2942.9486609172955
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - retry3 - failed remux ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "it3zRIOAZ",
+      "position": {
+        "x": 1656.7104146405477,
+        "y": 2859.593391501273
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Go back to beginning of flow ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "tQQm3yseH",
+      "position": {
+        "x": 1920.173228065069,
+        "y": 3145.6457706516107
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "htpX8Ypt1",
+        "pluginId": "2kU0j98XT"
+      }
+    },
+    {
+      "name": "Prep & Clean - Execute ffmpeg command - Force Timescale⏳",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandExecute",
+      "version": "1.0.0",
+      "id": "6HjBseVvz",
+      "position": {
+        "x": 1818.2075910698602,
+        "y": 2871.218786622338
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Force Timescale 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "qnVKFGF7o",
+      "position": {
+        "x": 1818.83073558477,
+        "y": 2775.687610263517
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "inputArguments": "",
+        "outputArguments": "-c:v copy -video_track_timescale 90000 -map_metadata 0 -c:a copy"
+      }
+    },
+    {
+      "name": "Prep & Clean - Start ffmpeg command - Force Timescale 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "Seo9IHIHX",
+      "position": {
+        "x": 1818.5479097789666,
+        "y": 2661.156424321689
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Set Original File ✅",
+      "sourceRepo": "Community",
+      "pluginName": "setOriginalFile",
+      "version": "1.0.0",
+      "id": "bI9N1ScpO",
+      "position": {
+        "x": 1999.6206497731828,
+        "y": 2542.8808806881802
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Set Variable retry5 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "Qtv7Q35LV",
+      "position": {
+        "x": 1999.483006494408,
+        "y": 2637.2183982039983
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry5",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Found retry4 tag  - Lets try remux with force conforming container ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "_RKb9UaZy",
+      "position": {
+        "x": 1998.3308977533989,
+        "y": 2425.775189549546
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Found retry5 tag  - We're screwed 💀💀💀",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "bNbvlM1de",
+      "position": {
+        "x": 2160.46279359243,
+        "y": 2527.4040914746183
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Check Variable retry5 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "kXbsctTYL",
+      "position": {
+        "x": 2184.67393782347,
+        "y": 2435.321007479271
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.retry5}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Go back to beginning of flow ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "Xg-Q8YHHu",
+      "position": {
+        "x": 1554.0669838465174,
+        "y": 3007.1769908474344
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "htpX8Ypt1",
+        "pluginId": "2kU0j98XT"
+      }
+    },
+    {
+      "name": "Prep & Clean - Execute ffmpeg command - Remux⏳",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandExecute",
+      "version": "1.0.0",
+      "id": "JKIBC8xIS",
+      "position": {
+        "x": 1554.2830694243464,
+        "y": 2790.264543822452
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Set Original File ✅",
+      "sourceRepo": "Community",
+      "pluginName": "setOriginalFile",
+      "version": "1.0.0",
+      "id": "bszJgzKD9",
+      "position": {
+        "x": 1818.385571359832,
+        "y": 2429.2888208395784
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Set Variable retry4 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "7R-VRhlZ8",
+      "position": {
+        "x": 1818.574326487378,
+        "y": 2509.268797736489
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry4",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Found retry3 tag  - Lets try forcing Timescale ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "kKQrb4Nwp",
+      "position": {
+        "x": 1818.0247842058175,
+        "y": 2329.8512753346877
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Check Variable retry4 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "sCKGoRWku",
+      "position": {
+        "x": 2023.0874536012966,
+        "y": 2323.541841102102
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.retry4}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Go back to beginning of flow ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "pb0VfABI6",
+      "position": {
+        "x": 1999.1184303484142,
+        "y": 2832.948440064368
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "htpX8Ypt1",
+        "pluginId": "2kU0j98XT"
+      }
+    },
+    {
+      "name": "Prep & Clean - Found retry2 tag  - Extracting subs didn't help, lets try a clean remux ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "hJigo4oKb",
+      "position": {
+        "x": 1554.760852678482,
+        "y": 2243.5290970596757
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Set Variable retry3 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "M4QxOPCao",
+      "position": {
+        "x": 1555.0261694984115,
+        "y": 2423.970455896665
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry3",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Set Original File ✅",
+      "sourceRepo": "Community",
+      "pluginName": "setOriginalFile",
+      "version": "1.0.0",
+      "id": "gIvsLyLu0",
+      "position": {
+        "x": 1554.959221147732,
+        "y": 2336.473628704764
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Check Variable retry3 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "3HVG_KAf1",
+      "position": {
+        "x": 1843.325769499855,
+        "y": 2238.5385528796414
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.retry3}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "ℹ️ Failed remux operation\nRetry1 - Try it in mp4\nRetry2 - Try extracting subs\nRetry3 - Try Clean remux\nRetry4 - Force Timescale\nRetry5 - Try using Force Conform on Remux\nRetry6 - Fail\n\n* Forcing Conform Last as it strips Subtitles",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "xg91b49KJ",
+      "position": {
+        "x": 1587.9169053782005,
+        "y": 1787.1839579721654
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Found retry1 tag  - mp4 didn't work, lets try extracting subs ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "V3YoVNxW1",
+      "position": {
+        "x": 1397.882407224652,
+        "y": 2151.740909282394
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Found no retry tags  - Set to retry1 ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "_2LfxJ_lG",
+      "position": {
+        "x": 2350.0943207909745,
+        "y": 2521.658059766548
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Clean Subtitles ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "1KJVm_sn5",
+      "position": {
+        "x": 679.4906761667997,
+        "y": 833.6098378569683
+      },
+      "fpEnabled": false,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MC93_Migz4CleanSubs",
+        "language": "{{{args.userVariables.library.audio_language}}}",
+        "commentary": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Go back to beginning of flow ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "3CEFsdkql",
+      "position": {
+        "x": 2350.622170522596,
+        "y": 2803.3337069802515
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "htpX8Ypt1",
+        "pluginId": "2kU0j98XT"
+      }
+    },
+    {
+      "name": "Prep & Clean - Set Variable retry1 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "Ha8p6GlUg",
+      "position": {
+        "x": 2350.8795826626924,
+        "y": 2715.784749084313
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry1",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Set Original File ✅",
+      "sourceRepo": "Community",
+      "pluginName": "setOriginalFile",
+      "version": "1.0.0",
+      "id": "FeNQcoCoS",
+      "position": {
+        "x": 2350.884836890136,
+        "y": 2623.1179944107985
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Check Variable retry2 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "4Hy8HEX4j",
+      "position": {
+        "x": 1580.515466614175,
+        "y": 2149.1648756938953
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.retry2}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Check Variable retry1 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "i1ThRQRfW",
+      "position": {
+        "x": 1424.337242758512,
+        "y": 2065.383932863068
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.retry1}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - ffmpeg Command OK! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "uLz4RKa2R",
+      "position": {
+        "x": 1212.1780311897721,
+        "y": 2038.7572292973477
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - ffmpeg command Error! Going to try another method ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "gBp6qu_NS",
+      "position": {
+        "x": 1424.9216724612143,
+        "y": 1971.3493740736585
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - retry1 found, let's try mp4 this time  ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "Nodfc63HY",
+      "position": {
+        "x": 1033.2905780100575,
+        "y": 1460.0694424388805
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Try to extract mkv incompatible subs",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "bZoySQxOm",
+      "position": {
+        "x": 822.35206347568,
+        "y": -0.5454384272955792
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - is_avi bypass container remux ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "B5_Tocuqa",
+      "position": {
+        "x": 941.3267839800786,
+        "y": 1377.9989480930035
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Check Variable is_avi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "HOn7BNPij",
+      "position": {
+        "x": 1066.227909160514,
+        "y": 1288.6214002099568
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.is_avi}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Check Variable retry1 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "1TKIYv9Fd",
+      "position": {
+        "x": 1135.5834033596295,
+        "y": 1372.8959334906847
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.retry1}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Set Container MP4 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetContainer",
+      "version": "1.0.0",
+      "id": "b0UHzJuch",
+      "position": {
+        "x": 1033.6891291533668,
+        "y": 1557.711708687986
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "forceConform": "false",
+        "container": "mp4"
+      }
+    },
+    {
+      "name": "Prep & Clean - Error running MKVPropEdit ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "EO3A17CY1",
+      "position": {
+        "x": 591.9298708463547,
+        "y": -376.1241924037901
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Error Getting File Extension ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "gkuRtonPh",
+      "position": {
+        "x": 834.9462088208456,
+        "y": -479.79954555736026
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - File is not mkv ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "KmrUSEAlg",
+      "position": {
+        "x": 682.1061964330196,
+        "y": -480.33654366354426
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - File is mkv ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "AZnEHlAaQ",
+      "position": {
+        "x": 489.5467281806998,
+        "y": -512.0061895214443
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - MKVPropEdit OK!  ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "ep7lqdYwl",
+      "position": {
+        "x": 490.7370302561751,
+        "y": -335.67212010946366
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Clean Titles Error! Moving on Anyways ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "vX8lBfgvT",
+      "position": {
+        "x": 1368.1610730523462,
+        "y": 862.994723151749
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Nothing to Process ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "h9hxgqzCE",
+      "position": {
+        "x": 1218.2773721521091,
+        "y": 876.9548868355174
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Titles Cleaned ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "fVVvOGSJL",
+      "position": {
+        "x": 1068.7838658413257,
+        "y": 875.2416252916731
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Clean Titles ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "U-F59Ok-h",
+      "position": {
+        "x": 1149.6901971975126,
+        "y": 758.723590867744
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MC93_Migz2CleanTitle",
+        "clean_audio": "true",
+        "clean_subtitles": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Remove Images Error! Moving on anyways ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "kGN6CEz31",
+      "position": {
+        "x": 1300.9399095305284,
+        "y": 655.3765506987852
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Nothing to Process ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "87IxgdnN7",
+      "position": {
+        "x": 1149.2159692092464,
+        "y": 668.5924551492088
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Couldn't extract subtitles! ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "xMNtxs-Ct",
+      "position": {
+        "x": 982.8728494078152,
+        "y": 188.170214075775
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Reorder Streams - No action was taken ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "QkJm4Dbb4",
+      "position": {
+        "x": 766.3486651922797,
+        "y": -163.77042658424043
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Reorder Streams Done ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "vGg9Q1mTC",
+      "position": {
+        "x": 606.1379100259819,
+        "y": -150.07838404787657
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Moved Extrated Subtitles ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "CAY3YSQvk",
+      "position": {
+        "x": 728.8420956181805,
+        "y": 401.77929614588743
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Subtitles were Extracted ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "YSy_qAvCn",
+      "position": {
+        "x": 728.9126728212051,
+        "y": 240.2307548395582
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - No action was taken ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "OAa5M6tSO",
+      "position": {
+        "x": 893.5350381221477,
+        "y": 239.7661174794373
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Start 🚀",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "d8balkJHB",
+      "position": {
+        "x": 657.0687318935323,
+        "y": -682.6971669502832
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ What's the retry1 & retry2?\nSome subtitles that are mkv incompatible.  If the remux to mkv fails, we simply try again by changing to a mp4 container, to try and save  the subtitles.  If that doesn't work, we send it back through the stack a 2nd time and remove the subtitles.\nThis is not as targeted as I would like.  Need to compile a list of all offending subtitles so we can target them for extraction or removal more efficiently.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "irYheUcfv",
+      "position": {
+        "x": 352.62108259280893,
+        "y": -88.39400545169542
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Check Flow Variable retry2 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "4HcUvOUMU",
+      "position": {
+        "x": 1043.8080867837134,
+        "y": -59.55158922164234
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.variables.user.retry2}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Rety2 Found, Lets try to extract subs to .srt ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "qwjItq9BN",
+      "position": {
+        "x": 984.7168641981087,
+        "y": 30.701232127637297
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Try to Extract Subs to SRT & Remove⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "p1upuueta",
+      "position": {
+        "x": 869.112686586765,
+        "y": 129.2214860804554
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_rr01_drpeppershaker_extract_subs_to_SRT",
+        "remove_subs": "yes"
+      }
+    },
+    {
+      "name": "Move Extracted Subs out of Cache ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "copyMoveFolderContent",
+      "version": "1.0.0",
+      "id": "nAm2l1adq",
+      "position": {
+        "x": 728.5352788943445,
+        "y": 320.04388320488283
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "sourceDirectory": "workingDirectory",
+        "copyOrMove": "move",
+        "outputDirectory": "{{{args.userVariables.library.output_dir_done}}}",
+        "fileExtensions": "srt,ass,sub,idx"
+      }
+    },
+    {
+      "name": "Prep & Clean - Couldn't move subtitles! ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "QEf_j7ip0",
+      "position": {
+        "x": 844.2482745550799,
+        "y": 447.9895543775325
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Don't have a way to check if subtitles actually exist ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "Rs84-OZZF",
+      "position": {
+        "x": 729.2304174203774,
+        "y": 492.1901865302418
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Remove Data Streams 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandRemoveDataStreams",
+      "version": "1.0.0",
+      "id": "cX6BSrPmO",
+      "position": {
+        "x": 1066.358242474462,
+        "y": 1192.2048085444649
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Remove Subtitles 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandRemoveSubtitles",
+      "version": "1.0.0",
+      "id": "seR432XMi",
+      "position": {
+        "x": 1098.71155280145,
+        "y": 1824.1801319020813
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Reorder Streams ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "wpTkxtpa6",
+      "position": {
+        "x": 682.5180898705386,
+        "y": -248.37820636991884
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MC93_Migz6OrderStreams"
+      }
+    },
+    {
+      "name": "Prep & Clean - Couldn't Reorder Streams! Moving Forward Anyways ⚠️",
+      "sourceRepo": "Community",
+      "pluginName": "resetFlowError",
+      "version": "1.0.0",
+      "id": "Wx1eKJA9L",
+      "position": {
+        "x": 926.5180898705389,
+        "y": -163.37820636991867
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Check Variable remove_subs 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFlowVariable",
+      "version": "1.0.0",
+      "id": "82dLQJX1e",
+      "position": {
+        "x": 1185.161489734479,
+        "y": 1740.3025758471233
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "{{{args.userVariables.library.remove_subs}}}",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Remove Images ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "gKEJKrzsJ",
+      "position": {
+        "x": 1070.083877296706,
+        "y": 581.3363068985333
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MC93_MigzImageRemoval"
+      }
+    },
+    {
+      "name": "Prep & Clean - Removed Images ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "cHhqlSpU1",
+      "position": {
+        "x": 999.0119250121107,
+        "y": 667.9516194183444
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Run MKVPropEdit ⏳ ",
+      "sourceRepo": "Community",
+      "pluginName": "runMkvPropEdit",
+      "version": "1.0.0",
+      "id": "CRbRhtXaL",
+      "position": {
+        "x": 490.1656800384857,
+        "y": -420.49275406400744
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Check if mkv 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "NCG23FkZ3",
+      "position": {
+        "x": 656.2856596642484,
+        "y": -597.2147021708244
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "extensions": "mkv"
+      }
+    },
+    {
+      "name": "Prep & Clean - Begin ffmpeg Command 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "_d_3OOKXy",
+      "position": {
+        "x": 1065.7737294895069,
+        "y": 1007.4351016398653
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Reorder Streams 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandRorderStreams",
+      "version": "1.0.0",
+      "id": "om49ib9os",
+      "position": {
+        "x": 1065.4549933396338,
+        "y": 1103.0305016900604
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "languages": "{{{args.variables.user.config_reorder_streams_lang}}}",
+        "codecs": "{{{args.variables.user.config_reorder_streams_codec}}}",
+        "processOrder": "{{{args.variables.user.config_reorder_streams_order}}}",
+        "channels": "{{{args.variables.user.config_reorder_streams_channels}}}",
+        "streamTypes": "{{{args.variables.user.config_reorder_streams_type}}}"
+      }
+    },
+    {
+      "name": "Prep & Clean - Set Container MKV  📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetContainer",
+      "version": "1.0.0",
+      "id": "mqGBwbA97",
+      "position": {
+        "x": 1333.7899071107704,
+        "y": 1557.8577046108292
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "forceConform": "false"
+      }
+    },
+    {
+      "name": "Prep & Clean - Execute ffmpeg command ⏳",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandExecute",
+      "version": "1.0.0",
+      "id": "vqPIXNyua",
+      "position": {
+        "x": 1211.400541326505,
+        "y": 1921.7311135508278
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Set Original File ✅",
+      "sourceRepo": "Community",
+      "pluginName": "setOriginalFile",
+      "version": "1.0.0",
+      "id": "Z46e9VML1",
+      "position": {
+        "x": 1396.179214533909,
+        "y": 2246.7690201717905
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Set Variable retry2 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "qx5Ou3Yw5",
+      "position": {
+        "x": 1396.498056010208,
+        "y": 2335.5882690644607
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "retry2",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Prep & Clean - Go back to beginning of flow ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "o1Fqz2KmU",
+      "position": {
+        "x": 1396.0504700362658,
+        "y": 2512.170795732604
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "htpX8Ypt1",
+        "pluginId": "2kU0j98XT"
+      }
+    },
+    {
+      "name": "Prep & Clean - Retry5 found - Giving Up 🚨🚨",
+      "sourceRepo": "Community",
+      "pluginName": "failFlow",
+      "version": "1.0.0",
+      "id": "btr58Aud9",
+      "position": {
+        "x": 2160.9636521920884,
+        "y": 2635.8741602007667
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Start ffmpeg command - Remux📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "DrM_l7cfy",
+      "position": {
+        "x": 1553.4854145315458,
+        "y": 2596.827699110581
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Prep & Clean - Remux 📼",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "Kc5D-yATu",
+      "position": {
+        "x": 1553.472933332675,
+        "y": 2692.209447810073
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "inputArguments": "",
+        "outputArguments": "-c copy"
+      }
+    }
+  ],
+  "flowEdges": [
+    {
+      "source": "qwjItq9BN",
+      "sourceHandle": "1",
+      "target": "p1upuueta",
+      "targetHandle": null,
+      "id": "E9P8rb7qT"
+    },
+    {
+      "source": "p1upuueta",
+      "sourceHandle": "2",
+      "target": "OAa5M6tSO",
+      "targetHandle": null,
+      "id": "0jcs6zr18"
+    },
+    {
+      "source": "p1upuueta",
+      "sourceHandle": "1",
+      "target": "YSy_qAvCn",
+      "targetHandle": null,
+      "id": "ViMvv0lg5"
+    },
+    {
+      "source": "YSy_qAvCn",
+      "sourceHandle": "1",
+      "target": "nAm2l1adq",
+      "targetHandle": null,
+      "id": "MJMKFuwyF"
+    },
+    {
+      "source": "nAm2l1adq",
+      "sourceHandle": "err1",
+      "target": "QEf_j7ip0",
+      "targetHandle": null,
+      "id": "1O4RGPptg"
+    },
+    {
+      "source": "nAm2l1adq",
+      "sourceHandle": "1",
+      "target": "CAY3YSQvk",
+      "targetHandle": null,
+      "id": "cCy4Gg-Xd"
+    },
+    {
+      "source": "CAY3YSQvk",
+      "sourceHandle": "1",
+      "target": "Rs84-OZZF",
+      "targetHandle": null,
+      "id": "Od3m6_gV8"
+    },
+    {
+      "source": "wpTkxtpa6",
+      "sourceHandle": "1",
+      "target": "vGg9Q1mTC",
+      "targetHandle": null,
+      "id": "RFCQtAUiu"
+    },
+    {
+      "source": "wpTkxtpa6",
+      "sourceHandle": "2",
+      "target": "QkJm4Dbb4",
+      "targetHandle": null,
+      "id": "GUWyUNnHN"
+    },
+    {
+      "source": "vGg9Q1mTC",
+      "sourceHandle": "1",
+      "target": "4HcUvOUMU",
+      "targetHandle": null,
+      "id": "Ugs9JWYHF"
+    },
+    {
+      "source": "QkJm4Dbb4",
+      "sourceHandle": "1",
+      "target": "4HcUvOUMU",
+      "targetHandle": null,
+      "id": "N077ada9x"
+    },
+    {
+      "source": "wpTkxtpa6",
+      "sourceHandle": "err1",
+      "target": "Wx1eKJA9L",
+      "targetHandle": null,
+      "id": "k912oMOPM"
+    },
+    {
+      "source": "Wx1eKJA9L",
+      "sourceHandle": "1",
+      "target": "4HcUvOUMU",
+      "targetHandle": null,
+      "id": "DIHgFCkcd"
+    },
+    {
+      "source": "4HcUvOUMU",
+      "sourceHandle": "1",
+      "target": "qwjItq9BN",
+      "targetHandle": null,
+      "id": "qp-umjYBP"
+    },
+    {
+      "source": "p1upuueta",
+      "sourceHandle": "err1",
+      "target": "xMNtxs-Ct",
+      "targetHandle": null,
+      "id": "f8zqW8ik_"
+    },
+    {
+      "source": "OAa5M6tSO",
+      "sourceHandle": "1",
+      "target": "gKEJKrzsJ",
+      "targetHandle": null,
+      "id": "EzmIGuGWu"
+    },
+    {
+      "source": "QEf_j7ip0",
+      "sourceHandle": "1",
+      "target": "gKEJKrzsJ",
+      "targetHandle": null,
+      "id": "-afke5nqW"
+    },
+    {
+      "source": "Rs84-OZZF",
+      "sourceHandle": "1",
+      "target": "gKEJKrzsJ",
+      "targetHandle": null,
+      "id": "gGIcjPgIW"
+    },
+    {
+      "source": "gKEJKrzsJ",
+      "sourceHandle": "1",
+      "target": "cHhqlSpU1",
+      "targetHandle": null,
+      "id": "LImxMCsAH"
+    },
+    {
+      "source": "gKEJKrzsJ",
+      "sourceHandle": "2",
+      "target": "87IxgdnN7",
+      "targetHandle": null,
+      "id": "seNt4yPzN"
+    },
+    {
+      "source": "gKEJKrzsJ",
+      "sourceHandle": "err1",
+      "target": "kGN6CEz31",
+      "targetHandle": null,
+      "id": "xs80B9Dpw"
+    },
+    {
+      "source": "cHhqlSpU1",
+      "sourceHandle": "1",
+      "target": "U-F59Ok-h",
+      "targetHandle": null,
+      "id": "a_IqDafzK"
+    },
+    {
+      "source": "87IxgdnN7",
+      "sourceHandle": "1",
+      "target": "U-F59Ok-h",
+      "targetHandle": null,
+      "id": "LsvFdlH0u"
+    },
+    {
+      "source": "kGN6CEz31",
+      "sourceHandle": "1",
+      "target": "U-F59Ok-h",
+      "targetHandle": null,
+      "id": "cgf2xVlNg"
+    },
+    {
+      "source": "U-F59Ok-h",
+      "sourceHandle": "1",
+      "target": "fVVvOGSJL",
+      "targetHandle": null,
+      "id": "9AanTBKdJ"
+    },
+    {
+      "source": "U-F59Ok-h",
+      "sourceHandle": "2",
+      "target": "h9hxgqzCE",
+      "targetHandle": null,
+      "id": "oMQuciHFb"
+    },
+    {
+      "source": "U-F59Ok-h",
+      "sourceHandle": "err1",
+      "target": "vX8lBfgvT",
+      "targetHandle": null,
+      "id": "yCjFog4wz"
+    },
+    {
+      "source": "d8balkJHB",
+      "sourceHandle": "1",
+      "target": "NCG23FkZ3",
+      "targetHandle": null,
+      "id": "5SN7cJc9W"
+    },
+    {
+      "source": "NCG23FkZ3",
+      "sourceHandle": "1",
+      "target": "AZnEHlAaQ",
+      "targetHandle": null,
+      "id": "alS8Wy2Pc"
+    },
+    {
+      "source": "AZnEHlAaQ",
+      "sourceHandle": "1",
+      "target": "CRbRhtXaL",
+      "targetHandle": null,
+      "id": "2mFURzd_z"
+    },
+    {
+      "source": "NCG23FkZ3",
+      "sourceHandle": "2",
+      "target": "KmrUSEAlg",
+      "targetHandle": null,
+      "id": "G9Q5cMdna"
+    },
+    {
+      "source": "NCG23FkZ3",
+      "sourceHandle": "err1",
+      "target": "gkuRtonPh",
+      "targetHandle": null,
+      "id": "8wg_Vi08U"
+    },
+    {
+      "source": "CRbRhtXaL",
+      "sourceHandle": "err1",
+      "target": "EO3A17CY1",
+      "targetHandle": null,
+      "id": "HYHd5fip4"
+    },
+    {
+      "source": "CRbRhtXaL",
+      "sourceHandle": "1",
+      "target": "ep7lqdYwl",
+      "targetHandle": null,
+      "id": "4dj2xEpeL"
+    },
+    {
+      "source": "KmrUSEAlg",
+      "sourceHandle": "1",
+      "target": "wpTkxtpa6",
+      "targetHandle": null,
+      "id": "P6LosuM66"
+    },
+    {
+      "source": "EO3A17CY1",
+      "sourceHandle": "1",
+      "target": "wpTkxtpa6",
+      "targetHandle": null,
+      "id": "VsKu-cme4"
+    },
+    {
+      "source": "ep7lqdYwl",
+      "sourceHandle": "1",
+      "target": "wpTkxtpa6",
+      "targetHandle": null,
+      "id": "Om06rdyON"
+    },
+    {
+      "source": "gkuRtonPh",
+      "sourceHandle": "1",
+      "target": "wpTkxtpa6",
+      "targetHandle": null,
+      "id": "hsk0Igg8z"
+    },
+    {
+      "source": "4HcUvOUMU",
+      "sourceHandle": "2",
+      "target": "gKEJKrzsJ",
+      "targetHandle": null,
+      "id": "ET5jSNynx"
+    },
+    {
+      "source": "fVVvOGSJL",
+      "sourceHandle": "1",
+      "target": "_d_3OOKXy",
+      "targetHandle": null,
+      "id": "EHhgumaQc"
+    },
+    {
+      "source": "h9hxgqzCE",
+      "sourceHandle": "1",
+      "target": "_d_3OOKXy",
+      "targetHandle": null,
+      "id": "WcIVYpva5"
+    },
+    {
+      "source": "vX8lBfgvT",
+      "sourceHandle": "1",
+      "target": "_d_3OOKXy",
+      "targetHandle": null,
+      "id": "mhx-Z9yjc"
+    },
+    {
+      "source": "_d_3OOKXy",
+      "sourceHandle": "1",
+      "target": "om49ib9os",
+      "targetHandle": null,
+      "id": "dFvILtoaZ"
+    },
+    {
+      "source": "om49ib9os",
+      "sourceHandle": "1",
+      "target": "cX6BSrPmO",
+      "targetHandle": null,
+      "id": "3nelwz0c2"
+    },
+    {
+      "source": "82dLQJX1e",
+      "sourceHandle": "1",
+      "target": "seR432XMi",
+      "targetHandle": null,
+      "id": "Qif-hZi2r"
+    },
+    {
+      "source": "cX6BSrPmO",
+      "sourceHandle": "1",
+      "target": "HOn7BNPij",
+      "targetHandle": null,
+      "id": "2K-MnRvoI"
+    },
+    {
+      "source": "HOn7BNPij",
+      "sourceHandle": "2",
+      "target": "1TKIYv9Fd",
+      "targetHandle": null,
+      "id": "gVFuaJN1C"
+    },
+    {
+      "source": "HOn7BNPij",
+      "sourceHandle": "1",
+      "target": "B5_Tocuqa",
+      "targetHandle": null,
+      "id": "UZrmjI57O"
+    },
+    {
+      "source": "1TKIYv9Fd",
+      "sourceHandle": "1",
+      "target": "Nodfc63HY",
+      "targetHandle": null,
+      "id": "Qp3mHB1YF"
+    },
+    {
+      "source": "Nodfc63HY",
+      "sourceHandle": "1",
+      "target": "b0UHzJuch",
+      "targetHandle": null,
+      "id": "ZZRenkKFf"
+    },
+    {
+      "source": "b0UHzJuch",
+      "sourceHandle": "1",
+      "target": "82dLQJX1e",
+      "targetHandle": null,
+      "id": "KZuIpf1h_"
+    },
+    {
+      "source": "mqGBwbA97",
+      "sourceHandle": "1",
+      "target": "82dLQJX1e",
+      "targetHandle": null,
+      "id": "QTtZd4cuw"
+    },
+    {
+      "source": "82dLQJX1e",
+      "sourceHandle": "2",
+      "target": "vqPIXNyua",
+      "targetHandle": null,
+      "id": "7XZhulNWX"
+    },
+    {
+      "source": "seR432XMi",
+      "sourceHandle": "1",
+      "target": "vqPIXNyua",
+      "targetHandle": null,
+      "id": "-4oyhcRVL"
+    },
+    {
+      "source": "vqPIXNyua",
+      "sourceHandle": "err1",
+      "target": "gBp6qu_NS",
+      "targetHandle": null,
+      "id": "3bk_PQL5L"
+    },
+    {
+      "source": "vqPIXNyua",
+      "sourceHandle": "1",
+      "target": "uLz4RKa2R",
+      "targetHandle": null,
+      "id": "Zsr1rE_A0"
+    },
+    {
+      "source": "gBp6qu_NS",
+      "sourceHandle": "1",
+      "target": "i1ThRQRfW",
+      "targetHandle": null,
+      "id": "-ZeqfJihw"
+    },
+    {
+      "source": "Z46e9VML1",
+      "sourceHandle": "1",
+      "target": "qx5Ou3Yw5",
+      "targetHandle": null,
+      "id": "sjIT4OZno"
+    },
+    {
+      "source": "i1ThRQRfW",
+      "sourceHandle": "2",
+      "target": "4Hy8HEX4j",
+      "targetHandle": null,
+      "id": "A8fjegqEl"
+    },
+    {
+      "source": "FeNQcoCoS",
+      "sourceHandle": "1",
+      "target": "Ha8p6GlUg",
+      "targetHandle": null,
+      "id": "uLD6kntmm"
+    },
+    {
+      "source": "Ha8p6GlUg",
+      "sourceHandle": "1",
+      "target": "3CEFsdkql",
+      "targetHandle": null,
+      "id": "VIE0Oq7PP"
+    },
+    {
+      "source": "_2LfxJ_lG",
+      "sourceHandle": "1",
+      "target": "FeNQcoCoS",
+      "targetHandle": null,
+      "id": "dHv1RfLkj"
+    },
+    {
+      "source": "i1ThRQRfW",
+      "sourceHandle": "1",
+      "target": "V3YoVNxW1",
+      "targetHandle": null,
+      "id": "XfLO7d1jA"
+    },
+    {
+      "source": "V3YoVNxW1",
+      "sourceHandle": "1",
+      "target": "Z46e9VML1",
+      "targetHandle": null,
+      "id": "PPALC-IG9"
+    },
+    {
+      "source": "4Hy8HEX4j",
+      "sourceHandle": "2",
+      "target": "3HVG_KAf1",
+      "targetHandle": null,
+      "id": "m_g9SWBOg"
+    },
+    {
+      "source": "gIvsLyLu0",
+      "sourceHandle": "1",
+      "target": "M4QxOPCao",
+      "targetHandle": null,
+      "id": "h9PWnSFbs"
+    },
+    {
+      "source": "4Hy8HEX4j",
+      "sourceHandle": "1",
+      "target": "hJigo4oKb",
+      "targetHandle": null,
+      "id": "6My0gfw2N"
+    },
+    {
+      "source": "hJigo4oKb",
+      "sourceHandle": "1",
+      "target": "gIvsLyLu0",
+      "targetHandle": null,
+      "id": "F0ox_Kv2s"
+    },
+    {
+      "source": "3HVG_KAf1",
+      "sourceHandle": "2",
+      "target": "sCKGoRWku",
+      "targetHandle": null,
+      "id": "DvEnkfRt8"
+    },
+    {
+      "source": "kKQrb4Nwp",
+      "sourceHandle": "1",
+      "target": "bszJgzKD9",
+      "targetHandle": null,
+      "id": "cX34wZJgv"
+    },
+    {
+      "source": "bszJgzKD9",
+      "sourceHandle": "1",
+      "target": "7R-VRhlZ8",
+      "targetHandle": null,
+      "id": "TtNF-4Ulg"
+    },
+    {
+      "source": "DrM_l7cfy",
+      "sourceHandle": "1",
+      "target": "Kc5D-yATu",
+      "targetHandle": null,
+      "id": "SDOazpJ4v"
+    },
+    {
+      "source": "Kc5D-yATu",
+      "sourceHandle": "1",
+      "target": "JKIBC8xIS",
+      "targetHandle": null,
+      "id": "hrMwjptxC"
+    },
+    {
+      "source": "sCKGoRWku",
+      "sourceHandle": "2",
+      "target": "kXbsctTYL",
+      "targetHandle": null,
+      "id": "ogHVt8ORC"
+    },
+    {
+      "source": "bNbvlM1de",
+      "sourceHandle": "1",
+      "target": "btr58Aud9",
+      "targetHandle": null,
+      "id": "tE8GSVa63"
+    },
+    {
+      "source": "_RKb9UaZy",
+      "sourceHandle": "1",
+      "target": "bI9N1ScpO",
+      "targetHandle": null,
+      "id": "aj5yUk0Mp"
+    },
+    {
+      "source": "bI9N1ScpO",
+      "sourceHandle": "1",
+      "target": "Qtv7Q35LV",
+      "targetHandle": null,
+      "id": "cWCLM2Cx9"
+    },
+    {
+      "source": "Seo9IHIHX",
+      "sourceHandle": "1",
+      "target": "qnVKFGF7o",
+      "targetHandle": null,
+      "id": "hc_K_cvo_"
+    },
+    {
+      "source": "qnVKFGF7o",
+      "sourceHandle": "1",
+      "target": "6HjBseVvz",
+      "targetHandle": null,
+      "id": "lTbwXwSEn"
+    },
+    {
+      "source": "JKIBC8xIS",
+      "sourceHandle": "err1",
+      "target": "it3zRIOAZ",
+      "targetHandle": null,
+      "id": "-L_Qba9sp"
+    },
+    {
+      "source": "it3zRIOAZ",
+      "sourceHandle": "1",
+      "target": "Xg-Q8YHHu",
+      "targetHandle": null,
+      "id": "Gn8KoLRmh"
+    },
+    {
+      "source": "6HjBseVvz",
+      "sourceHandle": "err1",
+      "target": "Jr7llqP0Y",
+      "targetHandle": null,
+      "id": "8uoXG7O_G"
+    },
+    {
+      "source": "Jr7llqP0Y",
+      "sourceHandle": "1",
+      "target": "tQQm3yseH",
+      "targetHandle": null,
+      "id": "VtEibb9MT"
+    },
+    {
+      "source": "JKIBC8xIS",
+      "sourceHandle": "1",
+      "target": "8wqevGK79",
+      "targetHandle": null,
+      "id": "xm9KBCrd8"
+    },
+    {
+      "source": "8wqevGK79",
+      "sourceHandle": "1",
+      "target": "Xg-Q8YHHu",
+      "targetHandle": null,
+      "id": "uVllg-Yf_"
+    },
+    {
+      "source": "6HjBseVvz",
+      "sourceHandle": "1",
+      "target": "jtSxGNjjN",
+      "targetHandle": null,
+      "id": "JmuUtHi0I"
+    },
+    {
+      "source": "jtSxGNjjN",
+      "sourceHandle": "1",
+      "target": "3xfSrm5u6",
+      "targetHandle": null,
+      "id": "fLfLGTr2q"
+    },
+    {
+      "source": "3xfSrm5u6",
+      "sourceHandle": "1",
+      "target": "tQQm3yseH",
+      "targetHandle": null,
+      "id": "QqA4aK_GR"
+    },
+    {
+      "source": "qx5Ou3Yw5",
+      "sourceHandle": "1",
+      "target": "2TBOdavD2",
+      "targetHandle": null,
+      "id": "1NfYclFuM"
+    },
+    {
+      "source": "2TBOdavD2",
+      "sourceHandle": "1",
+      "target": "o1Fqz2KmU",
+      "targetHandle": null,
+      "id": "t3Hdy_4li"
+    },
+    {
+      "source": "M4QxOPCao",
+      "sourceHandle": "1",
+      "target": "13vEyPpHp",
+      "targetHandle": null,
+      "id": "oJ42LUnqx"
+    },
+    {
+      "source": "Qtv7Q35LV",
+      "sourceHandle": "1",
+      "target": "QMHwf-38I",
+      "targetHandle": null,
+      "id": "zk1xIPReq"
+    },
+    {
+      "source": "3HVG_KAf1",
+      "sourceHandle": "1",
+      "target": "kKQrb4Nwp",
+      "targetHandle": null,
+      "id": "sM5B2Okq2"
+    },
+    {
+      "source": "sCKGoRWku",
+      "sourceHandle": "1",
+      "target": "_RKb9UaZy",
+      "targetHandle": null,
+      "id": "HqREU1BTz"
+    },
+    {
+      "source": "xMNtxs-Ct",
+      "sourceHandle": "1",
+      "target": "gKEJKrzsJ",
+      "targetHandle": null,
+      "id": "gfwbJgLF3"
+    },
+    {
+      "source": "7R-VRhlZ8",
+      "sourceHandle": "1",
+      "target": "qZHmlR-QL",
+      "targetHandle": null,
+      "id": "BkW-3yUi-"
+    },
+    {
+      "source": "13vEyPpHp",
+      "sourceHandle": "1",
+      "target": "DrM_l7cfy",
+      "targetHandle": null,
+      "id": "Im29mKXnL"
+    },
+    {
+      "source": "qZHmlR-QL",
+      "sourceHandle": "1",
+      "target": "Seo9IHIHX",
+      "targetHandle": null,
+      "id": "MblhItN2n"
+    },
+    {
+      "source": "kXbsctTYL",
+      "sourceHandle": "1",
+      "target": "bNbvlM1de",
+      "targetHandle": null,
+      "id": "Vrig0NqWe"
+    },
+    {
+      "source": "kXbsctTYL",
+      "sourceHandle": "2",
+      "target": "_2LfxJ_lG",
+      "targetHandle": null,
+      "id": "cuLyFhRxv"
+    },
+    {
+      "source": "1TKIYv9Fd",
+      "sourceHandle": "2",
+      "target": "wa9lSIJCd",
+      "targetHandle": null,
+      "id": "95ef0B7ha"
+    },
+    {
+      "source": "wa9lSIJCd",
+      "sourceHandle": "2",
+      "target": "mqGBwbA97",
+      "targetHandle": null,
+      "id": "wrFUsUkca"
+    },
+    {
+      "source": "wa9lSIJCd",
+      "sourceHandle": "1",
+      "target": "7PuSG3-6D",
+      "targetHandle": null,
+      "id": "RlrVJGwZe"
+    },
+    {
+      "source": "7PuSG3-6D",
+      "sourceHandle": "1",
+      "target": "uRXgRWy3A",
+      "targetHandle": null,
+      "id": "kCvVcvQUb"
+    },
+    {
+      "source": "uRXgRWy3A",
+      "sourceHandle": "1",
+      "target": "82dLQJX1e",
+      "targetHandle": null,
+      "id": "OGq72KCIE"
+    },
+    {
+      "source": "QMHwf-38I",
+      "sourceHandle": "1",
+      "target": "pb0VfABI6",
+      "targetHandle": null,
+      "id": "DFEmnp0Rt"
+    },
+    {
+      "source": "B5_Tocuqa",
+      "sourceHandle": "1",
+      "target": "_iFkU1C17",
+      "targetHandle": null,
+      "id": "AD-SUfmPt"
+    },
+    {
+      "source": "uLz4RKa2R",
+      "sourceHandle": "1",
+      "target": "_iFkU1C17",
+      "targetHandle": null,
+      "id": "ANoqoQvCL"
+    }
+  ]
+}
