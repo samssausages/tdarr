@@ -6,7 +6,7 @@ module.exports = async (args) => {
     "1080p": parseInt(args.userVariables.library.bitrate_1080p),
     "1440p": parseInt(args.userVariables.library.bitrate_1440p),
     "4k": parseInt(args.userVariables.library.bitrate_4k),
-    "4k_hdr": parseInt(args.userVariables.library.bitrate_4k_hdr)
+    "4k_hdr": parseInt(args.userVariables.library.bitrate_4k_hdr),
   };
 
   // Check if all bitrates are valid
@@ -16,13 +16,13 @@ module.exports = async (args) => {
     }
   }
 
-  let variables = {};
+  let variables = args.variables || {}; // Preserve existing variables/tags
 
   for (let resolution in bitrates) {
     const bitrate = bitrates[resolution];
     const maxrate = bitrate * 2; // Maxrate is double the bitrate
     const bufsize = maxrate * 2; // Bufsize is double the maxrate
-    const cutoff = Math.round(bitrate * 1.15 * 1000); // Cutoff is 115% of the bitrate, rounded to nearest integer.  In bps, not kbs
+    const cutoff = Math.round(bitrate * 1.15 * 1000); // Cutoff is 115% of the bitrate, rounded to nearest integer. In bps, not kbs
     
     // Store in variables
     variables[`bitrate_${resolution}`] = `${bitrate}k`;
