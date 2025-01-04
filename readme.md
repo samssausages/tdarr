@@ -42,9 +42,9 @@ I broke it down into 5 steps/flows:
 
 # Installation
 1. Create a new flow for each of the above steps (1-5) by:
-  a. Go to Tdarr Flows
-  b. Click "add flow"
-  c. Scoll to bottom and copy/paste json into "Import JSON Template" 
+a. Go to Tdarr Flows
+b. Click "add flow"
+c. Scoll to bottom and copy/paste json into "Import JSON Template" 
 3. Create a new Library with the Variables listed below (Make Sure your library has an input folder defined & output folders exist)
 4. Profit
 
