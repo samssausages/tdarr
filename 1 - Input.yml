@@ -1,0 +1,1548 @@
+{
+  "_id": "htpX8Ypt1",
+  "name": "1 - Input",
+  "description": "1 - Input",
+  "tags": "",
+  "flowPlugins": [
+    {
+      "name": "ℹ️ This is for cq encoding.  How often we query to check file size.  40 = 40 seconds",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "K8trD9DCB",
+      "position": {
+        "x": 55.97197119726553,
+        "y": -295.56935941760764
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_cq_filesize_ratio_time 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "XkbKW5wlt",
+      "position": {
+        "x": 355.0023753441211,
+        "y": -179.88962728796218
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_cq_filesize_ratio_time",
+        "value": "40"
+      }
+    },
+    {
+      "name": "ℹ️ This is for the fallback cq encoding method.  We use Check Live Filesize to ensure the output is smaller than the input file.  Set as a percentage.  Where 85 = 85%.  85% would mean that the output file must be smaller than 85% of the original input file size.\nIf it's not, then cq encoding stops.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "bslv19W8q",
+      "position": {
+        "x": -98.56643926843692,
+        "y": -523.556989237217
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_cq_filesize_ratio🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "5o_ZX8OYi",
+      "position": {
+        "x": 354.263163755709,
+        "y": -289.76043166512284
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_cq_filesize_ratio",
+        "value": "85"
+      }
+    },
+    {
+      "name": "ℹ️ This is a place to add general ffmpeg flags that apply to all encoders",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "EJ7ugSUhO",
+      "position": {
+        "x": 59.77990930838459,
+        "y": -486.5310001030745
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Used to deinterlace .ts tv broadcasts.  Set to true or false",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "FacWVu3PY",
+      "position": {
+        "x": 58.530740852967455,
+        "y": -593.1167867173225
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_ffmpeg_main 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "xg0Zl7npQ",
+      "position": {
+        "x": 354.6515120658205,
+        "y": -384.88988110182675
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_ffmpeg_main",
+        "value": "-max_muxing_queue_size 9999 -probesize 50M -analyzeduration 100M"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable do_deinterlace 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "kIngctdNa",
+      "position": {
+        "x": 355.816077906248,
+        "y": -491.77498625668767
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "do_deinterlace",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_vid_other 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "BJc8ojEjU",
+      "position": {
+        "x": 998.0120261821264,
+        "y": 1045.723191842916
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_vid_other",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_4K 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "vOLxp6jqn",
+      "position": {
+        "x": 849.2611946375436,
+        "y": 1046.707057185266
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_4K",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_1440p🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "vZeLbiTu7",
+      "position": {
+        "x": 700.0184304217859,
+        "y": 1046.3284392931453
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_1440p",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_1080p🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "0mDiymjG6",
+      "position": {
+        "x": 549.905115642732,
+        "y": 1045.949821401024
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_1080p",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_720p🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "VGXapbft5",
+      "position": {
+        "x": 400.1704187557991,
+        "y": 1046.8203719643197
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_720p",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_576p 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "TvXXyca5m",
+      "position": {
+        "x": 249.18655341344908,
+        "y": 1048.1828551987912
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_576p",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_480p 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "eZlcFyas1",
+      "position": {
+        "x": 98.20268807109892,
+        "y": 1049.5453384332623
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_480p",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Tag for Resolution ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "gidO9thTZ",
+      "position": {
+        "x": 528.0018547049071,
+        "y": 841.7632691051521
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ The Quality Setting CPU will use.  Scale:\nveryfast, faster, fast, medium, slow, slower, veryslow",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "8JScSknhL",
+      "position": {
+        "x": 1731.493002498521,
+        "y": -1082.7017814032133
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_cpu_main🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "CfQ5R76K8",
+      "position": {
+        "x": 1814.855719218521,
+        "y": -626.7663604095354
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_cpu_main",
+        "value": ""
+      }
+    },
+    {
+      "name": "ℹ️ Fine tuning of the CPU command",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "YnBm6uVAD",
+      "position": {
+        "x": 1728.2600927592555,
+        "y": -720.5366124143758
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_cpu_quality🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "KtEhs8mRz",
+      "position": {
+        "x": 1815.6004022070495,
+        "y": -970.6021631499533
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_cpu_quality",
+        "value": "-preset medium"
+      }
+    },
+    {
+      "name": "Variables - Video Encoding Customize CPU libx265 ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "9HN03eu7I",
+      "position": {
+        "x": 1815.3939678869824,
+        "y": -1136.2171398452676
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_hdr 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "YF0BETBk-",
+      "position": {
+        "x": 857.8147119364919,
+        "y": 694.8526412796199
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_hdr",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - File is not HDR ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "9SRtFxz_G",
+      "position": {
+        "x": 1031.6720129612404,
+        "y": 695.1321565792827
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️\n- Treat as Beta software, do not run this on your main library\n- Currently setup to be used with an Input and an Output Directory.\n- Works with HDR, but NOT DV.  Do not process DV and HDR+ with this, could cause playback errors.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "EX_Y6GAzU",
+      "position": {
+        "x": 96.13404025806506,
+        "y": -1976.9513539644645
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Fine tuning of the QSV command",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "NChZbnXOV",
+      "position": {
+        "x": 1400.5544630677923,
+        "y": -707.8569718570551
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ The Quality Setting QSV will use.  Scale:\nveryfast, faster, fast, medium, slow, slower, veryslow",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "80rjksgQ0",
+      "position": {
+        "x": 1411.4930024985213,
+        "y": -1081.7017814032133
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_qsv_quality🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "tm4a907sb",
+      "position": {
+        "x": 1494.6941320916203,
+        "y": -964.1846235858698
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_qsv_quality",
+        "value": "-preset slow"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable fl_qsv_main🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "8yoAmALSV",
+      "position": {
+        "x": 1494.8199996663877,
+        "y": -621.9216749218797
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_qsv_main",
+        "value": ""
+      }
+    },
+    {
+      "name": "Variables - Video Encoding Customize QSV (intel) ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "keUbLeDbW",
+      "position": {
+        "x": 1494.7349028979454,
+        "y": -1128.981985292825
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Fine tuning of the NVENC command",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "_bgbyE6TA",
+      "position": {
+        "x": 1070.2371816864404,
+        "y": -706.4944886225836
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_nvenc_main🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "SGW3kM8y2",
+      "position": {
+        "x": 1164.7554686023896,
+        "y": -623.7993533370853
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_nvenc_main",
+        "value": "-spatial-aq 1 -aq-strength 8"
+      }
+    },
+    {
+      "name": "ℹ️ The Quality Setting NVENC will use.  From a Scale of p1-p7, with p7 being the slowest and highest quality.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "y0M5XrBWr",
+      "position": {
+        "x": 1065.505810977839,
+        "y": -887.9476236802983
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_nvenc_quality 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "tQT-xnl9o",
+      "position": {
+        "x": 1165.2474012735643,
+        "y": -750.4078029071442
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_nvenc_quality",
+        "value": "-preset p7"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable fl_nvenc_b-frames🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "2hKuMEpT1",
+      "position": {
+        "x": 1165.820555126866,
+        "y": -933.9189089693849
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_nvenc_b-frames",
+        "value": "-bf 4"
+      }
+    },
+    {
+      "name": "ℹ️ If you have 2000 series Nvidia and up, then enable b frames:\n-bf 4\n\nIf you have an older card, then disable the plugin",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "VL1ZiYrD3",
+      "position": {
+        "x": 1059.1563484677265,
+        "y": -1084.9810131199188
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Variables - Video Encoding Customize NVENC ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "jbCsqTGiy",
+      "position": {
+        "x": 1165.5222565900879,
+        "y": -1125.0907744586984
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Used to re-order streams by the provided criteria.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "JDKkahsC_",
+      "position": {
+        "x": 663.1656637911804,
+        "y": -1076.0831872447702
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Loading User Configurable Variables ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "kNtI_XJKP",
+      "position": {
+        "x": 355.15642887965646,
+        "y": -1144.569454905396
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Variables - Reorder Streams ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "Rgv_qS5I1",
+      "position": {
+        "x": 756.2416258528026,
+        "y": -1122.111218701188
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_reorder_streams_type🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "zY3hnRibY",
+      "position": {
+        "x": 754.625890315089,
+        "y": -603.7965233177173
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_reorder_streams_type",
+        "value": "video,audio,subtitle"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable fl_reorder_streams_codec🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "-QJ_fm4Uu",
+      "position": {
+        "x": 754.5178920204631,
+        "y": -694.0448323366583
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_reorder_streams_codec",
+        "value": "truehd,dts,dca,pcm_s24le,pcm_s16le,flac,opus,eac3,ac3"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable fl_reorder_streams_lang🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "VLjGzKP-n",
+      "position": {
+        "x": 754.7177664476999,
+        "y": -872.1104788168575
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_reorder_streams_lang",
+        "value": "eng,en,ger,deu,de,zho,zh,chi,spa,es"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable fl_reorder_streams_channels 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "l7mPsczSU",
+      "position": {
+        "x": 754.3255412119738,
+        "y": -789.9333613278375
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_reorder_streams_channels",
+        "value": "7.1,5.1,2,1"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable fl_reorder_streams_order 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "HZMKeUC0S",
+      "position": {
+        "x": 755.7014234077964,
+        "y": -974.707043104211
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_reorder_streams_order",
+        "value": "codecs,channels,languages,streamTypes"
+      }
+    },
+    {
+      "name": "ℹ️ Used to check if the file duration is too long, indicating an error with the encode.\n100.5 = 100.5%",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "eXo53rilj",
+      "position": {
+        "x": 56.41102183425423,
+        "y": -721.4663374139735
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Used to check if the final file size is too large.  We generally don't want the files to end up larger.  Failure here could indicate encoding error or settings.\n100 = 100% = same file size as original\n105 = 105% = 5% larger than original",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "UWvkwUbL4",
+      "position": {
+        "x": 56.609453934568705,
+        "y": -1044.3084315488072
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ Used to check if the file duration is too short, indicating a possible error with the flow.  The file must be at least 99.5% as the original.\n\n99.5 = 99.5%",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "Qs-649x3e",
+      "position": {
+        "x": 56.178998111066306,
+        "y": -861.9008960685511
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "File Input - Custom User Config set! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "KIvOMF-YR",
+      "position": {
+        "x": 1816.2758776104363,
+        "y": -302.33275243773926
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_max_duration_limit 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "ne96A38Oq",
+      "position": {
+        "x": 355.4833860907444,
+        "y": -597.1943185091492
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_max_duration_limit",
+        "value": "100.5"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable fl_min_duration_limit 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "3sV69vJNq",
+      "position": {
+        "x": 355.49656510187003,
+        "y": -717.061837075493
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_min_duration_limit",
+        "value": "99.5"
+      }
+    },
+    {
+      "name": "ℹ️ Used to check if the file size is too large or too small. I use it to find out if there is an error with the encode.\n5 = 5%",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "o0aNbXH7c",
+      "position": {
+        "x": 53.35402213576333,
+        "y": -1164.4691502928565
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ ℹ️ ℹ️ ℹ️ USER CONFIGURABLE SECTION ℹ️ ℹ️ ℹ️ ℹ️\n\nHere are variables that are used later in the flow, so we have one central location to manage them, and you don't have to search the entire flow.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "l1863lNOd",
+      "position": {
+        "x": 53.87839039429505,
+        "y": -1355.477911139162
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_max_size_limit 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "J7dgGQ2DP",
+      "position": {
+        "x": 355.0759683161044,
+        "y": -851.2912417166373
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_max_size_limit",
+        "value": "103"
+      }
+    },
+    {
+      "name": "ℹ️ Goal of this flow is to id and tag things for easier recall later on",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "IuJ64Bs3g",
+      "position": {
+        "x": 355.7488505554565,
+        "y": -1753.1095855544154
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "ℹ️ We look for extensions that aren't processed well, or need extra processing.  Tagging them here helps recall later in the flow.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "AcOsg6NGg",
+      "position": {
+        "x": 383.10521561867716,
+        "y": 194.48607458363898
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Sorted & Tagged Done! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "At2ZiLHCX",
+      "position": {
+        "x": 530.4644634123953,
+        "y": 1205.7660453572903
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - File is not ts ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "cYqc7sNbD",
+      "position": {
+        "x": 881.7401981772964,
+        "y": 527.1612792326722
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_ts 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "rOUu3_Yzz",
+      "position": {
+        "x": 722.1767259286543,
+        "y": 526.6267490918091
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_ts",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Start 🚀",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "2kU0j98XT",
+      "position": {
+        "x": 554.5691572080907,
+        "y": 129.50651133758484
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - File is not avi ℹ️",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "3FJrHRaQD",
+      "position": {
+        "x": 792.3228209270461,
+        "y": 361.1252830528393
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Check if ts 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "CJJf39rHE",
+      "position": {
+        "x": 793.2090474237875,
+        "y": 443.36955551747474
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "extensions": "ts"
+      }
+    },
+    {
+      "name": "Input File - Start 📁",
+      "sourceRepo": "Community",
+      "pluginName": "inputFile",
+      "version": "1.0.0",
+      "id": "OO_HK73Ms",
+      "position": {
+        "x": 353.11717235971923,
+        "y": -1669.1325601419335
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "fileAccessChecks": "true"
+      }
+    },
+    {
+      "name": "Input File - Fail Permissions or File Error 🚨🚨",
+      "sourceRepo": "Community",
+      "pluginName": "failFlow",
+      "version": "1.0.0",
+      "id": "rsJ4Znt-F",
+      "position": {
+        "x": 462.5002645278922,
+        "y": -1622.1049066856633
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "File Input - File Found! ✅",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "EOKWqH2pd",
+      "position": {
+        "x": 351.78557574757224,
+        "y": -1569.699598104572
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Check if avi 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "GxxhjqFpX",
+      "position": {
+        "x": 655.8168041038375,
+        "y": 289.97278449903416
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "extensions": "avi"
+      }
+    },
+    {
+      "name": "Sort & Tag - Set Flow Variable is_avi 🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "4_jWs5Ktm",
+      "position": {
+        "x": 629.878424805901,
+        "y": 364.42097512492717
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "is_avi",
+        "value": "true"
+      }
+    },
+    {
+      "name": "Sort & Tag - Extensions that don't need tagging 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "QVy9g0ntp",
+      "position": {
+        "x": 553.5592434578249,
+        "y": 205.54818526041572
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Sort & Tag - Go To Flow 2 Prep & Clean ➡️",
+      "sourceRepo": "Community",
+      "pluginName": "goToFlow",
+      "version": "2.0.0",
+      "id": "kp1rLu37S",
+      "position": {
+        "x": 531.641844025337,
+        "y": 1301.6991158407575
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "flowId": "6FNPwZs6M",
+        "pluginId": "d8balkJHB"
+      }
+    },
+    {
+      "name": "Input - Set Flow Variable fl_min_size_limit🎯",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "c4dzBz_bo",
+      "position": {
+        "x": 355.20016933454565,
+        "y": -1030.1310272983274
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_min_size_limit",
+        "value": "3"
+      }
+    },
+    {
+      "name": "Sort & Tag - Check HDR Video 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkHdr",
+      "version": "1.0.0",
+      "id": "OXKlLy2rZ",
+      "position": {
+        "x": 934.3199473291859,
+        "y": 611.0565470167764
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Check Video Resolution",
+      "sourceRepo": "Community",
+      "pluginName": "checkVideoResolution",
+      "version": "1.0.0",
+      "id": "4k6WOJ84A",
+      "position": {
+        "x": 528.3690884598263,
+        "y": 944.8548812068027
+      },
+      "fpEnabled": true
+    }
+  ],
+  "flowEdges": [
+    {
+      "source": "OO_HK73Ms",
+      "sourceHandle": "err1",
+      "target": "rsJ4Znt-F",
+      "targetHandle": null,
+      "id": "_uFTcO9cF"
+    },
+    {
+      "source": "OO_HK73Ms",
+      "sourceHandle": "1",
+      "target": "EOKWqH2pd",
+      "targetHandle": null,
+      "id": "A0uJHeXoz"
+    },
+    {
+      "source": "GxxhjqFpX",
+      "sourceHandle": "2",
+      "target": "3FJrHRaQD",
+      "targetHandle": null,
+      "id": "0jKy6XHJ8"
+    },
+    {
+      "source": "3FJrHRaQD",
+      "sourceHandle": "1",
+      "target": "CJJf39rHE",
+      "targetHandle": null,
+      "id": "S96pRzPrs"
+    },
+    {
+      "source": "GxxhjqFpX",
+      "sourceHandle": "1",
+      "target": "4_jWs5Ktm",
+      "targetHandle": null,
+      "id": "OscQs0RNG"
+    },
+    {
+      "source": "CJJf39rHE",
+      "sourceHandle": "1",
+      "target": "rOUu3_Yzz",
+      "targetHandle": null,
+      "id": "XEcmV7m_c"
+    },
+    {
+      "source": "CJJf39rHE",
+      "sourceHandle": "2",
+      "target": "cYqc7sNbD",
+      "targetHandle": null,
+      "id": "ks72hpviB"
+    },
+    {
+      "source": "2kU0j98XT",
+      "sourceHandle": "1",
+      "target": "QVy9g0ntp",
+      "targetHandle": null,
+      "id": "-Fg60KVtk"
+    },
+    {
+      "source": "QVy9g0ntp",
+      "sourceHandle": "2",
+      "target": "GxxhjqFpX",
+      "targetHandle": null,
+      "id": "MMu9RuKxk"
+    },
+    {
+      "source": "At2ZiLHCX",
+      "sourceHandle": "1",
+      "target": "kp1rLu37S",
+      "targetHandle": null,
+      "id": "rcJrtzAjx"
+    },
+    {
+      "source": "c4dzBz_bo",
+      "sourceHandle": "1",
+      "target": "J7dgGQ2DP",
+      "targetHandle": null,
+      "id": "yRKfU3ulq"
+    },
+    {
+      "source": "J7dgGQ2DP",
+      "sourceHandle": "1",
+      "target": "3sV69vJNq",
+      "targetHandle": null,
+      "id": "SLe1IETb9"
+    },
+    {
+      "source": "3sV69vJNq",
+      "sourceHandle": "1",
+      "target": "ne96A38Oq",
+      "targetHandle": null,
+      "id": "3gdp9-aym"
+    },
+    {
+      "source": "KIvOMF-YR",
+      "sourceHandle": "1",
+      "target": "2kU0j98XT",
+      "targetHandle": null,
+      "id": "xu-xeYjjC"
+    },
+    {
+      "source": "l1863lNOd",
+      "sourceHandle": "1",
+      "target": "o0aNbXH7c",
+      "targetHandle": null,
+      "id": "dQZ8IHxQV"
+    },
+    {
+      "source": "o0aNbXH7c",
+      "sourceHandle": "1",
+      "target": "c4dzBz_bo",
+      "targetHandle": null,
+      "id": "kBK-heN_D"
+    },
+    {
+      "source": "UWvkwUbL4",
+      "sourceHandle": "1",
+      "target": "J7dgGQ2DP",
+      "targetHandle": null,
+      "id": "2eQr2qB4Z"
+    },
+    {
+      "source": "Qs-649x3e",
+      "sourceHandle": "1",
+      "target": "3sV69vJNq",
+      "targetHandle": null,
+      "id": "bNR2JJ1NX"
+    },
+    {
+      "source": "eXo53rilj",
+      "sourceHandle": "1",
+      "target": "ne96A38Oq",
+      "targetHandle": null,
+      "id": "DU7BX35rU"
+    },
+    {
+      "source": "EOKWqH2pd",
+      "sourceHandle": "1",
+      "target": "kNtI_XJKP",
+      "targetHandle": null,
+      "id": "GiZkHo4Sm"
+    },
+    {
+      "source": "kNtI_XJKP",
+      "sourceHandle": "1",
+      "target": "c4dzBz_bo",
+      "targetHandle": null,
+      "id": "Wd14tIzO2"
+    },
+    {
+      "source": "Rgv_qS5I1",
+      "sourceHandle": "1",
+      "target": "HZMKeUC0S",
+      "targetHandle": null,
+      "id": "CK_yz8xBP"
+    },
+    {
+      "source": "HZMKeUC0S",
+      "sourceHandle": "1",
+      "target": "VLjGzKP-n",
+      "targetHandle": null,
+      "id": "1pJrzisOh"
+    },
+    {
+      "source": "VLjGzKP-n",
+      "sourceHandle": "1",
+      "target": "l7mPsczSU",
+      "targetHandle": null,
+      "id": "05DzEVJDQ"
+    },
+    {
+      "source": "l7mPsczSU",
+      "sourceHandle": "1",
+      "target": "-QJ_fm4Uu",
+      "targetHandle": null,
+      "id": "kBt2oEo2u"
+    },
+    {
+      "source": "-QJ_fm4Uu",
+      "sourceHandle": "1",
+      "target": "zY3hnRibY",
+      "targetHandle": null,
+      "id": "e5W1o99kH"
+    },
+    {
+      "source": "zY3hnRibY",
+      "sourceHandle": "1",
+      "target": "jbCsqTGiy",
+      "targetHandle": null,
+      "id": "NiQEr8CZD"
+    },
+    {
+      "source": "VL1ZiYrD3",
+      "sourceHandle": "1",
+      "target": "2hKuMEpT1",
+      "targetHandle": null,
+      "id": "6oBO7PmBO"
+    },
+    {
+      "source": "jbCsqTGiy",
+      "sourceHandle": "1",
+      "target": "2hKuMEpT1",
+      "targetHandle": null,
+      "id": "qhXan8gvW"
+    },
+    {
+      "source": "2hKuMEpT1",
+      "sourceHandle": "1",
+      "target": "tQT-xnl9o",
+      "targetHandle": null,
+      "id": "vERLDVqQ_"
+    },
+    {
+      "source": "y0M5XrBWr",
+      "sourceHandle": "1",
+      "target": "tQT-xnl9o",
+      "targetHandle": null,
+      "id": "kPgWVbDOu"
+    },
+    {
+      "source": "tQT-xnl9o",
+      "sourceHandle": "1",
+      "target": "SGW3kM8y2",
+      "targetHandle": null,
+      "id": "22ACA6M2I"
+    },
+    {
+      "source": "_bgbyE6TA",
+      "sourceHandle": "1",
+      "target": "SGW3kM8y2",
+      "targetHandle": null,
+      "id": "OcL7Igb7_"
+    },
+    {
+      "source": "SGW3kM8y2",
+      "sourceHandle": "1",
+      "target": "keUbLeDbW",
+      "targetHandle": null,
+      "id": "xceEsBO-X"
+    },
+    {
+      "source": "keUbLeDbW",
+      "sourceHandle": "1",
+      "target": "tm4a907sb",
+      "targetHandle": null,
+      "id": "ilKYJbJ7I"
+    },
+    {
+      "source": "80rjksgQ0",
+      "sourceHandle": "1",
+      "target": "tm4a907sb",
+      "targetHandle": null,
+      "id": "LWlHLOTnb"
+    },
+    {
+      "source": "tm4a907sb",
+      "sourceHandle": "1",
+      "target": "8yoAmALSV",
+      "targetHandle": null,
+      "id": "N11Pb0gGj"
+    },
+    {
+      "source": "NChZbnXOV",
+      "sourceHandle": "1",
+      "target": "8yoAmALSV",
+      "targetHandle": null,
+      "id": "khvyr6CK_"
+    },
+    {
+      "source": "JDKkahsC_",
+      "sourceHandle": "1",
+      "target": "HZMKeUC0S",
+      "targetHandle": null,
+      "id": "E9xMCgA7p"
+    },
+    {
+      "source": "cYqc7sNbD",
+      "sourceHandle": "1",
+      "target": "OXKlLy2rZ",
+      "targetHandle": null,
+      "id": "PnyqoO3gb"
+    },
+    {
+      "source": "OXKlLy2rZ",
+      "sourceHandle": "2",
+      "target": "9SRtFxz_G",
+      "targetHandle": null,
+      "id": "ClgeoM5G1"
+    },
+    {
+      "source": "OXKlLy2rZ",
+      "sourceHandle": "1",
+      "target": "YF0BETBk-",
+      "targetHandle": null,
+      "id": "pQtKV6EnO"
+    },
+    {
+      "source": "8yoAmALSV",
+      "sourceHandle": "1",
+      "target": "9HN03eu7I",
+      "targetHandle": null,
+      "id": "CjSivzS1s"
+    },
+    {
+      "source": "9HN03eu7I",
+      "sourceHandle": "1",
+      "target": "KtEhs8mRz",
+      "targetHandle": null,
+      "id": "vL9exEhGb"
+    },
+    {
+      "source": "KtEhs8mRz",
+      "sourceHandle": "1",
+      "target": "CfQ5R76K8",
+      "targetHandle": null,
+      "id": "xNLvOeLKr"
+    },
+    {
+      "source": "YnBm6uVAD",
+      "sourceHandle": "1",
+      "target": "CfQ5R76K8",
+      "targetHandle": null,
+      "id": "kGu5wmeRa"
+    },
+    {
+      "source": "CfQ5R76K8",
+      "sourceHandle": "1",
+      "target": "KIvOMF-YR",
+      "targetHandle": null,
+      "id": "NcfTVl936"
+    },
+    {
+      "source": "8JScSknhL",
+      "sourceHandle": "1",
+      "target": "KtEhs8mRz",
+      "targetHandle": null,
+      "id": "vktngEkNt"
+    },
+    {
+      "source": "QVy9g0ntp",
+      "sourceHandle": "1",
+      "target": "gidO9thTZ",
+      "targetHandle": null,
+      "id": "g1515FAdT"
+    },
+    {
+      "source": "4_jWs5Ktm",
+      "sourceHandle": "1",
+      "target": "gidO9thTZ",
+      "targetHandle": null,
+      "id": "meexRgia-"
+    },
+    {
+      "source": "rOUu3_Yzz",
+      "sourceHandle": "1",
+      "target": "gidO9thTZ",
+      "targetHandle": null,
+      "id": "a5E_nFr3q"
+    },
+    {
+      "source": "YF0BETBk-",
+      "sourceHandle": "1",
+      "target": "gidO9thTZ",
+      "targetHandle": null,
+      "id": "4EnptDA-N"
+    },
+    {
+      "source": "9SRtFxz_G",
+      "sourceHandle": "1",
+      "target": "gidO9thTZ",
+      "targetHandle": null,
+      "id": "tpnn4RKV1"
+    },
+    {
+      "source": "gidO9thTZ",
+      "sourceHandle": "1",
+      "target": "4k6WOJ84A",
+      "targetHandle": null,
+      "id": "6JHwjJhyG"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "1",
+      "target": "eZlcFyas1",
+      "targetHandle": null,
+      "id": "VyovZoS9w"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "2",
+      "target": "TvXXyca5m",
+      "targetHandle": null,
+      "id": "W07E8nxVz"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "3",
+      "target": "VGXapbft5",
+      "targetHandle": null,
+      "id": "4i1jSfBe7"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "4",
+      "target": "0mDiymjG6",
+      "targetHandle": null,
+      "id": "b3cMv3TA4"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "5",
+      "target": "vZeLbiTu7",
+      "targetHandle": null,
+      "id": "UuOQ4A2rY"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "6",
+      "target": "vOLxp6jqn",
+      "targetHandle": null,
+      "id": "lew90C4y2"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "7",
+      "target": "vOLxp6jqn",
+      "targetHandle": null,
+      "id": "R8Af7pt2i"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "8",
+      "target": "BJc8ojEjU",
+      "targetHandle": null,
+      "id": "y3dFwHSPb"
+    },
+    {
+      "source": "4k6WOJ84A",
+      "sourceHandle": "9",
+      "target": "BJc8ojEjU",
+      "targetHandle": null,
+      "id": "3jDJS2Gr5"
+    },
+    {
+      "source": "eZlcFyas1",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "27_vO7xDZ"
+    },
+    {
+      "source": "TvXXyca5m",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "Z9qcBeuu-"
+    },
+    {
+      "source": "VGXapbft5",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "aX7XXIRNg"
+    },
+    {
+      "source": "0mDiymjG6",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "GCWY30t2p"
+    },
+    {
+      "source": "vZeLbiTu7",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "1LIHYojrp"
+    },
+    {
+      "source": "vOLxp6jqn",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "fU-W4eD3-"
+    },
+    {
+      "source": "BJc8ojEjU",
+      "sourceHandle": "1",
+      "target": "At2ZiLHCX",
+      "targetHandle": null,
+      "id": "Va3bTv7dF"
+    },
+    {
+      "source": "ne96A38Oq",
+      "sourceHandle": "1",
+      "target": "kIngctdNa",
+      "targetHandle": null,
+      "id": "8szL1cSky"
+    },
+    {
+      "source": "FacWVu3PY",
+      "sourceHandle": "1",
+      "target": "kIngctdNa",
+      "targetHandle": null,
+      "id": "J9RsVEPB0"
+    },
+    {
+      "source": "EJ7ugSUhO",
+      "sourceHandle": "1",
+      "target": "xg0Zl7npQ",
+      "targetHandle": null,
+      "id": "SHw68JDi0"
+    },
+    {
+      "source": "kIngctdNa",
+      "sourceHandle": "1",
+      "target": "xg0Zl7npQ",
+      "targetHandle": null,
+      "id": "HF6Jk6POg"
+    },
+    {
+      "source": "bslv19W8q",
+      "sourceHandle": "1",
+      "target": "5o_ZX8OYi",
+      "targetHandle": null,
+      "id": "svG1ksN3d"
+    },
+    {
+      "source": "xg0Zl7npQ",
+      "sourceHandle": "1",
+      "target": "5o_ZX8OYi",
+      "targetHandle": null,
+      "id": "WHUlmEyRT"
+    },
+    {
+      "source": "5o_ZX8OYi",
+      "sourceHandle": "1",
+      "target": "XkbKW5wlt",
+      "targetHandle": null,
+      "id": "PEdFq2lRj"
+    },
+    {
+      "source": "K8trD9DCB",
+      "sourceHandle": "1",
+      "target": "XkbKW5wlt",
+      "targetHandle": null,
+      "id": "tEdxTrMmw"
+    },
+    {
+      "source": "XkbKW5wlt",
+      "sourceHandle": "1",
+      "target": "Rgv_qS5I1",
+      "targetHandle": null,
+      "id": "BRKeLcsM9"
+    }
+  ]
+}
