@@ -1,10 +1,22 @@
-# list your encoders run: ffmpeg -encoders
-# search the list run: ffmpeg -encoders | grep hevc
-# To query an encoder's options run: ffmpeg -h encoder=hevc_nvenc
+list your encoders run: 
+```
+ffmpeg -encoders
+```
 
-# Example:
-# GA102GL [RTX A5000]
+search the list run: 
+```
+ffmpeg -encoders | grep hevc
+```
 
+To query an encoder's options run: 
+```
+ffmpeg -h encoder=hevc_nvenc
+```
+
+Example:
+GA102GL [RTX A5000]
+
+```
 Encoder hevc_nvenc [NVIDIA NVENC hevc encoder]:
     General capabilities: dr1 delay hardware 
     Threading capabilities: none
@@ -120,3 +132,4 @@ hevc_nvenc AVOptions:
   -intra-refresh     <boolean>    E..V....... Use Periodic Intra Refresh instead of IDR frames (default false)
   -single-slice-intra-refresh <boolean>    E..V....... Use single slice intra refresh (default false)
   -constrained-encoding <boolean>    E..V....... Enable constrainedFrame encoding where each slice in the constrained picture is independent of other slices (default false)
+```
