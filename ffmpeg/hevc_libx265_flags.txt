@@ -1,0 +1,21 @@
+# list your encoders run: ffmpeg -encoders
+# search the list run: ffmpeg -encoders | grep hevc
+# To query an encoder's options run: ffmpeg -h encoder=hevc_nvenc
+
+# Example:
+# GA102GL [RTX A5000]
+
+Encoder libx265 [libx265 H.265 / HEVC]:
+    General capabilities: dr1 delay threads 
+    Threading capabilities: other
+    Supported pixel formats: yuv420p yuvj420p yuv422p yuvj422p yuv444p yuvj444p gbrp yuv420p10le yuv422p10le yuv444p10le gbrp10le yuv420p12le yuv422p12le yuv444p12le gbrp12le gray gray10le gray12le
+libx265 AVOptions:
+  -crf               <float>      E..V....... set the x265 crf (from -1 to FLT_MAX) (default -1)
+  -qp                <int>        E..V....... set the x265 qp (from -1 to INT_MAX) (default -1)
+  -forced-idr        <boolean>    E..V....... if forcing keyframes, force them as IDR frames (default false)
+  -preset            <string>     E..V....... set the x265 preset
+  -tune              <string>     E..V....... set the x265 tune parameter
+  -profile           <string>     E..V....... set the x265 profile
+  -udu_sei           <boolean>    E..V....... Use user data unregistered SEI if available (default false)
+  -a53cc             <boolean>    E..V....... Use A53 Closed Captions (if available) (default true)
+  -x265-params       <dictionary> E..V....... set the x265 configuration using a :-separated list of key=value parameters
