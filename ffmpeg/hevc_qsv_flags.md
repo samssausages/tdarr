@@ -105,6 +105,8 @@ hevc_qsv encoder AVOptions:
   -int_ref_cycle_dist <int>        E..V....... Distance between the beginnings of the intra-refresh cycles in frames (from -1 to 32767) (default -1)
 ```
 
+## additional
+
 ```
 The ratecontrol method is selected as follows:
 
