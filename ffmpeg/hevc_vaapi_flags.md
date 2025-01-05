@@ -1,10 +1,22 @@
-# list your encoders run: ffmpeg -encoders
-# search the list run: ffmpeg -encoders | grep hevc
-# To query an encoder's options run: ffmpeg -h encoder=hevc_nvenc
+list your encoders run: 
+```
+ffmpeg -encoders
+```
 
-# Example:
-# GA102GL [RTX A5000]
+search the list run: 
+```
+ffmpeg -encoders | grep hevc
+```
 
+To query an encoder's options run: 
+```
+ffmpeg -h encoder=hevc_nvenc
+```
+
+Example:
+GA102GL [RTX A5000]
+
+```
 Encoder hevc_vaapi [H.265/HEVC (VAAPI)]:
     General capabilities: dr1 delay hardware 
     Threading capabilities: none
@@ -51,3 +63,4 @@ h265_vaapi AVOptions:
      hdr                          E..V....... Include HDR metadata for mastering display colour volume and content light level information
      a53_cc                       E..V....... Include A/53 caption data
   -tiles             <image_size> E..V....... Tile columns x rows
+```
