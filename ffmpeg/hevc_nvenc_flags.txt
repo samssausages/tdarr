@@ -1,7 +1,9 @@
-# To query your system run: "ffmpeg -h encoder=hevc_nvenc"
-# GA102GL [RTX A5000]
+# list your encoders run: ffmpeg -encoders
+# search the list run: ffmpeg -encoders | grep hevc
+# To query an encoder's options run: ffmpeg -h encoder=hevc_nvenc
 
-# These are the flags and configs you can add for hevc_nvenc
+# Example:
+# GA102GL [RTX A5000]
 
 Encoder hevc_nvenc [NVIDIA NVENC hevc encoder]:
     General capabilities: dr1 delay hardware 
