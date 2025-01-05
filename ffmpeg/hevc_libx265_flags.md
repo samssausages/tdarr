@@ -1,10 +1,22 @@
-# list your encoders run: ffmpeg -encoders
-# search the list run: ffmpeg -encoders | grep hevc
-# To query an encoder's options run: ffmpeg -h encoder=hevc_nvenc
+list your encoders run: 
+```
+ffmpeg -encoders
+```
 
-# Example:
-# GA102GL [RTX A5000]
+search the list run: 
+```
+ffmpeg -encoders | grep hevc
+```
 
+To query an encoder's options run: 
+```
+ffmpeg -h encoder=hevc_nvenc
+```
+
+Example:
+GA102GL [RTX A5000]
+
+```
 Encoder libx265 [libx265 H.265 / HEVC]:
     General capabilities: dr1 delay threads 
     Threading capabilities: other
@@ -19,3 +31,4 @@ libx265 AVOptions:
   -udu_sei           <boolean>    E..V....... Use user data unregistered SEI if available (default false)
   -a53cc             <boolean>    E..V....... Use A53 Closed Captions (if available) (default true)
   -x265-params       <dictionary> E..V....... set the x265 configuration using a :-separated list of key=value parameters
+```
