@@ -62,23 +62,15 @@ Library variables you need to add, with example setting:
 # Variable Notes:
 Audio bitrates and cutoff are set PER CHANNEL.  We use that to calculate based on number of channels in the audio stream.
 
-# Low Quality:
+# Required Fields
 ```
-test_mode true # true = will not delete source file.  False = will delete source file
+test_mode true # true = will not delete source file.  False = will delete source file.  Without source files won't delete.
 
 output_dir_done /media/4_done # path from within tdarr
 
 output_dir_review /media/4_done_review # if something didn't go right, we move to review folder.
 
-do_audio true # process audio? Currently Opus
-
-do_hevc = false # process hevc?
-
-v_cq 20 # quality setting for cq fallback method
-
-disable_cq = false # Disable Fallback encoding method
-
-disable_video = false # Optional - Only needed if you want to disable video processing - Set to True
+v_cq 20 # quality setting for cq fallback method. Scale of 0-51.  Where 0 is lossless and 51 is the lowest quality.  16-18 is often considered indistinguishable.  18-24 is usually a sane range.
 
 bitrate_480p 1250k # bitrate you want for given resolution
 
@@ -94,33 +86,60 @@ bitrate_4k 10000k
 
 bitrate_4k_hdr 12500k
 
-bitrate_audio 160k # Audio bitrate we will encode to.  This is PER CHANNEL
+bitrate_audio 160k # Audio bitrate we will encode to.  This is PER CHANNEL.
 
 bitrate_audio_cutoff 192k # will not encode source audio under this bitrate.  This is PER CHANNEL
 
 audio_language und,un,eng,en,ger,deu,de,zho,zh,chi,jpn,ja,kor,ko,spa,es,cpe,  # languages that you want to keep
 
-```
-
-# Mid-High Quality:
-
-```
-
-test_mode true # true = will not delete source file.  False = will delete source file
-
-output_dir_done /media/4_done # path from within tdarr
-
-output_dir_review /media/4_done_review # if something didn't go right, we move to review folder.
-
 do_audio true # process audio? Currently Opus
 
 do_hevc = false # process hevc?
 
-v_cq 18 # quality setting for cq fallback method
+```
 
+# Optional Fields
+
+```
 disable_cq = false # Disable Fallback encoding method
 
 disable_video = false # Optional - Only needed if you want to disable video processing - Set to True
+
+```
+
+# Quality Examples
+
+Peoples opinions vary greatly on this.  Also content will have a big impact on what is optimal.  If you think you have good settings, share them!
+
+## Low Quality:
+
+```
+v_cq 24 # quality setting for cq fallback method. Scale of 0-51.  Where 0 is lossless and 51 is the lowest quality.  16-18 is often considered indistinguishable.  18-24 is usually a sane range.
+
+bitrate_480p 1250k # bitrate you want for given resolution
+
+bitrate_576p 1400k
+
+bitrate_720p 2000k
+
+bitrate_1080p 2500k
+
+bitrate_1440p 3800k
+
+bitrate_4k 10000k
+
+bitrate_4k_hdr 12500k
+
+bitrate_audio 160k # Audio bitrate we will encode to.  This is PER CHANNEL.
+
+bitrate_audio_cutoff 192k # will not encode source audio under this bitrate.  This is PER CHANNEL
+
+```
+
+## Mid-High Quality:
+
+```
+v_cq 20 # quality setting for cq fallback method. Scale of 0-51.  Where 0 is lossless and 51 is the lowest quality.  16-18 is often considered indistinguishable.  18-24 is usually a sane range.
 
 bitrate_480p 1750k # bitrate you want for given resolution
 
@@ -139,9 +158,6 @@ bitrate_4k_hdr 20000k
 bitrate_audio 256k # Audio bitrate we will encode to.  This is PER CHANNEL
 
 bitrate_audio_cutoff 384k # will not encode source audio under this bitrate.  This is PER CHANNEL
-
-audio_language und,un,eng,en,ger,deu,de,zho,zh,chi,jpn,ja,kor,ko,spa,es,cpe,  # languages that you want to keep
-
 
 ```
 
