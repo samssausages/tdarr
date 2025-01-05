@@ -1,10 +1,22 @@
-# list your encoders run: ffmpeg -encoders
-# search the list run: ffmpeg -encoders | grep hevc
-# To query an encoder's options run: ffmpeg -h encoder=hevc_nvenc
+list your encoders run: 
+```
+ffmpeg -encoders
+```
 
-# Example:
-# GA102GL [RTX A5000]
+search the list run: 
+```
+ffmpeg -encoders | grep hevc
+```
 
+To query an encoder's options run: 
+```
+ffmpeg -h encoder=hevc_nvenc
+```
+
+Example:
+GA102GL [RTX A5000]
+
+```
 Encoder hevc_qsv [HEVC (Intel Quick Sync Video acceleration)]:
     General capabilities: delay hybrid 
     Threading capabilities: none
@@ -91,6 +103,7 @@ hevc_qsv encoder AVOptions:
   -int_ref_cycle_size <int>        E..V....... Number of frames in the intra refresh cycle (from -1 to 65535) (default -1)
   -int_ref_qp_delta  <int>        E..V....... QP difference for the refresh MBs (from -32768 to 32767) (default -32768)
   -int_ref_cycle_dist <int>        E..V....... Distance between the beginnings of the intra-refresh cycles in frames (from -1 to 32767) (default -1)
+```
 
 ```
 The ratecontrol method is selected as follows:
