@@ -76,6 +76,10 @@ v_cq 20 # quality setting for cq fallback method
 
 disable_cq = false # Disable Fallback encoding method
 
+disable_video = false # Optional - Only needed if you want to disable video processing - Set to True
+
+do_hevc = false # Disable processing files already in hevc
+
 bitrate_480p 1250k # bitrate you want for given resolution
 
 bitrate_576p 1400k
@@ -113,6 +117,8 @@ do_audio true # process audio? Currently Opus
 v_cq 18 # quality setting for cq fallback method
 
 disable_cq = false # Disable Fallback encoding method
+
+disable_video = false # Optional - Only needed if you want to disable video processing - Set to True
 
 bitrate_480p 1750k # bitrate you want for given resolution
 
