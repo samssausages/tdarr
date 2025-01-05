@@ -91,3 +91,31 @@ hevc_qsv encoder AVOptions:
   -int_ref_cycle_size <int>        E..V....... Number of frames in the intra refresh cycle (from -1 to 65535) (default -1)
   -int_ref_qp_delta  <int>        E..V....... QP difference for the refresh MBs (from -32768 to 32767) (default -32768)
   -int_ref_cycle_dist <int>        E..V....... Distance between the beginnings of the intra-refresh cycles in frames (from -1 to 32767) (default -1)
+
+```
+The ratecontrol method is selected as follows:
+
+When 'global_quality' is specified, a quality-based mode is used. Specifically this means either
+- CQP - constant quantizer scale, when the 'qscale' codec flag is also set (the '-qscale' ffmpeg option).
+- LA_ICQ - intelligent constant quality with lookahead, when the 'look_ahead' option is also set.
+- ICQ - intelligent constant quality otherwise.
+Otherwise, a bitrate-based mode is used. For all of those, you should specify at least the desired average bitrate with the 'b' option.
+- LA - VBR with lookahead, when the 'look_ahead' option is specified.
+- VCM - video conferencing mode, when the 'vcm' option is set.
+- CBR - constant bitrate, when 'maxrate' is specified and equal to the average bitrate.
+- VBR - variable bitrate, when 'maxrate' is specified, but is higher than the average bitrate.
+- AVBR - average VBR mode, when 'maxrate' is not specified. This mode is further configured by the 'avbr_accuracy' and 'avbr_convergence' options.
+Note that depending on your system, a different mode than the one you specified may be selected by the encoder. Set the verbosity level to verbose or higher to see the actual settings used by the QSV runtime.
+
+Additional libavcodec global options are mapped to MSDK options as follows:
+
+'g/gop_size' -> 'GopPicSize'
+'bf/max_b_frames'+1 -> 'GopRefDist'
+'rc_init_occupancy/rc_initial_buffer_occupancy' -> 'InitialDelayInKB'
+'slices' -> 'NumSlice'
+'refs' -> 'NumRefFrame'
+'b_strategy/b_frame_strategy' -> 'BRefType'
+'cgop/CLOSED_GOP' codec flag -> 'GopOptFlag'
+For the CQP mode, the 'i_qfactor/i_qoffset' and 'b_qfactor/b_qoffset' set the difference between QPP and QPI, and QPP and QPB respectively.
+Setting the 'coder' option to the value vlc will make the H.264 encoder use CAVLC instead of CABAC.
+```
