@@ -72,13 +72,13 @@ output_dir_review /media/4_done_review # if something didn't go right, we move t
 
 do_audio true # process audio? Currently Opus
 
+do_hevc = false # process hevc?
+
 v_cq 20 # quality setting for cq fallback method
 
 disable_cq = false # Disable Fallback encoding method
 
 disable_video = false # Optional - Only needed if you want to disable video processing - Set to True
-
-do_hevc = false # Disable processing files already in hevc
 
 bitrate_480p 1250k # bitrate you want for given resolution
 
@@ -113,6 +113,8 @@ output_dir_done /media/4_done # path from within tdarr
 output_dir_review /media/4_done_review # if something didn't go right, we move to review folder.
 
 do_audio true # process audio? Currently Opus
+
+do_hevc = false # process hevc?
 
 v_cq 18 # quality setting for cq fallback method
 
