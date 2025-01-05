@@ -1,10 +1,22 @@
-# list your encoders run: ffmpeg -encoders
-# search the list run: ffmpeg -encoders | grep hevc
-# To query an encoder's options run: ffmpeg -h encoder=hevc_nvenc
+list your encoders run: 
+```
+ffmpeg -encoders
+```
 
-# Example:
-# GA102GL [RTX A5000]
+search the list run: 
+```
+ffmpeg -encoders | grep hevc
+```
 
+To query an encoder's options run: 
+```
+ffmpeg -h encoder=hevc_nvenc
+```
+
+Example:
+GA102GL [RTX A5000]
+
+```
 Encoder hevc_amf [AMD AMF HEVC encoder]:
     General capabilities: dr1 delay hardware 
     Threading capabilities: none
@@ -69,3 +81,4 @@ hevc_amf AVOptions:
   -me_quarter_pel    <boolean>    E..V....... Enable ME Quarter Pixel (default true)
   -aud               <boolean>    E..V....... Inserts AU Delimiter NAL unit (default false)
   -log_to_dbg        <boolean>    E..V....... Enable AMF logging to debug output (default false)
+```
