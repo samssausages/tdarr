@@ -134,3 +134,69 @@ Additional libavcodec global options are mapped to MSDK options as follows:
 For the CQP mode, the 'i_qfactor/i_qoffset' and 'b_qfactor/b_qoffset' set the difference between QPP and QPI, and QPP and QPB respectively.
 Setting the 'coder' option to the value vlc will make the H.264 encoder use CAVLC instead of CABAC.
 ```
+
+# 9.26 QSV Encoders
+The family of Intel QuickSync Video encoders (MPEG-2, H.264, HEVC, JPEG/MJPEG, VP9, AV1)
+
+## 9.26.1 Ratecontrol Method
+The ratecontrol method is selected as follows:
+
+- **When `global_quality` is specified**, a quality-based mode is used:
+  - **CQP** - constant quantizer scale, when the `qscale` codec flag is also set (the `-qscale` ffmpeg option).
+  - **LA_ICQ** - intelligent constant quality with lookahead, when the `look_ahead` option is also set.
+  - **ICQ** – intelligent constant quality otherwise. For the ICQ modes, `global_quality` range is 1 to 51, with 1 being the best quality.
+- **Otherwise when the desired average bitrate is specified with the `b` option**, a bitrate-based mode is used:
+  - **LA** - VBR with lookahead, when the `look_ahead` option is specified.
+  - **VCM** - video conferencing mode, when the `vcm` option is set.
+  - **CBR** - constant bitrate, when `maxrate` is specified and equal to the average bitrate.
+  - **VBR** - variable bitrate, when `maxrate` is specified, but is higher than the average bitrate.
+  - **AVBR** - average VBR mode, when `maxrate` is not specified, both `avbr_accuracy` and `avbr_convergence` are set to non-zero. This mode is available for H264 and HEVC on Windows.
+- **Otherwise**, the default ratecontrol method **CQP** is used.
+
+Note that depending on your system, a different mode than the one you specified may be selected by the encoder. Set the verbosity level to verbose or higher to see the actual settings used by the QSV runtime.
+
+## 9.26.2 Global Options -> MSDK Options
+Additional libavcodec global options are mapped to MSDK options as follows:
+
+- `g`/`gop_size` -> `GopPicSize`
+- `bf`/`max_b_frames+1` -> `GopRefDist`
+- `rc_init_occupancy`/`rc_initial_buffer_occupancy` -> `InitialDelayInKB`
+- `slices` -> `NumSlice`
+- `refs` -> `NumRefFrame`
+- `b_strategy`/`b_frame_strategy` -> `BRefType`
+- `cgop`/`CLOSED_GOP` codec flag -> `GopOptFlag`
+
+For the CQP mode, the `i_qfactor`/`i_qoffset` and `b_qfactor`/`b_qoffset` set the difference between QPP and QPI, and QPP and QPB respectively. Setting the `coder` option to the value `vlc` will make the H.264 encoder use CAVLC instead of CABAC.
+
+## 9.26.3 Common Options
+Following options are used by all qsv encoders:
+
+- **async_depth**: Specifies how many asynchronous operations an application performs before the application explicitly synchronizes the result. If zero, the value is not specified.
+- **preset**: This option itemizes a range of choices from `veryfast` (best speed) to `veryslow` (best quality):
+  - `veryfast`
+  - `faster`
+  - `fast`
+  - `medium`
+  - `slow`
+  - `slower`
+  - `veryslow`
+- **forced_idr**: Forcing I frames as IDR frames.
+- **low_power**: For encoders, set this flag to ON to reduce power consumption and GPU usage.
+
+## 9.26.4 Runtime Options
+Following options can be used during qsv encoding:
+
+- **global_quality**
+- **i_quant_factor**
+- **i_quant_offset**
+- **b_quant_factor**
+- **b_quant_offset** - Supported in `h264_qsv` and `hevc_qsv`. Change these values to reset qsv codec's qp configuration.
+- **max_frame_size** - Supported in `h264_qsv` and `hevc_qsv`. Change this value to reset qsv codec's `MaxFrameSize` configuration.
+- **gop_size** - Change this value to reset qsv codec's gop configuration.
+
+... (more options could be listed here)
+
+- **qsv_params**: Set QSV encoder parameters as a colon-separated list of key-value pairs.
+
+```bash
+ffmpeg -i input.mp4 -c:v h264_qsv -qsv_params "CodingOption1=1:CodingOption2=2" output.mp4
