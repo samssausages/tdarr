@@ -1,5 +1,5 @@
-```mermaid
-flowchart TD {themes="hand"}
+```seqence {themes="hand"}
+flowchart TD
     A[Start] --> B{Is it raining?}
     B -->|Yes| C[Take umbrella]
     B -->|No| D[Enjoy the weather]
