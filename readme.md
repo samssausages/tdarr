@@ -1,6 +1,6 @@
-## Tdarr - One Flow To Rule Them All
+## Tdarr - One Flow - To Rule Them All
 
-Goal to have one Flow (set of flows) for all your encoding needs.
+Goal to have One Flow (set of flows) to Rule all your Media!
 I accomplish this by using Library Variables.  This allows us to change our quality and encoding settings in the library.  This is much easier than trying to edit the flow every time we want to encode differently.
 I have a library for low quality, high quality, Animation, Movies.  Each has their own quality settings.  Then I just move the files I'm processing into the corresponding library folder and tdarr will process as needed.
 
