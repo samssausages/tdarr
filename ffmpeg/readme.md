@@ -31,15 +31,6 @@ https://goughlui.com/2023/12/28/video-codec-round-up-2023-part-7-hevc_qsv-h-265-
 
 https://nelsonslog.wordpress.com/2022/08/22/ffmpeg-and-hevc_qsv-intel-quick-sync-settings/
 
-## vaapi
-### hvec_vaapi
-
-https://trac.ffmpeg.org/wiki/Hardware/VAAPI
-
-## libx265
-
-https://goughlui.com/2023/12/26/video-codec-round-up-2023-part-3-libx265-mpeg-h-part-2-h-265-hevc/
-
 ## amf
 
 AMD Encoder/Decoder Compatibility Matrix
@@ -51,3 +42,12 @@ https://en.wikipedia.org/wiki/Video_Coding_Engine
 ### hevc_amf
 
 https://goughlui.com/2023/12/31/video-codec-round-up-2023-part-11-hevc_amf-h-265-amd-advanced-media-framework/
+
+## libx265
+
+https://goughlui.com/2023/12/26/video-codec-round-up-2023-part-3-libx265-mpeg-h-part-2-h-265-hevc/
+
+## vaapi
+### hvec_vaapi
+
+https://trac.ffmpeg.org/wiki/Hardware/VAAPI
