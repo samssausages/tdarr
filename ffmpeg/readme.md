@@ -41,6 +41,8 @@ https://en.wikipedia.org/wiki/Video_Core_Next
 
 https://en.wikipedia.org/wiki/Video_Coding_Engine
 
+https://github.com/GPUOpen-LibrariesAndSDKs/AMF
+
 #### hevc_amf
 
 https://goughlui.com/2023/12/31/video-codec-round-up-2023-part-11-hevc_amf-h-265-amd-advanced-media-framework/
