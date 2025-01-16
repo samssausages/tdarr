@@ -18,9 +18,9 @@ I have a library for low quality, high quality, Animation, Movies.  Each has the
 - We calculate things like -maxrate based on your target bitrate. Simplifying user imput
 - Lots of notes & documentation in the flow
 - Extensive logging and use of icons to make tracking down failures a breeze
-- Works with Nvidia, Intel QuickSync and CPU (Help me add others by saring your ffmpeg command)
+- Works with Nvidia, Intel QuickSync and CPU (Help me add others by sharing your ffmpeg command)
 - Strip audio to where only the tracks you want remain
-- If a lossless audio track exists, encode in opus (can disable)
+- If a lossless audio track exists, encode in opus (can disable, still needs refinement, as sometimes encodes high bitrate non-lossless tracks)
 - Deinterlace .ts files. (tv DVR broadcasts)
 - Export Embedded Subtitles (Could use more testing and refinement)
 
