@@ -5,10 +5,7 @@ Goal to have One Flow (set of flows) to Rule all your Media!
 I accomplish this by using Library Variables.  This allows us to change our quality and encoding settings in the library.  This is much easier than trying to edit the flow every time we want to encode differently.
 I have a library for low quality, high quality, Animation, Movies.  Each has their own quality settings.  Then I just move the files I'm processing into the corresponding library folder and tdarr will process as needed.
 
-Current Version:
-V0.9
-
-- Consider this beta, do not trust it with your media library until you have ran a bunch of various files through it!  Let me know if you run into unexpected behavior!
+- While I have ran thousands of files through this flow, please consider this beta! Do not trust it with your media library until you have ran a bunch of various files through it and understand how it operates!  Let me know if you run into unexpected behavior!
 - Do not use with DV or HDR+.  Could cause playback error.  Works fine with basic HDR
 - CPU & QSV need more testing, as I don't use them often.  NVENC is well tested
 - This Flow is designed to be used with an input and output directory
