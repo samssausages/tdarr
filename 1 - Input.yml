@@ -21,16 +21,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_cq_filesize_ratio_time",
+        "value": "40"
+      },
       "id": "XkbKW5wlt",
       "position": {
         "x": 351.0023753441212,
         "y": -355.8896272879622
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_cq_filesize_ratio_time",
-        "value": "40"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ This is for the fallback cq encoding method.  We use Check Live Filesize to ensure the output is smaller than the input file.  Set as a percentage.  Where 85 = 85%.  85% would mean that the output file must be smaller than 85% of the original input file size.\nIf it's not, then cq encoding stops.",
@@ -49,16 +49,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_cq_filesize_ratio",
+        "value": "85"
+      },
       "id": "5o_ZX8OYi",
       "position": {
         "x": 350.263163755709,
         "y": -465.76043166512284
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_cq_filesize_ratio",
-        "value": "85"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ This is a place to add general ffmpeg flags that apply to all encoders",
@@ -89,144 +89,144 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_ffmpeg_main",
+        "value": "-max_muxing_queue_size 9999 -probesize 100M -analyzeduration 200M"
+      },
       "id": "xg0Zl7npQ",
       "position": {
         "x": 350.6515120658205,
         "y": -560.8898811018267
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_ffmpeg_main",
-        "value": "-max_muxing_queue_size 9999 -probesize 100M -analyzeduration 200M"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable do_deinterlace 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "do_deinterlace",
+        "value": "true"
+      },
       "id": "kIngctdNa",
       "position": {
         "x": 351.816077906248,
         "y": -667.7749862566877
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "do_deinterlace",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Set Flow Variable is_vid_other 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_vid_other",
+        "value": "true"
+      },
       "id": "BJc8ojEjU",
       "position": {
         "x": 998.0120261821264,
         "y": 1045.723191842916
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_vid_other",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Set Flow Variable is_4K 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_4K",
+        "value": "true"
+      },
       "id": "vOLxp6jqn",
       "position": {
         "x": 849.2611946375436,
         "y": 1046.707057185266
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_4K",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Set Flow Variable is_1440p🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_1440p",
+        "value": "true"
+      },
       "id": "vZeLbiTu7",
       "position": {
         "x": 700.0184304217859,
         "y": 1046.3284392931453
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_1440p",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Set Flow Variable is_1080p🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_1080p",
+        "value": "true"
+      },
       "id": "0mDiymjG6",
       "position": {
         "x": 549.905115642732,
         "y": 1045.949821401024
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_1080p",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Set Flow Variable is_720p🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_720p",
+        "value": "true"
+      },
       "id": "VGXapbft5",
       "position": {
         "x": 400.1704187557991,
         "y": 1046.8203719643197
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_720p",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Set Flow Variable is_576p 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_576p",
+        "value": "true"
+      },
       "id": "TvXXyca5m",
       "position": {
         "x": 249.18655341344908,
         "y": 1048.1828551987912
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_576p",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Set Flow Variable is_480p 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_480p",
+        "value": "true"
+      },
       "id": "eZlcFyas1",
       "position": {
         "x": 98.20268807109892,
         "y": 1049.5453384332623
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_480p",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Tag for Resolution ℹ️",
@@ -257,16 +257,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_cpu_main",
+        "value": ""
+      },
       "id": "CfQ5R76K8",
       "position": {
         "x": 1810.855719218521,
         "y": -802.7663604095354
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_cpu_main",
-        "value": ""
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ Fine tuning of the CPU command",
@@ -285,16 +285,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_cpu_quality",
+        "value": "-preset medium"
+      },
       "id": "KtEhs8mRz",
       "position": {
         "x": 1811.6004022070495,
         "y": -1103.7754302520393
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_cpu_quality",
-        "value": "-preset medium"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Variables - Video Encoding Customize CPU libx265 ℹ️",
@@ -313,16 +313,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_hdr",
+        "value": "true"
+      },
       "id": "YF0BETBk-",
       "position": {
         "x": 857.8147119364919,
         "y": 694.8526412796199
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_hdr",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - File is not HDR ℹ️",
@@ -377,32 +377,32 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_qsv_quality",
+        "value": "-preset slower"
+      },
       "id": "tm4a907sb",
       "position": {
         "x": 1490.6941320916203,
         "y": -1117.1240751023777
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_qsv_quality",
-        "value": "-preset slower"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable fl_qsv_main🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_qsv_main",
+        "value": ""
+      },
       "id": "8yoAmALSV",
       "position": {
         "x": 1490.8199996663877,
         "y": -797.9216749218797
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_qsv_main",
-        "value": ""
-      }
+      "fpEnabled": true
     },
     {
       "name": "Variables - Video Encoding Customize QSV (intel) ℹ️",
@@ -433,16 +433,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_nvenc_main",
+        "value": "-spatial-aq 1 -aq-strength 8"
+      },
       "id": "SGW3kM8y2",
       "position": {
         "x": 1160.7554686023896,
         "y": -799.7993533370853
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_nvenc_main",
-        "value": "-spatial-aq 1 -aq-strength 8"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ The Quality Setting NVENC will use.  From a Scale of p1-p7, with p7 being the slowest and highest quality.",
@@ -461,32 +461,32 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_nvenc_quality",
+        "value": "-preset p7"
+      },
       "id": "tQT-xnl9o",
       "position": {
         "x": 1161.2474012735643,
         "y": -926.4078029071442
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_nvenc_quality",
-        "value": "-preset p7"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable fl_nvenc_b-frames🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_nvenc_b-frames",
+        "value": "-bf 4"
+      },
       "id": "2hKuMEpT1",
       "position": {
         "x": 1161.820555126866,
         "y": -1109.918908969385
       },
-      "fpEnabled": false,
-      "inputsDB": {
-        "variable": "fl_nvenc_b-frames",
-        "value": "-bf 4"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ If you have 2000 series Nvidia and up, then enable b frames:\n-bf 4\n\nIf you have an older card, then disable the plugin",
@@ -553,80 +553,80 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_reorder_streams_type",
+        "value": "video,audio,subtitle"
+      },
       "id": "zY3hnRibY",
       "position": {
         "x": 750.625890315089,
         "y": -779.7965233177173
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_reorder_streams_type",
-        "value": "video,audio,subtitle"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable fl_reorder_streams_codec🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_reorder_streams_codec",
+        "value": "truehd,dts,dca,pcm_s24le,pcm_s16le,flac,opus,eac3,ac3"
+      },
       "id": "-QJ_fm4Uu",
       "position": {
         "x": 750.5178920204631,
         "y": -870.0448323366583
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_reorder_streams_codec",
-        "value": "truehd,dts,dca,pcm_s24le,pcm_s16le,flac,opus,eac3,ac3"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable fl_reorder_streams_lang🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_reorder_streams_lang",
+        "value": "eng,en,ger,deu,de,zho,zh,chi,spa,es"
+      },
       "id": "VLjGzKP-n",
       "position": {
         "x": 750.7177664476999,
         "y": -1048.1104788168575
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_reorder_streams_lang",
-        "value": "eng,en,ger,deu,de,zho,zh,chi,spa,es"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable fl_reorder_streams_channels 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_reorder_streams_channels",
+        "value": "7.1,5.1,2,1"
+      },
       "id": "l7mPsczSU",
       "position": {
         "x": 750.3255412119738,
         "y": -965.9333613278375
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_reorder_streams_channels",
-        "value": "7.1,5.1,2,1"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable fl_reorder_streams_order 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_reorder_streams_order",
+        "value": "codecs,channels,languages,streamTypes"
+      },
       "id": "HZMKeUC0S",
       "position": {
         "x": 751.7014234077964,
         "y": -1150.7070431042112
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_reorder_streams_order",
-        "value": "codecs,channels,languages,streamTypes"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ Used to check if the file duration is too long, indicating an error with the encode.\n100.5 = 100.5%",
@@ -681,32 +681,32 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_max_duration_limit",
+        "value": "100.5"
+      },
       "id": "ne96A38Oq",
       "position": {
         "x": 351.4833860907445,
         "y": -773.1943185091492
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_max_duration_limit",
-        "value": "100.5"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable fl_min_duration_limit 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_min_duration_limit",
+        "value": "99.5"
+      },
       "id": "3sV69vJNq",
       "position": {
         "x": 351.4965651018699,
         "y": -893.061837075493
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_min_duration_limit",
-        "value": "99.5"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ Used to check if the file size is too large or too small. I use it to find out if there is an error with the encode.\n5 = 5%",
@@ -737,16 +737,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_max_size_limit",
+        "value": "103"
+      },
       "id": "J7dgGQ2DP",
       "position": {
         "x": 351.0759683161043,
         "y": -1027.2912417166372
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_max_size_limit",
-        "value": "103"
-      }
+      "fpEnabled": true
     },
     {
       "name": "ℹ️ Goal of this flow is to id and tag things for easier recall later on",
@@ -801,16 +801,16 @@
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_ts",
+        "value": "true"
+      },
       "id": "rOUu3_Yzz",
       "position": {
         "x": 722.1767259286543,
         "y": 526.6267490918091
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_ts",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Start 🚀",
@@ -841,30 +841,30 @@
       "sourceRepo": "Community",
       "pluginName": "checkFileExtension",
       "version": "1.0.0",
+      "inputsDB": {
+        "extensions": "ts"
+      },
       "id": "CJJf39rHE",
       "position": {
         "x": 793.2090474237875,
         "y": 443.36955551747474
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "extensions": "ts"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input File - Start 📁",
       "sourceRepo": "Community",
       "pluginName": "inputFile",
       "version": "1.0.0",
+      "inputsDB": {
+        "fileAccessChecks": "true"
+      },
       "id": "OO_HK73Ms",
       "position": {
         "x": 353.11717235971923,
         "y": -1669.1325601419335
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "fileAccessChecks": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input File - Fail Permissions or File Error 🚨🚨",
@@ -895,31 +895,31 @@
       "sourceRepo": "Community",
       "pluginName": "checkFileExtension",
       "version": "1.0.0",
+      "inputsDB": {
+        "extensions": "avi"
+      },
       "id": "GxxhjqFpX",
       "position": {
         "x": 655.8168041038375,
         "y": 289.97278449903416
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "extensions": "avi"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Set Flow Variable is_avi 🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "is_avi",
+        "value": "true"
+      },
       "id": "4_jWs5Ktm",
       "position": {
         "x": 629.878424805901,
         "y": 364.42097512492717
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "is_avi",
-        "value": "true"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Extensions that don't need tagging 🔍",
@@ -938,32 +938,32 @@
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
       "version": "2.0.0",
+      "inputsDB": {
+        "flowId": "6FNPwZs6M",
+        "pluginId": "d8balkJHB"
+      },
       "id": "kp1rLu37S",
       "position": {
         "x": 531.641844025337,
         "y": 1301.6991158407575
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "flowId": "6FNPwZs6M",
-        "pluginId": "d8balkJHB"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Input - Set Flow Variable fl_min_size_limit🎯",
       "sourceRepo": "Community",
       "pluginName": "setFlowVariable",
       "version": "1.0.0",
+      "inputsDB": {
+        "variable": "fl_min_size_limit",
+        "value": "3"
+      },
       "id": "c4dzBz_bo",
       "position": {
         "x": 351.20016933454576,
         "y": -1206.1310272983274
       },
-      "fpEnabled": true,
-      "inputsDB": {
-        "variable": "fl_min_size_limit",
-        "value": "3"
-      }
+      "fpEnabled": true
     },
     {
       "name": "Sort & Tag - Check HDR Video 🔍",
@@ -986,6 +986,34 @@
       "position": {
         "x": 528.3690884598263,
         "y": 944.8548812068027
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input - Set Flow Variable fl_force_cq",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "id": "X74WUQkJk",
+      "position": {
+        "x": 350.6009901474331,
+        "y": -252.8442375132331
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "variable": "fl_force_cq",
+        "value": "{{{args.userVariables.library.force_cq}}}"
+      }
+    },
+    {
+      "name": "If library variable force_cq is set to true, then the video flow will skip constant bitrate try and force constant quality.",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "6255cnzWT",
+      "position": {
+        "x": 46.084864939378576,
+        "y": -324.43100956520254
       },
       "fpEnabled": true
     }
@@ -1540,9 +1568,23 @@
     {
       "source": "XkbKW5wlt",
       "sourceHandle": "1",
+      "target": "X74WUQkJk",
+      "targetHandle": null,
+      "id": "yQZuC9uVb"
+    },
+    {
+      "source": "X74WUQkJk",
+      "sourceHandle": "1",
       "target": "Rgv_qS5I1",
       "targetHandle": null,
-      "id": "BRKeLcsM9"
+      "id": "luyHrnBay"
+    },
+    {
+      "source": "6255cnzWT",
+      "sourceHandle": "1",
+      "target": "X74WUQkJk",
+      "targetHandle": null,
+      "id": "wqsy9LMWe"
     }
   ]
 }
